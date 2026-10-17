@@ -64,3 +64,16 @@ build schema="haus3.json":
 # Blueprint Schritt für Schritt bauen (Enter = nächster Schritt, q = Abbruch)
 step schema="haus3.json":
   MC_RCON_PASSWORD={{RCON_PASSWORD}} ./bp2rcon.py {{schema}} --anchor {{POS_X}} {{POS_Y}} {{POS_Z}} --step
+backup:
+  podman exec mc-preprod rcon-cli save-off
+  podman exec mc-preprod rcon-cli save-all flush
+  podman unshare tar -C data -czf backup-{{LEVEL}}.tgz {{LEVEL}}
+  podman exec mc-preprod rcon-cli save-on
+
+# Gesicherte Welt zurückspielen (Server wird gestoppt)
+restore:
+  -podman stop mc-preprod
+  podman unshare rm -rf data/{{LEVEL}}
+  podman unshare tar -C data -xzf backup-{{LEVEL}}.tgz
+  podman start mc-preprod
+

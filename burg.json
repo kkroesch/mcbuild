@@ -127,7 +127,6 @@
     {"op": "fill", "from": [31,7,10], "to": [32,11,14], "block": "stone"},
     {"op": "carve", "from": [31,7,12], "to": [32,8,12]},
     {"op": "fill", "from": [31,6,12], "to": [32,6,12], "block": "netherrack"},
-    {"op": "fill", "from": [31,7,12], "to": [32,7,12], "block": "fire"},
     {"op": "gable_roof", "from": [7,18,6], "to": [33,18,18], "axis": "x",
      "stairs": "slate_stair", "gable": "plaster"},
 

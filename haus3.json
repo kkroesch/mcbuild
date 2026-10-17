@@ -1,0 +1,84 @@
+{
+  "name": "haus3",
+  "palette": {
+    "wall": "minecraft:stone_bricks",
+    "floor": "minecraft:oak_planks",
+    "glass": "minecraft:glass_pane",
+    "log": "minecraft:oak_log[axis=y]",
+    "shut_n": "minecraft:oak_trapdoor[facing=north,half=bottom,open=true]",
+    "shut_s": "minecraft:oak_trapdoor[facing=south,half=bottom,open=true]",
+    "shut_w": "minecraft:oak_trapdoor[facing=west,half=bottom,open=true]",
+    "shut_e": "minecraft:oak_trapdoor[facing=east,half=bottom,open=true]",
+    "door_lo": "minecraft:oak_door[facing=south,half=lower,hinge=left,open=false]",
+    "door_hi": "minecraft:oak_door[facing=south,half=upper,hinge=left,open=false]",
+    "step": "minecraft:stone_brick_stairs[facing=south,half=bottom]",
+    "stair_in": "minecraft:oak_stairs[facing=south,half=bottom]",
+    "fence": "minecraft:oak_fence",
+    "roofstair": "minecraft:spruce_stairs"
+  },
+  "ops": [
+    {"op": "fill", "from": [1,0,1], "to": [13,0,9], "block": "floor"},
+    {"op": "hollow_box", "from": [1,1,1], "to": [13,4,9], "block": "wall"},
+    {"op": "carve", "from": [2,1,2], "to": [12,4,8]},
+    {"op": "fill", "from": [1,5,1], "to": [13,5,9], "block": "floor"},
+    {"op": "hollow_box", "from": [1,6,1], "to": [13,9,9], "block": "wall"},
+    {"op": "carve", "from": [2,6,2], "to": [12,9,8]},
+
+    {"op": "fill", "from": [1,1,1],  "to": [1,9,1],  "block": "log"},
+    {"op": "fill", "from": [13,1,1], "to": [13,9,1], "block": "log"},
+    {"op": "fill", "from": [1,1,9],  "to": [1,9,9],  "block": "log"},
+    {"op": "fill", "from": [13,1,9], "to": [13,9,9], "block": "log"},
+
+    {"op": "repeat", "count": 2, "step": [8,0,0], "ops": [
+      {"op": "fill", "from": [3,2,1], "to": [3,3,1], "block": "glass"},
+      {"op": "fill", "from": [2,2,0], "to": [2,3,0], "block": "shut_n"},
+      {"op": "fill", "from": [4,2,0], "to": [4,3,0], "block": "shut_n"}
+    ]},
+    {"op": "repeat", "count": 3, "step": [4,0,0], "ops": [
+      {"op": "fill", "from": [3,7,1], "to": [3,8,1], "block": "glass"},
+      {"op": "fill", "from": [2,7,0], "to": [2,8,0], "block": "shut_n"},
+      {"op": "fill", "from": [4,7,0], "to": [4,8,0], "block": "shut_n"}
+    ]},
+
+    {"op": "repeat", "count": 3, "step": [4,0,0], "ops": [
+      {"op": "fill", "from": [3,2,9], "to": [3,3,9], "block": "glass"},
+      {"op": "fill", "from": [3,7,9], "to": [3,8,9], "block": "glass"},
+      {"op": "fill", "from": [2,2,10], "to": [2,3,10], "block": "shut_s"},
+      {"op": "fill", "from": [4,2,10], "to": [4,3,10], "block": "shut_s"},
+      {"op": "fill", "from": [2,7,10], "to": [2,8,10], "block": "shut_s"},
+      {"op": "fill", "from": [4,7,10], "to": [4,8,10], "block": "shut_s"}
+    ]},
+
+    {"op": "repeat", "count": 2, "step": [0,0,4], "ops": [
+      {"op": "fill", "from": [1,2,3], "to": [1,3,3], "block": "glass"},
+      {"op": "fill", "from": [1,7,3], "to": [1,8,3], "block": "glass"},
+      {"op": "fill", "from": [0,2,2], "to": [0,3,2], "block": "shut_w"},
+      {"op": "fill", "from": [0,2,4], "to": [0,3,4], "block": "shut_w"},
+      {"op": "fill", "from": [0,7,2], "to": [0,8,2], "block": "shut_w"},
+      {"op": "fill", "from": [0,7,4], "to": [0,8,4], "block": "shut_w"},
+      {"op": "fill", "from": [13,2,3], "to": [13,3,3], "block": "glass"},
+      {"op": "fill", "from": [13,7,3], "to": [13,8,3], "block": "glass"},
+      {"op": "fill", "from": [14,2,2], "to": [14,3,2], "block": "shut_e"},
+      {"op": "fill", "from": [14,2,4], "to": [14,3,4], "block": "shut_e"},
+      {"op": "fill", "from": [14,7,2], "to": [14,8,2], "block": "shut_e"},
+      {"op": "fill", "from": [14,7,4], "to": [14,8,4], "block": "shut_e"}
+    ]},
+
+    {"op": "carve", "from": [7,1,1], "to": [7,2,1]},
+    {"op": "setblock", "at": [7,1,1], "block": "door_lo"},
+    {"op": "setblock", "at": [7,2,1], "block": "door_hi"},
+    {"op": "setblock", "at": [7,0,0], "block": "step"},
+
+    {"op": "carve", "from": [2,5,3], "to": [2,5,5]},
+    {"op": "setblock", "at": [2,1,2], "block": "stair_in"},
+    {"op": "setblock", "at": [2,2,3], "block": "stair_in"},
+    {"op": "setblock", "at": [2,3,4], "block": "stair_in"},
+    {"op": "setblock", "at": [2,4,5], "block": "stair_in"},
+    {"op": "setblock", "at": [2,5,6], "block": "stair_in"},
+    {"op": "fill", "from": [3,6,3], "to": [3,6,5], "block": "fence"},
+    {"op": "setblock", "at": [2,6,2], "block": "fence"},
+
+    {"op": "gable_roof", "from": [1,10,0], "to": [13,10,10], "axis": "x",
+     "stairs": "roofstair", "gable": "wall"}
+  ]
+}

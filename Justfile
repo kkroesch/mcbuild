@@ -36,6 +36,25 @@ reset seed="":
   podman unshare rm -rf data/{{LEVEL}} data/{{LEVEL}}_nether data/{{LEVEL}}_the_end
   just init '{{seed}}'
 
+# Backup der Welt (data/<LEVEL>*) nach backups/<LEVEL>-<Zeitstempel>.tar.gz, Server läuft weiter
+backup:
+  mkdir -p backups
+  podman exec mc-preprod rcon-cli save-off
+  podman exec mc-preprod rcon-cli save-all flush
+  podman unshare sh -c 'tar -czf backups/{{LEVEL}}-$(date +%Y%m%d-%H%M%S).tar.gz -C data $(cd data && ls -d {{LEVEL}}*)'
+  podman exec mc-preprod rcon-cli save-on
+  ls -lh backups | tail -3
+
+# Backup einspielen (ersetzt die Welt):  just restore backups/flach1-20261020-120000.tar.gz
+restore file:
+  -podman stop mc-preprod
+  podman unshare rm -rf data/{{LEVEL}} data/{{LEVEL}}_nether data/{{LEVEL}}_the_end
+  podman unshare tar -xzf {{file}} -C data
+  podman start mc-preprod
+
+backups:
+  ls -lh backups
+
 start:
   podman start mc-preprod
 

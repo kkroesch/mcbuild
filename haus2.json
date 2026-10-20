@@ -1,0 +1,19 @@
+{
+  "name": "haus2",
+  "palette": {
+    "wall": "minecraft:stone_bricks",
+    "floor": "minecraft:oak_planks",
+    "glass": "minecraft:glass_pane",
+    "roofstair": "minecraft:spruce_stairs"
+  },
+  "ops": [
+    {"op": "fill", "from": [0,0,0], "to": [10,0,8], "block": "floor"},
+    {"op": "hollow_box", "from": [0,1,0], "to": [10,4,8], "block": "wall"},
+    {"op": "repeat", "count": 3, "step": [3,0,0], "ops": [
+      {"op": "fill", "from": [1,2,0], "to": [1,3,0], "block": "glass"}
+    ]},
+    {"op": "gable_roof", "from": [0,5,0], "to": [10,5,8], "axis": "x",
+     "stairs": "roofstair", "gable": "wall"},
+    {"op": "cylinder", "center": [14,0,4], "radius": 3, "height": 9, "block": "wall", "hollow": true}
+  ]
+}

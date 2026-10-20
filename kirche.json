@@ -1,0 +1,146 @@
+{
+  "name": "klosterkirche_laach_stil",
+  "palette": {
+    "pave": "minecraft:cobblestone",
+    "wall": "minecraft:tuff_bricks",
+    "trim": "minecraft:stone_bricks",
+    "pillar": "minecraft:polished_andesite",
+    "floor": "minecraft:polished_andesite",
+    "slate": "minecraft:deepslate_tiles",
+    "slate_stair": "minecraft:deepslate_tile_stairs",
+    "glass": "minecraft:glass_pane",
+    "bars": "minecraft:iron_bars",
+    "lantern": "minecraft:lantern[hanging=true]",
+    "bench": "minecraft:spruce_slab[type=bottom]",
+    "col": "minecraft:stone_brick_wall",
+    "beam": "minecraft:stone_brick_slab[type=top]",
+    "stair_n": "minecraft:deepslate_tile_stairs[facing=north,half=bottom]",
+    "stair_s": "minecraft:deepslate_tile_stairs[facing=south,half=bottom]",
+    "water": "minecraft:water"
+  },
+  "ops": [
+    {"op": "fill", "from": [0,0,0], "to": [58,0,34], "block": "pave"},
+
+    {"op": "hollow_box", "from": [11,0,8], "to": [32,8,26], "block": "wall"},
+    {"op": "hollow_box", "from": [11,0,8], "to": [19,13,26], "block": "wall"},
+    {"op": "hollow_box", "from": [11,13,13], "to": [19,32,21], "block": "wall"},
+
+    {"op": "hollow_box", "from": [19,10,12], "to": [40,17,22], "block": "wall"},
+    {"op": "fill", "from": [20,0,12], "to": [31,8,12], "block": "wall"},
+    {"op": "fill", "from": [20,0,22], "to": [31,8,22], "block": "wall"},
+
+    {"op": "hollow_box", "from": [32,0,3], "to": [40,17,31], "block": "wall"},
+    {"op": "hollow_box", "from": [40,0,12], "to": [49,17,22], "block": "wall"},
+    {"op": "cylinder", "center": [49,0,17], "radius": 5, "height": 12, "block": "wall", "hollow": true},
+    {"op": "cone", "center": [49,12,17], "radius": 5, "steep": 1, "block": "slate"},
+
+
+    {"op": "cylinder", "center": [11,0,9],  "radius": 2, "height": 22, "block": "wall", "hollow": true},
+    {"op": "cylinder", "center": [11,0,25], "radius": 2, "height": 22, "block": "wall", "hollow": true},
+
+    {"op": "gable_roof", "from": [31,18,2], "to": [41,18,32], "axis": "z",
+     "stairs": "slate_stair", "gable": "wall"},
+    {"op": "gable_roof", "from": [19,18,11], "to": [49,18,23], "axis": "x",
+     "stairs": "slate_stair", "gable": "wall"},
+
+    {"op": "repeat", "count": 5, "step": [0,1,1], "ops": [
+      {"op": "fill", "from": [20,9,8], "to": [31,9,8], "block": "stair_s"}
+    ]},
+    {"op": "repeat", "count": 5, "step": [0,1,-1], "ops": [
+      {"op": "fill", "from": [20,9,26], "to": [31,9,26], "block": "stair_n"}
+    ]},
+    {"op": "fill", "from": [20,9,9],  "to": [31,9,9],   "block": "wall"},
+    {"op": "fill", "from": [20,9,10], "to": [31,10,10], "block": "wall"},
+    {"op": "fill", "from": [20,9,11], "to": [31,11,11], "block": "wall"},
+    {"op": "fill", "from": [20,9,25], "to": [31,9,25],  "block": "wall"},
+    {"op": "fill", "from": [20,9,24], "to": [31,10,24], "block": "wall"},
+    {"op": "fill", "from": [20,9,23], "to": [31,11,23], "block": "wall"},
+
+    {"op": "hollow_box", "from": [41,0,6],  "to": [47,24,12], "block": "wall"},
+    {"op": "hollow_box", "from": [41,0,22], "to": [47,24,28], "block": "wall"},
+
+    {"op": "cylinder", "center": [36,17,17], "radius": 4, "height": 16, "block": "wall", "hollow": true},
+    {"op": "cone", "center": [36,33,17], "radius": 5, "steep": 2, "block": "slate"},
+    {"op": "pyramid", "from": [10,33,12], "to": [20,33,22], "steep": 2, "block": "slate"},
+    {"op": "pyramid", "from": [41,25,6],  "to": [47,25,12], "steep": 2, "block": "slate"},
+    {"op": "pyramid", "from": [41,25,22], "to": [47,25,28], "steep": 2, "block": "slate"},
+    {"op": "cone", "center": [11,22,9],  "radius": 3, "steep": 2, "block": "slate"},
+    {"op": "cone", "center": [11,22,25], "radius": 3, "steep": 2, "block": "slate"},
+
+    {"op": "carve", "from": [12,1,9],  "to": [18,12,25]},
+    {"op": "carve", "from": [12,13,14], "to": [18,31,20]},
+    {"op": "carve", "from": [20,1,13], "to": [39,16,21]},
+    {"op": "carve", "from": [33,1,4],  "to": [39,16,30]},
+    {"op": "carve", "from": [40,1,13], "to": [40,16,21]},
+    {"op": "carve", "from": [41,1,13], "to": [48,16,21]},
+    {"op": "carve", "from": [49,1,13], "to": [49,11,21]},
+    {"op": "carve", "from": [42,1,7],  "to": [46,23,11]},
+    {"op": "carve", "from": [42,1,23], "to": [46,23,27]},
+    {"op": "carve", "from": [19,1,15], "to": [19,8,19]},
+    {"op": "carve", "from": [11,1,16], "to": [11,4,18]},
+    {"op": "carve", "from": [11,5,17], "to": [11,5,17]},
+    {"op": "repeat", "count": 4, "step": [3,0,0], "ops": [
+      {"op": "carve", "from": [21,1,12], "to": [22,5,12]},
+      {"op": "carve", "from": [21,1,22], "to": [22,5,22]}
+    ]},
+
+    {"op": "fill", "from": [20,0,13], "to": [39,0,21], "block": "floor"},
+    {"op": "fill", "from": [41,0,13], "to": [48,0,21], "block": "floor"},
+    {"op": "fill", "from": [33,0,4],  "to": [39,0,30], "block": "floor"},
+    {"op": "fill", "from": [12,0,9],  "to": [18,0,25], "block": "floor"},
+
+    {"op": "repeat", "count": 4, "step": [3,0,0], "ops": [
+      {"op": "fill", "from": [22,3,8],  "to": [22,5,8],  "block": "glass"},
+      {"op": "fill", "from": [22,3,26], "to": [22,5,26], "block": "glass"},
+      {"op": "fill", "from": [22,14,12], "to": [22,16,12], "block": "glass"},
+      {"op": "fill", "from": [22,14,22], "to": [22,16,22], "block": "glass"}
+    ]},
+    {"op": "repeat", "count": 3, "step": [2,0,0], "ops": [
+      {"op": "fill", "from": [34,6,3],  "to": [34,12,3],  "block": "glass"},
+      {"op": "fill", "from": [34,6,31], "to": [34,12,31], "block": "glass"}
+    ]},
+    {"op": "fill", "from": [54,4,17], "to": [54,8,17], "block": "glass"},
+    {"op": "fill", "from": [52,4,13], "to": [52,8,13], "block": "glass"},
+    {"op": "fill", "from": [52,4,21], "to": [52,8,21], "block": "glass"},
+
+    {"op": "repeat", "count": 2, "step": [0,6,0], "ops": [
+      {"op": "carve", "from": [15,17,13], "to": [15,19,13]},
+      {"op": "carve", "from": [15,17,21], "to": [15,19,21]},
+      {"op": "carve", "from": [11,17,17], "to": [11,19,17]},
+      {"op": "carve", "from": [19,17,17], "to": [19,19,17]}
+    ]},
+    {"op": "carve", "from": [36,24,13], "to": [36,27,13]},
+    {"op": "carve", "from": [36,24,21], "to": [36,27,21]},
+    {"op": "carve", "from": [32,24,17], "to": [32,27,17]},
+    {"op": "carve", "from": [40,24,17], "to": [40,27,17]},
+    {"op": "repeat", "count": 3, "step": [0,6,0], "ops": [
+      {"op": "carve", "from": [44,8,6],  "to": [44,9,6]},
+      {"op": "carve", "from": [47,8,9],  "to": [47,9,9]},
+      {"op": "carve", "from": [44,8,28], "to": [44,9,28]},
+      {"op": "carve", "from": [47,8,25], "to": [47,9,25]}
+    ]},
+
+    {"op": "repeat", "count": 5, "step": [2,0,0], "ops": [
+      {"op": "fill", "from": [22,1,14], "to": [22,1,16], "block": "bench"},
+      {"op": "fill", "from": [22,1,18], "to": [22,1,20], "block": "bench"}
+    ]},
+    {"op": "repeat", "count": 3, "step": [4,0,0], "ops": [
+      {"op": "fill", "from": [23,13,17], "to": [23,16,17], "block": "bars"},
+      {"op": "setblock", "at": [23,12,17], "block": "lantern"}
+    ]},
+    {"op": "fill", "from": [46,1,16], "to": [47,2,18], "block": "pillar"},
+
+    {"op": "repeat", "count": 7, "step": [0,0,3], "ops": [
+      {"op": "fill", "from": [3,1,8], "to": [3,4,8], "block": "col"}
+    ]},
+    {"op": "repeat", "count": 3, "step": [3,0,0], "ops": [
+      {"op": "fill", "from": [3,1,8],  "to": [3,4,8],  "block": "col"},
+      {"op": "fill", "from": [3,1,26], "to": [3,4,26], "block": "col"}
+    ]},
+    {"op": "fill", "from": [3,5,8],  "to": [3,5,26], "block": "beam"},
+    {"op": "fill", "from": [3,5,8],  "to": [10,5,8],  "block": "beam"},
+    {"op": "fill", "from": [3,5,26], "to": [10,5,26], "block": "beam"},
+    {"op": "fill", "from": [4,1,16], "to": [6,1,18], "block": "trim"},
+    {"op": "setblock", "at": [5,1,17], "block": "water"}
+  ]
+}

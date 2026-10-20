@@ -86,3 +86,28 @@ build-at x=POS_X y=POS_Y z=POS_Z schema=SCHEMA:
 
 step-at x=POS_X y=POS_Y z=POS_Z schema=SCHEMA:
   MC_RCON_PASSWORD={{RCON_PASSWORD}} ./bp2rcon.py {{schema}} --anchor {{x}} {{y}} {{z}} --step
+
+# Gebäude VOR den Spieler bauen, Eingang zeigt zum Spieler (Blickrichtung wird gelesen).
+# Eingangspunkt steht im Blueprint ("entry"). ABSTAND = Blöcke bis zum Eingang, TURN = Zusatzdrehung.
+#   just front rathaus.json            # 5 Blöcke vor dir
+#   just front rathaus.json 12 90      # 12 Blöcke Abstand, zusätzlich 90° gedreht
+# Hinweis: OFFSET hier nicht nötig (Höhe kommt vom Eingangspunkt) -> eigener Offset-Parameter:
+front schema=SCHEMA dist="5" turn="0" off="0 0 0":
+  MC_RCON_PASSWORD={{RCON_PASSWORD}} ./bp2rcon.py {{schema}} --at-player {{PLAYER}} --front {{dist}} --turn {{turn}} --offset {{off}}
+
+front-dry schema=SCHEMA dist="5" turn="0" off="0 0 0":
+  MC_RCON_PASSWORD={{RCON_PASSWORD}} ./bp2rcon.py {{schema}} --at-player {{PLAYER}} --front {{dist}} --turn {{turn}} --offset {{off}} --dry-run
+
+front-step schema=SCHEMA dist="5" turn="0" off="0 0 0":
+  MC_RCON_PASSWORD={{RCON_PASSWORD}} ./bp2rcon.py {{schema}} --at-player {{PLAYER}} --front {{dist}} --turn {{turn}} --offset {{off}} --step
+
+# ---- Ganze Stadt (Layout: stadt.json). Spieler steht an der NORDWEST-Ecke der Stadt auf ebenem Boden.
+stadt-map:
+  ./stadt.py stadt.json --map
+
+stadt-dry:
+  MC_RCON_PASSWORD={{RCON_PASSWORD}} ./stadt.py stadt.json --at-player {{PLAYER}} --dry-run
+
+# alles bauen; Teile einzeln:  just stadt --only rathaus,kirche   |  ab Teil X:  just stadt --from gasthaus
+stadt *ARGS:
+  MC_RCON_PASSWORD={{RCON_PASSWORD}} ./stadt.py stadt.json --at-player {{PLAYER}} {{ARGS}}

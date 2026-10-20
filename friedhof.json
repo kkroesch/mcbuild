@@ -1,0 +1,3051 @@
+{
+ "name": "friedhof",
+ "palette": {
+  "grass": "minecraft:grass_block",
+  "podzol": "minecraft:podzol",
+  "moss": "minecraft:moss_block",
+  "coarse": "minecraft:coarse_dirt",
+  "gravel": "minecraft:gravel",
+  "path": "minecraft:dirt_path",
+  "mcob": "minecraft:mossy_cobblestone",
+  "cob": "minecraft:cobblestone",
+  "msb": "minecraft:mossy_stone_bricks",
+  "sb": "minecraft:stone_bricks",
+  "csb": "minecraft:cracked_stone_bricks",
+  "mwall": "minecraft:mossy_cobblestone_wall",
+  "cwall": "minecraft:cobblestone_wall",
+  "sbwall": "minecraft:stone_brick_wall",
+  "msb_slab": "minecraft:mossy_stone_brick_slab[type=bottom]",
+  "sb_slab": "minecraft:stone_brick_slab[type=bottom]",
+  "bars": "minecraft:iron_bars",
+  "lantern": "minecraft:lantern[hanging=false]",
+  "lantern_h": "minecraft:lantern[hanging=true]",
+  "chain": "minecraft:iron_chain[axis=y]",
+  "cor_w": "minecraft:stone_brick_stairs[facing=west,half=top]",
+  "cor_e": "minecraft:stone_brick_stairs[facing=east,half=top]",
+  "chis": "minecraft:chiseled_stone_bricks",
+  "mud": "minecraft:mud_bricks",
+  "pgran": "minecraft:polished_granite",
+  "gran": "minecraft:granite",
+  "mud_slab": "minecraft:mud_brick_slab[type=bottom]",
+  "roof": "minecraft:dark_oak_stairs",
+  "glass": "minecraft:glass_pane",
+  "floor": "minecraft:stone_bricks",
+  "d_n_lo": "minecraft:oak_door[facing=north,half=lower,hinge=left,open=false]",
+  "d_n_hi": "minecraft:oak_door[facing=north,half=upper,hinge=left,open=false]",
+  "carpet": "minecraft:red_carpet",
+  "pew": "minecraft:dark_oak_stairs[facing=south,half=bottom]",
+  "candle": "minecraft:candle[candles=3,lit=true]",
+  "candle1": "minecraft:candle[candles=1,lit=true]",
+  "lectern": "minecraft:lectern[facing=south,has_book=false,powered=false]",
+  "g_stair": "minecraft:stone_brick_stairs[facing=north,half=bottom]",
+  "bench_w": "minecraft:stone_brick_stairs[facing=west,half=bottom]",
+  "bench_e": "minecraft:stone_brick_stairs[facing=east,half=bottom]",
+  "log": "minecraft:oak_log[axis=y]",
+  "leaves": "minecraft:oak_leaves[persistent=true]",
+  "poppy": "minecraft:poppy",
+  "bluet": "minecraft:azure_bluet",
+  "corn": "minecraft:cornflower",
+  "lily": "minecraft:lily_of_the_valley",
+  "fern": "minecraft:fern",
+  "moss_c": "minecraft:moss_carpet"
+ },
+ "ops": [
+  {
+   "op": "fill",
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    32,
+    0,
+    40
+   ],
+   "block": "grass"
+  },
+  {
+   "op": "speckle",
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    32,
+    0,
+    40
+   ],
+   "block": "podzol",
+   "only": "grass",
+   "chance": 0.07,
+   "seed": 3
+  },
+  {
+   "op": "speckle",
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    32,
+    0,
+    40
+   ],
+   "block": "moss",
+   "only": "grass",
+   "chance": 0.05,
+   "seed": 4
+  },
+  {
+   "op": "fill",
+   "from": [
+    15,
+    0,
+    16
+   ],
+   "to": [
+    17,
+    0,
+    40
+   ],
+   "block": "gravel"
+  },
+  {
+   "op": "fill",
+   "from": [
+    14,
+    0,
+    17
+   ],
+   "to": [
+    14,
+    0,
+    40
+   ],
+   "block": "path"
+  },
+  {
+   "op": "fill",
+   "from": [
+    18,
+    0,
+    17
+   ],
+   "to": [
+    18,
+    0,
+    40
+   ],
+   "block": "path"
+  },
+  {
+   "op": "fill",
+   "from": [
+    1,
+    0,
+    26
+   ],
+   "to": [
+    31,
+    0,
+    28
+   ],
+   "block": "gravel"
+  },
+  {
+   "op": "fill",
+   "from": [
+    1,
+    0,
+    25
+   ],
+   "to": [
+    13,
+    0,
+    25
+   ],
+   "block": "path"
+  },
+  {
+   "op": "fill",
+   "from": [
+    19,
+    0,
+    25
+   ],
+   "to": [
+    31,
+    0,
+    25
+   ],
+   "block": "path"
+  },
+  {
+   "op": "fill",
+   "from": [
+    1,
+    0,
+    29
+   ],
+   "to": [
+    13,
+    0,
+    29
+   ],
+   "block": "path"
+  },
+  {
+   "op": "fill",
+   "from": [
+    19,
+    0,
+    29
+   ],
+   "to": [
+    31,
+    0,
+    29
+   ],
+   "block": "path"
+  },
+  {
+   "op": "fill",
+   "from": [
+    15,
+    0,
+    16
+   ],
+   "to": [
+    17,
+    0,
+    17
+   ],
+   "block": "gravel"
+  },
+  {
+   "op": "fill",
+   "from": [
+    0,
+    1,
+    0
+   ],
+   "to": [
+    32,
+    3,
+    0
+   ],
+   "block": "mcob"
+  },
+  {
+   "op": "fill",
+   "from": [
+    0,
+    1,
+    0
+   ],
+   "to": [
+    0,
+    3,
+    40
+   ],
+   "block": "mcob"
+  },
+  {
+   "op": "fill",
+   "from": [
+    32,
+    1,
+    0
+   ],
+   "to": [
+    32,
+    3,
+    40
+   ],
+   "block": "mcob"
+  },
+  {
+   "op": "fill",
+   "from": [
+    0,
+    1,
+    40
+   ],
+   "to": [
+    12,
+    3,
+    40
+   ],
+   "block": "mcob"
+  },
+  {
+   "op": "fill",
+   "from": [
+    20,
+    1,
+    40
+   ],
+   "to": [
+    32,
+    3,
+    40
+   ],
+   "block": "mcob"
+  },
+  {
+   "op": "speckle",
+   "from": [
+    0,
+    1,
+    0
+   ],
+   "to": [
+    32,
+    3,
+    40
+   ],
+   "block": "cob",
+   "only": "mcob",
+   "chance": 0.22,
+   "seed": 5
+  },
+  {
+   "op": "speckle",
+   "from": [
+    0,
+    1,
+    0
+   ],
+   "to": [
+    32,
+    3,
+    40
+   ],
+   "block": "msb",
+   "only": "mcob",
+   "chance": 0.22,
+   "seed": 6
+  },
+  {
+   "op": "speckle",
+   "from": [
+    0,
+    1,
+    0
+   ],
+   "to": [
+    32,
+    3,
+    40
+   ],
+   "block": "sb",
+   "only": "mcob",
+   "chance": 0.06,
+   "seed": 7
+  },
+  {
+   "op": "fill",
+   "from": [
+    0,
+    4,
+    0
+   ],
+   "to": [
+    32,
+    4,
+    0
+   ],
+   "block": "mwall"
+  },
+  {
+   "op": "fill",
+   "from": [
+    0,
+    4,
+    0
+   ],
+   "to": [
+    0,
+    4,
+    40
+   ],
+   "block": "mwall"
+  },
+  {
+   "op": "fill",
+   "from": [
+    32,
+    4,
+    0
+   ],
+   "to": [
+    32,
+    4,
+    40
+   ],
+   "block": "mwall"
+  },
+  {
+   "op": "fill",
+   "from": [
+    0,
+    4,
+    40
+   ],
+   "to": [
+    12,
+    4,
+    40
+   ],
+   "block": "mwall"
+  },
+  {
+   "op": "fill",
+   "from": [
+    20,
+    4,
+    40
+   ],
+   "to": [
+    32,
+    4,
+    40
+   ],
+   "block": "mwall"
+  },
+  {
+   "op": "speckle",
+   "from": [
+    0,
+    4,
+    0
+   ],
+   "to": [
+    32,
+    4,
+    40
+   ],
+   "block": "cwall",
+   "only": "mwall",
+   "chance": 0.3,
+   "seed": 8
+  },
+  {
+   "op": "fill",
+   "from": [
+    0,
+    1,
+    0
+   ],
+   "to": [
+    0,
+    5,
+    0
+   ],
+   "block": "msb"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    0,
+    6,
+    0
+   ],
+   "block": "msb_slab"
+  },
+  {
+   "op": "fill",
+   "from": [
+    32,
+    1,
+    0
+   ],
+   "to": [
+    32,
+    5,
+    0
+   ],
+   "block": "msb"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    32,
+    6,
+    0
+   ],
+   "block": "msb_slab"
+  },
+  {
+   "op": "fill",
+   "from": [
+    0,
+    1,
+    40
+   ],
+   "to": [
+    0,
+    5,
+    40
+   ],
+   "block": "msb"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    0,
+    6,
+    40
+   ],
+   "block": "msb_slab"
+  },
+  {
+   "op": "fill",
+   "from": [
+    32,
+    1,
+    40
+   ],
+   "to": [
+    32,
+    5,
+    40
+   ],
+   "block": "msb"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    32,
+    6,
+    40
+   ],
+   "block": "msb_slab"
+  },
+  {
+   "op": "fill",
+   "from": [
+    8,
+    1,
+    0
+   ],
+   "to": [
+    8,
+    4,
+    0
+   ],
+   "block": "msb"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    5,
+    0
+   ],
+   "block": "msb_slab"
+  },
+  {
+   "op": "fill",
+   "from": [
+    24,
+    1,
+    0
+   ],
+   "to": [
+    24,
+    4,
+    0
+   ],
+   "block": "msb"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    24,
+    5,
+    0
+   ],
+   "block": "msb_slab"
+  },
+  {
+   "op": "fill",
+   "from": [
+    0,
+    1,
+    13
+   ],
+   "to": [
+    0,
+    4,
+    13
+   ],
+   "block": "msb"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    0,
+    5,
+    13
+   ],
+   "block": "msb_slab"
+  },
+  {
+   "op": "fill",
+   "from": [
+    32,
+    1,
+    13
+   ],
+   "to": [
+    32,
+    4,
+    13
+   ],
+   "block": "msb"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    32,
+    5,
+    13
+   ],
+   "block": "msb_slab"
+  },
+  {
+   "op": "fill",
+   "from": [
+    0,
+    1,
+    27
+   ],
+   "to": [
+    0,
+    4,
+    27
+   ],
+   "block": "msb"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    0,
+    5,
+    27
+   ],
+   "block": "msb_slab"
+  },
+  {
+   "op": "fill",
+   "from": [
+    32,
+    1,
+    27
+   ],
+   "to": [
+    32,
+    4,
+    27
+   ],
+   "block": "msb"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    32,
+    5,
+    27
+   ],
+   "block": "msb_slab"
+  },
+  {
+   "op": "fill",
+   "from": [
+    6,
+    1,
+    40
+   ],
+   "to": [
+    6,
+    4,
+    40
+   ],
+   "block": "msb"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    5,
+    40
+   ],
+   "block": "msb_slab"
+  },
+  {
+   "op": "fill",
+   "from": [
+    26,
+    1,
+    40
+   ],
+   "to": [
+    26,
+    4,
+    40
+   ],
+   "block": "msb"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    26,
+    5,
+    40
+   ],
+   "block": "msb_slab"
+  },
+  {
+   "op": "fill",
+   "from": [
+    13,
+    1,
+    39
+   ],
+   "to": [
+    13,
+    7,
+    40
+   ],
+   "block": "msb"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    13,
+    8,
+    40
+   ],
+   "block": "lantern"
+  },
+  {
+   "op": "fill",
+   "from": [
+    19,
+    1,
+    39
+   ],
+   "to": [
+    19,
+    7,
+    40
+   ],
+   "block": "msb"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    19,
+    8,
+    40
+   ],
+   "block": "lantern"
+  },
+  {
+   "op": "fill",
+   "from": [
+    13,
+    1,
+    39
+   ],
+   "to": [
+    13,
+    1,
+    39
+   ],
+   "block": "sb"
+  },
+  {
+   "op": "fill",
+   "from": [
+    19,
+    1,
+    39
+   ],
+   "to": [
+    19,
+    1,
+    39
+   ],
+   "block": "sb"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    4,
+    40
+   ],
+   "block": "cor_w"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    18,
+    4,
+    40
+   ],
+   "block": "cor_e"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    15,
+    5,
+    40
+   ],
+   "block": "cor_w"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    17,
+    5,
+    40
+   ],
+   "block": "cor_e"
+  },
+  {
+   "op": "fill",
+   "from": [
+    14,
+    5,
+    40
+   ],
+   "to": [
+    14,
+    5,
+    40
+   ],
+   "block": "sb"
+  },
+  {
+   "op": "fill",
+   "from": [
+    18,
+    5,
+    40
+   ],
+   "to": [
+    18,
+    5,
+    40
+   ],
+   "block": "sb"
+  },
+  {
+   "op": "fill",
+   "from": [
+    14,
+    6,
+    40
+   ],
+   "to": [
+    18,
+    6,
+    40
+   ],
+   "block": "sb"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    16,
+    6,
+    40
+   ],
+   "block": "chis"
+  },
+  {
+   "op": "fill",
+   "from": [
+    14,
+    7,
+    40
+   ],
+   "to": [
+    18,
+    7,
+    40
+   ],
+   "block": "sb_slab"
+  },
+  {
+   "op": "fill",
+   "from": [
+    14,
+    1,
+    40
+   ],
+   "to": [
+    14,
+    3,
+    40
+   ],
+   "block": "bars"
+  },
+  {
+   "op": "fill",
+   "from": [
+    18,
+    1,
+    40
+   ],
+   "to": [
+    18,
+    3,
+    40
+   ],
+   "block": "bars"
+  },
+  {
+   "op": "fill",
+   "from": [
+    15,
+    3,
+    40
+   ],
+   "to": [
+    17,
+    3,
+    40
+   ],
+   "block": "bars"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    16,
+    4,
+    40
+   ],
+   "block": "bars"
+  },
+  {
+   "op": "hollow_box",
+   "from": [
+    11,
+    1,
+    4
+   ],
+   "to": [
+    21,
+    5,
+    15
+   ],
+   "block": "mud"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    0,
+    5
+   ],
+   "to": [
+    20,
+    0,
+    14
+   ],
+   "block": "floor"
+  },
+  {
+   "op": "fill",
+   "from": [
+    11,
+    1,
+    4
+   ],
+   "to": [
+    11,
+    5,
+    4
+   ],
+   "block": "pgran"
+  },
+  {
+   "op": "fill",
+   "from": [
+    21,
+    1,
+    4
+   ],
+   "to": [
+    21,
+    5,
+    4
+   ],
+   "block": "pgran"
+  },
+  {
+   "op": "fill",
+   "from": [
+    11,
+    1,
+    15
+   ],
+   "to": [
+    11,
+    5,
+    15
+   ],
+   "block": "pgran"
+  },
+  {
+   "op": "fill",
+   "from": [
+    21,
+    1,
+    15
+   ],
+   "to": [
+    21,
+    5,
+    15
+   ],
+   "block": "pgran"
+  },
+  {
+   "op": "fill",
+   "from": [
+    11,
+    1,
+    4
+   ],
+   "to": [
+    21,
+    1,
+    4
+   ],
+   "block": "gran"
+  },
+  {
+   "op": "fill",
+   "from": [
+    11,
+    1,
+    15
+   ],
+   "to": [
+    21,
+    1,
+    15
+   ],
+   "block": "gran"
+  },
+  {
+   "op": "fill",
+   "from": [
+    11,
+    1,
+    4
+   ],
+   "to": [
+    11,
+    1,
+    15
+   ],
+   "block": "gran"
+  },
+  {
+   "op": "fill",
+   "from": [
+    21,
+    1,
+    4
+   ],
+   "to": [
+    21,
+    1,
+    15
+   ],
+   "block": "gran"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    1,
+    4
+   ],
+   "block": "pgran"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    21,
+    1,
+    4
+   ],
+   "block": "pgran"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    1,
+    15
+   ],
+   "block": "pgran"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    21,
+    1,
+    15
+   ],
+   "block": "pgran"
+  },
+  {
+   "op": "gable_roof",
+   "from": [
+    10,
+    6,
+    4
+   ],
+   "to": [
+    22,
+    6,
+    15
+   ],
+   "axis": "z",
+   "stairs": "roof",
+   "gable": "mud"
+  },
+  {
+   "op": "fill",
+   "from": [
+    15,
+    1,
+    15
+   ],
+   "to": [
+    15,
+    4,
+    15
+   ],
+   "block": "pgran"
+  },
+  {
+   "op": "fill",
+   "from": [
+    17,
+    1,
+    15
+   ],
+   "to": [
+    17,
+    4,
+    15
+   ],
+   "block": "pgran"
+  },
+  {
+   "op": "fill",
+   "from": [
+    15,
+    4,
+    15
+   ],
+   "to": [
+    17,
+    4,
+    15
+   ],
+   "block": "pgran"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    16,
+    1,
+    15
+   ],
+   "block": "d_n_lo"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    16,
+    2,
+    15
+   ],
+   "block": "d_n_hi"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    16,
+    3,
+    15
+   ],
+   "block": "glass"
+  },
+  {
+   "op": "fill",
+   "from": [
+    11,
+    3,
+    7
+   ],
+   "to": [
+    11,
+    4,
+    7
+   ],
+   "block": "glass"
+  },
+  {
+   "op": "fill",
+   "from": [
+    11,
+    3,
+    12
+   ],
+   "to": [
+    11,
+    4,
+    12
+   ],
+   "block": "glass"
+  },
+  {
+   "op": "fill",
+   "from": [
+    21,
+    3,
+    7
+   ],
+   "to": [
+    21,
+    4,
+    7
+   ],
+   "block": "glass"
+  },
+  {
+   "op": "fill",
+   "from": [
+    21,
+    3,
+    12
+   ],
+   "to": [
+    21,
+    4,
+    12
+   ],
+   "block": "glass"
+  },
+  {
+   "op": "fill",
+   "from": [
+    16,
+    2,
+    4
+   ],
+   "to": [
+    16,
+    4,
+    4
+   ],
+   "block": "glass"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    15,
+    3,
+    4
+   ],
+   "block": "glass"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    17,
+    3,
+    4
+   ],
+   "block": "glass"
+  },
+  {
+   "op": "fill",
+   "from": [
+    16,
+    13,
+    15
+   ],
+   "to": [
+    16,
+    15,
+    15
+   ],
+   "block": "bars"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    15,
+    14,
+    15
+   ],
+   "block": "bars"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    17,
+    14,
+    15
+   ],
+   "block": "bars"
+  },
+  {
+   "op": "fill",
+   "from": [
+    15,
+    1,
+    8
+   ],
+   "to": [
+    17,
+    1,
+    14
+   ],
+   "block": "carpet"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    1,
+    8
+   ],
+   "to": [
+    14,
+    1,
+    8
+   ],
+   "block": "pew"
+  },
+  {
+   "op": "fill",
+   "from": [
+    18,
+    1,
+    8
+   ],
+   "to": [
+    20,
+    1,
+    8
+   ],
+   "block": "pew"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    1,
+    10
+   ],
+   "to": [
+    14,
+    1,
+    10
+   ],
+   "block": "pew"
+  },
+  {
+   "op": "fill",
+   "from": [
+    18,
+    1,
+    10
+   ],
+   "to": [
+    20,
+    1,
+    10
+   ],
+   "block": "pew"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    1,
+    12
+   ],
+   "to": [
+    14,
+    1,
+    12
+   ],
+   "block": "pew"
+  },
+  {
+   "op": "fill",
+   "from": [
+    18,
+    1,
+    12
+   ],
+   "to": [
+    20,
+    1,
+    12
+   ],
+   "block": "pew"
+  },
+  {
+   "op": "fill",
+   "from": [
+    15,
+    1,
+    5
+   ],
+   "to": [
+    17,
+    1,
+    5
+   ],
+   "block": "pgran"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    15,
+    2,
+    5
+   ],
+   "block": "candle"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    17,
+    2,
+    5
+   ],
+   "block": "candle"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    16,
+    2,
+    5
+   ],
+   "block": "lectern"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    1,
+    5
+   ],
+   "block": "candle1"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    20,
+    1,
+    5
+   ],
+   "block": "candle1"
+  },
+  {
+   "op": "fill",
+   "from": [
+    16,
+    8,
+    7
+   ],
+   "to": [
+    16,
+    11,
+    7
+   ],
+   "block": "chain"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    16,
+    7,
+    7
+   ],
+   "block": "lantern_h"
+  },
+  {
+   "op": "fill",
+   "from": [
+    16,
+    8,
+    11
+   ],
+   "to": [
+    16,
+    11,
+    11
+   ],
+   "block": "chain"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    16,
+    7,
+    11
+   ],
+   "block": "lantern_h"
+  },
+  {
+   "op": "fill",
+   "from": [
+    14,
+    1,
+    17
+   ],
+   "to": [
+    14,
+    2,
+    17
+   ],
+   "block": "sbwall"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    3,
+    17
+   ],
+   "block": "lantern"
+  },
+  {
+   "op": "fill",
+   "from": [
+    18,
+    1,
+    17
+   ],
+   "to": [
+    18,
+    2,
+    17
+   ],
+   "block": "sbwall"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    18,
+    3,
+    17
+   ],
+   "block": "lantern"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    16,
+    0,
+    16
+   ],
+   "block": "sb"
+  },
+  {
+   "op": "fill",
+   "from": [
+    14,
+    1,
+    22
+   ],
+   "to": [
+    14,
+    2,
+    22
+   ],
+   "block": "sbwall"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    3,
+    22
+   ],
+   "block": "lantern"
+  },
+  {
+   "op": "fill",
+   "from": [
+    18,
+    1,
+    22
+   ],
+   "to": [
+    18,
+    2,
+    22
+   ],
+   "block": "sbwall"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    18,
+    3,
+    22
+   ],
+   "block": "lantern"
+  },
+  {
+   "op": "fill",
+   "from": [
+    14,
+    1,
+    34
+   ],
+   "to": [
+    14,
+    2,
+    34
+   ],
+   "block": "sbwall"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    3,
+    34
+   ],
+   "block": "lantern"
+  },
+  {
+   "op": "fill",
+   "from": [
+    18,
+    1,
+    34
+   ],
+   "to": [
+    18,
+    2,
+    34
+   ],
+   "block": "sbwall"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    18,
+    3,
+    34
+   ],
+   "block": "lantern"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    1,
+    32
+   ],
+   "block": "bench_w"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    18,
+    1,
+    32
+   ],
+   "block": "bench_e"
+  },
+  {
+   "op": "fill",
+   "from": [
+    4,
+    0,
+    19
+   ],
+   "to": [
+    4,
+    0,
+    21
+   ],
+   "block": "coarse"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    1,
+    18
+   ],
+   "block": "g_stair"
+  },
+  {
+   "op": "fill",
+   "from": [
+    4,
+    0,
+    23
+   ],
+   "to": [
+    4,
+    0,
+    25
+   ],
+   "block": "coarse"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    1,
+    22
+   ],
+   "block": "g_stair"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    1,
+    24
+   ],
+   "block": "corn"
+  },
+  {
+   "op": "fill",
+   "from": [
+    4,
+    0,
+    31
+   ],
+   "to": [
+    4,
+    0,
+    33
+   ],
+   "block": "coarse"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    1,
+    30
+   ],
+   "block": "g_stair"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    1,
+    32
+   ],
+   "block": "candle1"
+  },
+  {
+   "op": "fill",
+   "from": [
+    4,
+    0,
+    35
+   ],
+   "to": [
+    4,
+    0,
+    37
+   ],
+   "block": "coarse"
+  },
+  {
+   "op": "fill",
+   "from": [
+    4,
+    1,
+    35
+   ],
+   "to": [
+    4,
+    1,
+    37
+   ],
+   "block": "sb"
+  },
+  {
+   "op": "fill",
+   "from": [
+    4,
+    2,
+    35
+   ],
+   "to": [
+    4,
+    2,
+    37
+   ],
+   "block": "sb_slab"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    1,
+    34
+   ],
+   "block": "msb"
+  },
+  {
+   "op": "fill",
+   "from": [
+    7,
+    0,
+    19
+   ],
+   "to": [
+    7,
+    0,
+    21
+   ],
+   "block": "coarse"
+  },
+  {
+   "op": "fill",
+   "from": [
+    7,
+    1,
+    18
+   ],
+   "to": [
+    7,
+    2,
+    18
+   ],
+   "block": "sbwall"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    2,
+    18
+   ],
+   "block": "sbwall"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    2,
+    18
+   ],
+   "block": "sbwall"
+  },
+  {
+   "op": "fill",
+   "from": [
+    7,
+    0,
+    23
+   ],
+   "to": [
+    7,
+    0,
+    25
+   ],
+   "block": "coarse"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    1,
+    22
+   ],
+   "block": "g_stair"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    1,
+    24
+   ],
+   "block": "candle1"
+  },
+  {
+   "op": "fill",
+   "from": [
+    7,
+    0,
+    31
+   ],
+   "to": [
+    7,
+    0,
+    33
+   ],
+   "block": "coarse"
+  },
+  {
+   "op": "fill",
+   "from": [
+    7,
+    1,
+    30
+   ],
+   "to": [
+    7,
+    2,
+    30
+   ],
+   "block": "sbwall"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    2,
+    30
+   ],
+   "block": "sbwall"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    2,
+    30
+   ],
+   "block": "sbwall"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    1,
+    32
+   ],
+   "block": "poppy"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    0,
+    19
+   ],
+   "to": [
+    10,
+    0,
+    21
+   ],
+   "block": "coarse"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    1,
+    18
+   ],
+   "block": "msb"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    2,
+    18
+   ],
+   "block": "sb_slab"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    1,
+    20
+   ],
+   "block": "poppy"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    0,
+    23
+   ],
+   "to": [
+    10,
+    0,
+    25
+   ],
+   "block": "coarse"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    1,
+    22
+   ],
+   "block": "g_stair"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    0,
+    31
+   ],
+   "to": [
+    10,
+    0,
+    33
+   ],
+   "block": "coarse"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    1,
+    31
+   ],
+   "to": [
+    10,
+    1,
+    33
+   ],
+   "block": "sb"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    2,
+    31
+   ],
+   "to": [
+    10,
+    2,
+    33
+   ],
+   "block": "sb_slab"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    1,
+    30
+   ],
+   "block": "msb"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    0,
+    35
+   ],
+   "to": [
+    10,
+    0,
+    37
+   ],
+   "block": "coarse"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    1,
+    34
+   ],
+   "to": [
+    10,
+    2,
+    34
+   ],
+   "block": "sbwall"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    2,
+    34
+   ],
+   "block": "sbwall"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    2,
+    34
+   ],
+   "block": "sbwall"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    1,
+    36
+   ],
+   "block": "candle1"
+  },
+  {
+   "op": "fill",
+   "from": [
+    22,
+    0,
+    23
+   ],
+   "to": [
+    22,
+    0,
+    25
+   ],
+   "block": "coarse"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    22,
+    1,
+    22
+   ],
+   "block": "g_stair"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    22,
+    1,
+    24
+   ],
+   "block": "poppy"
+  },
+  {
+   "op": "fill",
+   "from": [
+    22,
+    0,
+    31
+   ],
+   "to": [
+    22,
+    0,
+    33
+   ],
+   "block": "coarse"
+  },
+  {
+   "op": "fill",
+   "from": [
+    22,
+    1,
+    31
+   ],
+   "to": [
+    22,
+    1,
+    33
+   ],
+   "block": "sb"
+  },
+  {
+   "op": "fill",
+   "from": [
+    22,
+    2,
+    31
+   ],
+   "to": [
+    22,
+    2,
+    33
+   ],
+   "block": "sb_slab"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    22,
+    1,
+    30
+   ],
+   "block": "msb"
+  },
+  {
+   "op": "fill",
+   "from": [
+    22,
+    0,
+    35
+   ],
+   "to": [
+    22,
+    0,
+    37
+   ],
+   "block": "coarse"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    22,
+    1,
+    34
+   ],
+   "block": "g_stair"
+  },
+  {
+   "op": "fill",
+   "from": [
+    25,
+    0,
+    19
+   ],
+   "to": [
+    25,
+    0,
+    21
+   ],
+   "block": "coarse"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    25,
+    1,
+    18
+   ],
+   "block": "g_stair"
+  },
+  {
+   "op": "fill",
+   "from": [
+    25,
+    0,
+    23
+   ],
+   "to": [
+    25,
+    0,
+    25
+   ],
+   "block": "coarse"
+  },
+  {
+   "op": "fill",
+   "from": [
+    25,
+    1,
+    22
+   ],
+   "to": [
+    25,
+    2,
+    22
+   ],
+   "block": "sbwall"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    24,
+    2,
+    22
+   ],
+   "block": "sbwall"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    26,
+    2,
+    22
+   ],
+   "block": "sbwall"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    25,
+    1,
+    24
+   ],
+   "block": "candle1"
+  },
+  {
+   "op": "fill",
+   "from": [
+    25,
+    0,
+    31
+   ],
+   "to": [
+    25,
+    0,
+    33
+   ],
+   "block": "coarse"
+  },
+  {
+   "op": "fill",
+   "from": [
+    25,
+    1,
+    30
+   ],
+   "to": [
+    25,
+    2,
+    30
+   ],
+   "block": "sbwall"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    24,
+    2,
+    30
+   ],
+   "block": "sbwall"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    26,
+    2,
+    30
+   ],
+   "block": "sbwall"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    25,
+    1,
+    32
+   ],
+   "block": "corn"
+  },
+  {
+   "op": "fill",
+   "from": [
+    25,
+    0,
+    35
+   ],
+   "to": [
+    25,
+    0,
+    37
+   ],
+   "block": "coarse"
+  },
+  {
+   "op": "fill",
+   "from": [
+    25,
+    1,
+    34
+   ],
+   "to": [
+    25,
+    2,
+    34
+   ],
+   "block": "sbwall"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    24,
+    2,
+    34
+   ],
+   "block": "sbwall"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    26,
+    2,
+    34
+   ],
+   "block": "sbwall"
+  },
+  {
+   "op": "fill",
+   "from": [
+    28,
+    0,
+    19
+   ],
+   "to": [
+    28,
+    0,
+    21
+   ],
+   "block": "coarse"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    28,
+    1,
+    18
+   ],
+   "block": "msb"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    28,
+    2,
+    18
+   ],
+   "block": "sb_slab"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    28,
+    1,
+    20
+   ],
+   "block": "candle1"
+  },
+  {
+   "op": "fill",
+   "from": [
+    28,
+    0,
+    23
+   ],
+   "to": [
+    28,
+    0,
+    25
+   ],
+   "block": "coarse"
+  },
+  {
+   "op": "fill",
+   "from": [
+    28,
+    1,
+    22
+   ],
+   "to": [
+    28,
+    2,
+    22
+   ],
+   "block": "sbwall"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    27,
+    2,
+    22
+   ],
+   "block": "sbwall"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    29,
+    2,
+    22
+   ],
+   "block": "sbwall"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    28,
+    1,
+    24
+   ],
+   "block": "bluet"
+  },
+  {
+   "op": "fill",
+   "from": [
+    28,
+    0,
+    31
+   ],
+   "to": [
+    28,
+    0,
+    33
+   ],
+   "block": "coarse"
+  },
+  {
+   "op": "fill",
+   "from": [
+    28,
+    1,
+    31
+   ],
+   "to": [
+    28,
+    1,
+    33
+   ],
+   "block": "sb"
+  },
+  {
+   "op": "fill",
+   "from": [
+    28,
+    2,
+    31
+   ],
+   "to": [
+    28,
+    2,
+    33
+   ],
+   "block": "sb_slab"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    28,
+    1,
+    30
+   ],
+   "block": "msb"
+  },
+  {
+   "op": "fill",
+   "from": [
+    28,
+    0,
+    35
+   ],
+   "to": [
+    28,
+    0,
+    37
+   ],
+   "block": "coarse"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    28,
+    1,
+    34
+   ],
+   "block": "msb"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    28,
+    2,
+    34
+   ],
+   "block": "sb_slab"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    28,
+    1,
+    36
+   ],
+   "block": "corn"
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    1,
+    8
+   ],
+   "to": [
+    5,
+    5,
+    8
+   ],
+   "block": "log"
+  },
+  {
+   "op": "fill",
+   "from": [
+    3,
+    4,
+    6
+   ],
+   "to": [
+    7,
+    5,
+    10
+   ],
+   "block": "leaves"
+  },
+  {
+   "op": "fill",
+   "from": [
+    4,
+    6,
+    7
+   ],
+   "to": [
+    6,
+    6,
+    9
+   ],
+   "block": "leaves"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    5,
+    7,
+    8
+   ],
+   "block": "leaves"
+  },
+  {
+   "op": "carve",
+   "from": [
+    3,
+    4,
+    6
+   ],
+   "to": [
+    3,
+    4,
+    6
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    7,
+    4,
+    6
+   ],
+   "to": [
+    7,
+    4,
+    6
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    3,
+    4,
+    10
+   ],
+   "to": [
+    3,
+    4,
+    10
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    7,
+    4,
+    10
+   ],
+   "to": [
+    7,
+    4,
+    10
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    1,
+    8
+   ],
+   "to": [
+    5,
+    5,
+    8
+   ],
+   "block": "log"
+  },
+  {
+   "op": "fill",
+   "from": [
+    27,
+    1,
+    9
+   ],
+   "to": [
+    27,
+    6,
+    9
+   ],
+   "block": "log"
+  },
+  {
+   "op": "fill",
+   "from": [
+    25,
+    5,
+    7
+   ],
+   "to": [
+    29,
+    6,
+    11
+   ],
+   "block": "leaves"
+  },
+  {
+   "op": "fill",
+   "from": [
+    26,
+    7,
+    8
+   ],
+   "to": [
+    28,
+    7,
+    10
+   ],
+   "block": "leaves"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    27,
+    8,
+    9
+   ],
+   "block": "leaves"
+  },
+  {
+   "op": "carve",
+   "from": [
+    25,
+    5,
+    7
+   ],
+   "to": [
+    25,
+    5,
+    7
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    29,
+    5,
+    7
+   ],
+   "to": [
+    29,
+    5,
+    7
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    25,
+    5,
+    11
+   ],
+   "to": [
+    25,
+    5,
+    11
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    29,
+    5,
+    11
+   ],
+   "to": [
+    29,
+    5,
+    11
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    27,
+    1,
+    9
+   ],
+   "to": [
+    27,
+    6,
+    9
+   ],
+   "block": "log"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    1,
+    38
+   ],
+   "to": [
+    2,
+    4,
+    38
+   ],
+   "block": "log"
+  },
+  {
+   "op": "fill",
+   "from": [
+    0,
+    3,
+    36
+   ],
+   "to": [
+    4,
+    4,
+    40
+   ],
+   "block": "leaves"
+  },
+  {
+   "op": "fill",
+   "from": [
+    1,
+    5,
+    37
+   ],
+   "to": [
+    3,
+    5,
+    39
+   ],
+   "block": "leaves"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    2,
+    6,
+    38
+   ],
+   "block": "leaves"
+  },
+  {
+   "op": "carve",
+   "from": [
+    0,
+    3,
+    36
+   ],
+   "to": [
+    0,
+    3,
+    36
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    4,
+    3,
+    36
+   ],
+   "to": [
+    4,
+    3,
+    36
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    0,
+    3,
+    40
+   ],
+   "to": [
+    0,
+    3,
+    40
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    4,
+    3,
+    40
+   ],
+   "to": [
+    4,
+    3,
+    40
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    1,
+    38
+   ],
+   "to": [
+    2,
+    4,
+    38
+   ],
+   "block": "log"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    2,
+    1,
+    1
+   ],
+   "block": "fern"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    1,
+    1
+   ],
+   "block": "fern"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    1,
+    1
+   ],
+   "block": "fern"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    20,
+    1,
+    1
+   ],
+   "block": "fern"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    26,
+    1,
+    1
+   ],
+   "block": "fern"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    30,
+    1,
+    1
+   ],
+   "block": "fern"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    3,
+    1,
+    39
+   ],
+   "block": "fern"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    1,
+    39
+   ],
+   "block": "fern"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    23,
+    1,
+    39
+   ],
+   "block": "fern"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    29,
+    1,
+    39
+   ],
+   "block": "fern"
+  }
+ ],
+ "entry": {
+  "at": [
+   16,
+   1,
+   43
+  ],
+  "facing": "south"
+ }
+}

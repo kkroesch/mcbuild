@@ -3231,5 +3231,13 @@
    ],
    "block": "step_n"
   }
- ]
+ ],
+ "entry": {
+  "at": [
+   9,
+   6,
+   24
+  ],
+  "facing": "south"
+ }
 }

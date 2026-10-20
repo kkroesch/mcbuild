@@ -14,6 +14,16 @@ Beispiele:
 Blockkoordinaten ab und nimmt sie als Anker; der Spieler muss online sein.
 --offset verschiebt den Anker danach (gilt auch für --anchor).
 
+Mit --front [ABSTAND] wird das Gebäude VOR den Spieler gesetzt und so gedreht, dass der
+Eingang zum Spieler zeigt (Blickrichtung wird per RCON gelesen, auf 90° gerundet).
+Der Eingangspunkt steht im Blueprint: "entry": {"at": [x,y,z], "facing": "south"}
+(Bodenpunkt direkt vor der Tür, y = Standhöhe; facing = Richtung nach aussen).
+Er landet ABSTAND Blöcke (Standard 5) genau in Blickrichtung vor dem Spieler, auf
+dessen Standhöhe. Dann --offset nur noch für Feinschliff nutzen (y normalerweise 0).
+  bp2rcon.py rathaus.json --at-player Karsten --front
+  bp2rcon.py rathaus.json --at-player Karsten --front 12 --turn 90   # zusätzlich drehen
+Ohne "entry" im Blueprint: --entry X Y Z --entry-facing north|east|south|west.
+
 Passwort: --password oder Umgebungsvariable MC_RCON_PASSWORD.
 Nutzt dasselbe JSON-Format wie bp2nbt.py (muss im selben Ordner liegen).
 Ein Schritt = eine Operation aus der JSON-Datei (ein Dach oder ein repeat
@@ -111,21 +121,99 @@ def faces(lo, hi):
     return out
 
 
+
+# ---------------------------------------------------- Drehung / Platzierung
+DIRS = ["north", "east", "south", "west"]          # im Uhrzeigersinn, von oben gesehen
+DVEC = {"north": (0, -1), "east": (1, 0), "south": (0, 1), "west": (-1, 0)}
+_STATE_RE = re.compile(r"^([^\[]+)(?:\[(.*)\])?$")
+
+
+def rot_xz(x, z, k):
+    for _ in range(k % 4):
+        x, z = -z, x                                # 90° im Uhrzeigersinn
+    return x, z
+
+
+def rot_state(state, k):
+    """Blockstate um k*90° im Uhrzeigersinn drehen (facing, axis, rotation, Verbindungen)."""
+    k %= 4
+    if k == 0 or "[" not in state:
+        return state
+    m = _STATE_RE.match(state)
+    if not m or not m.group(2):
+        return state
+    props = {}
+    for kv in m.group(2).split(","):
+        key, _, val = kv.partition("=")
+        props[key] = val
+    out = {}
+    for key, val in props.items():
+        if key == "facing" and val in DIRS:
+            val = DIRS[(DIRS.index(val) + k) % 4]
+        elif key == "axis" and k % 2 and val in ("x", "z"):
+            val = "z" if val == "x" else "x"
+        elif key == "rotation" and val.isdigit():
+            val = str((int(val) + 4 * k) % 16)
+        elif key in DIRS:
+            key = DIRS[(DIRS.index(key) + k) % 4]
+        out[key] = val
+    return m.group(1) + "[" + ",".join(f"{a}={b}" for a, b in out.items()) + "]"
+
+
+class Place:
+    """Blueprint-Koordinate -> Weltkoordinate (Anker, optional gedreht um den Eingangspunkt)."""
+    def __init__(self, origin, k=0, pivot=(0, 0, 0)):
+        self.origin, self.k, self.pivot = list(origin), k % 4, pivot
+
+    def pt(self, p):
+        rx, rz = rot_xz(p[0] - self.pivot[0], p[2] - self.pivot[2], self.k)
+        return [self.origin[0] + rx, self.origin[1] + p[1] - self.pivot[1], self.origin[2] + rz]
+
+    def box(self, lo, hi):
+        a, b = self.pt(lo), self.pt(hi)
+        return [min(u, v) for u, v in zip(a, b)], [max(u, v) for u, v in zip(a, b)]
+
+    def state(self, s):
+        return rot_state(s, self.k)
+
+
+def look_dir(rcon, name):
+    """Blickrichtung (nach Yaw) als 'north'|'east'|'south'|'west'."""
+    resp = rcon.command(f"data get entity {name} Rotation")
+    num = r"(-?\d+(?:\.\d+)?(?:[eE][-+]?\d+)?)[fd]?"
+    m = re.search(r"\[\s*" + num + r"\s*,\s*" + num + r"\s*\]", resp)
+    if not m:
+        raise RuntimeError(f"Blickrichtung von {name!r} nicht lesbar. Antwort: {resp!r}")
+    yaw = float(m.group(1)) % 360                   # 0=Süden, 90=Westen, 180=Norden, 270=Osten
+    return ["south", "west", "north", "east"][int(((yaw + 45) % 360) // 90)]
+
+
+def make_place(pos, look, dist, entry_at, entry_facing, extra_turn, offset):
+    """Eingang liegt dist Blöcke in Blickrichtung vor dem Spieler, Tür zeigt zum Spieler."""
+    dx, dz = DVEC[look]
+    target = [pos[0] + dx * dist + offset[0], pos[1] + offset[1], pos[2] + dz * dist + offset[2]]
+    want = DIRS[(DIRS.index(look) + 2) % 4]         # Tür schaut zum Spieler
+    k = (DIRS.index(want) - DIRS.index(entry_facing) + extra_turn // 90) % 4
+    return Place(target, k, entry_at)
+
+
 def prim_commands(op, palette, anchor, max_fill):
     """Grundoperation -> (Beschriftung, [Befehle], untere/obere Ecke absolut)."""
     where, kind = op["_src"], op["op"]
+    pl = anchor if isinstance(anchor, Place) else Place(anchor)
     state = resolve(op, palette, where)
     parse_state(state)
+    state = pl.state(state)
 
     if kind == "setblock":
         p = vec(op, "at", where)
         if min(p) < 0:
             raise BlueprintError(f"{where}: negative Koordinaten nicht erlaubt")
-        a = [anchor[k] + p[k] for k in range(3)]
+        a = pl.pt(p)
         if op.get("only"):
             # speckle: nur ersetzen, wo der Block gerade 'only' ist -> /fill ... replace <filter>
             return (f"setblock {p} {state} (nur wo {op['only']})",
-                    [f"fill {a[0]} {a[1]} {a[2]} {a[0]} {a[1]} {a[2]} {state} replace {op['only']}"],
+                    [f"fill {a[0]} {a[1]} {a[2]} {a[0]} {a[1]} {a[2]} {state} replace {pl.state(op['only'])}"],
                     a, a)
         return (f"setblock {p} {state}",
                 [f"setblock {a[0]} {a[1]} {a[2]} {state}"], a, a)
@@ -135,8 +223,7 @@ def prim_commands(op, palette, anchor, max_fill):
     hi = [max(a, b) for a, b in zip(f, t)]
     if min(lo) < 0:
         raise BlueprintError(f"{where}: negative Koordinaten nicht erlaubt")
-    alo = [anchor[k] + lo[k] for k in range(3)]
-    ahi = [anchor[k] + hi[k] for k in range(3)]
+    alo, ahi = pl.box(lo, hi)
 
     if kind == "hollow_box":
         # 'outline': nur Hülle ersetzen, Innenraum bleibt unberührt (wie bp2nbt.py)
@@ -203,6 +290,14 @@ def main():
                        help="Anker = Blockposition dieses Spielers (per RCON abgefragt)")
     ap.add_argument("--offset", nargs=3, type=int, default=[0, 0, 0], metavar=("DX", "DY", "DZ"),
                     help="Verschiebung des Ankers, z.B. 0 -1 0")
+    ap.add_argument("--front", nargs="?", type=int, const=5, metavar="ABSTAND",
+                    help="vor den Spieler bauen, Eingang zum Spieler (Standard 5 Blöcke Abstand); "
+                         "braucht --at-player")
+    ap.add_argument("--turn", type=int, default=0, choices=[0, 90, 180, 270],
+                    help="zusätzliche Drehung zu --front (im Uhrzeigersinn)")
+    ap.add_argument("--entry", nargs=3, type=int, metavar=("X", "Y", "Z"),
+                    help="Eingangspunkt (überschreibt 'entry' im Blueprint)")
+    ap.add_argument("--entry-facing", choices=DIRS, help="Richtung des Eingangs nach aussen")
     ap.add_argument("--host", default="127.0.0.1")
     ap.add_argument("--port", type=int, default=25575)
     ap.add_argument("--password", default=os.environ.get("MC_RCON_PASSWORD"))
@@ -245,9 +340,26 @@ def main():
             except RuntimeError as e:
                 sys.exit(f"Fehler: {e}")
             print(f"Spieler {args.at_player} steht bei {anchor}")
-        anchor = [a + o for a, o in zip(anchor, args.offset)]
-        if any(args.offset):
-            print(f"Anker nach Versatz {args.offset}: {anchor}")
+        if args.front is not None:
+            if not args.at_player:
+                sys.exit("Fehler: --front braucht --at-player")
+            ent = bp.get("entry") or {}
+            e_at = args.entry or ent.get("at")
+            e_face = args.entry_facing or ent.get("facing")
+            if not e_at or e_face not in DIRS:
+                sys.exit('Fehler: kein Eingangspunkt. Im Blueprint "entry": {"at": [x,y,z], '
+                         '"facing": "south"} ergänzen oder --entry X Y Z --entry-facing ... angeben.')
+            try:
+                look = look_dir(rcon, args.at_player)
+            except RuntimeError as e:
+                sys.exit(f"Fehler: {e}")
+            anchor = make_place(anchor, look, args.front, e_at, e_face, args.turn, args.offset)
+            print(f"Blick nach {look}: Eingang {args.front} Blöcke vor dem Spieler bei "
+                  f"{anchor.origin}, Drehung {anchor.k * 90}° (+{args.turn}°)")
+        else:
+            anchor = [a + o for a, o in zip(anchor, args.offset)]
+            if any(args.offset):
+                print(f"Anker nach Versatz {args.offset}: {anchor}")
 
         try:
             steps, lo, hi = build_steps(bp, anchor, args.max_fill)

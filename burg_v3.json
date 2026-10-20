@@ -6473,5 +6473,13 @@
    ],
    "block": "neu_mossy_cobblestone_stairs_facing_east_half_bottom"
   }
- ]
+ ],
+ "entry": {
+  "at": [
+   24,
+   6,
+   57
+  ],
+  "facing": "south"
+ }
 }

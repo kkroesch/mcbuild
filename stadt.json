@@ -1,0 +1,233 @@
+{
+ "name": "Eltzburg",
+ "buildings": [
+  {
+   "id": "kloster",
+   "bp": "kloster.json",
+   "tag": "K",
+   "entry": [
+    30,
+    48
+   ],
+   "facing": "south"
+  },
+  {
+   "id": "rathaus",
+   "bp": "rathaus.json",
+   "tag": "R",
+   "entry": [
+    96,
+    30
+   ],
+   "facing": "south"
+  },
+  {
+   "id": "kirche",
+   "bp": "kirche.json",
+   "tag": "C",
+   "entry": [
+    140,
+    47
+   ],
+   "facing": "west"
+  },
+  {
+   "id": "friedhof",
+   "bp": "friedhof.json",
+   "tag": "F",
+   "entry": [
+    221,
+    50
+   ],
+   "facing": "south"
+  },
+  {
+   "id": "gasthaus",
+   "bp": "gasthaus.json",
+   "tag": "G",
+   "entry": [
+    66,
+    62
+   ],
+   "facing": "east"
+  },
+  {
+   "id": "keller",
+   "bp": "gewoelbekeller.json",
+   "tag": "V",
+   "entry": [
+    50,
+    82
+   ],
+   "facing": "north",
+   "underground": true
+  },
+  {
+   "id": "haus1",
+   "bp": "buergerhaus.json",
+   "tag": "1",
+   "entry": [
+    86,
+    91
+   ],
+   "facing": "east"
+  },
+  {
+   "id": "haus2",
+   "bp": "buergerhaus.json",
+   "tag": "2",
+   "entry": [
+    86,
+    113
+   ],
+   "facing": "east"
+  },
+  {
+   "id": "haus3",
+   "bp": "buergerhaus.json",
+   "tag": "3",
+   "entry": [
+    86,
+    135
+   ],
+   "facing": "east"
+  },
+  {
+   "id": "haus4",
+   "bp": "buergerhaus.json",
+   "tag": "4",
+   "entry": [
+    106,
+    91
+   ],
+   "facing": "west"
+  },
+  {
+   "id": "haus5",
+   "bp": "buergerhaus.json",
+   "tag": "5",
+   "entry": [
+    106,
+    113
+   ],
+   "facing": "west"
+  },
+  {
+   "id": "haus6",
+   "bp": "buergerhaus.json",
+   "tag": "6",
+   "entry": [
+    106,
+    135
+   ],
+   "facing": "west"
+  },
+  {
+   "id": "muehle",
+   "bp": "muehle.json",
+   "tag": "M",
+   "entry": [
+    213,
+    105
+   ],
+   "facing": "west"
+  },
+  {
+   "id": "hof1",
+   "bp": "bauernhof.json",
+   "tag": "H",
+   "entry": [
+    31,
+    168
+   ],
+   "facing": "south"
+  },
+  {
+   "id": "hof2",
+   "bp": "bauernhof.json",
+   "tag": "h",
+   "entry": [
+    211,
+    168
+   ],
+   "facing": "south"
+  }
+ ],
+ "streets": [
+  {
+   "id": "S1",
+   "rect": [
+    8,
+    76,
+    262,
+    80
+   ]
+  },
+  {
+   "id": "Hauptstrasse",
+   "rect": [
+    94,
+    76,
+    98,
+    152
+   ]
+  },
+  {
+   "id": "S2",
+   "rect": [
+    8,
+    148,
+    262,
+    152
+   ]
+  },
+  {
+   "id": "Ostgasse",
+   "rect": [
+    204,
+    76,
+    208,
+    152
+   ]
+  },
+  {
+   "id": "Klostergasse",
+   "rect": [
+    28,
+    46,
+    32,
+    80
+   ]
+  },
+  {
+   "id": "Friedhofsweg",
+   "rect": [
+    219,
+    50,
+    223,
+    80
+   ]
+  },
+  {
+   "id": "Kellergasse",
+   "rect": [
+    49,
+    81,
+    51,
+    82
+   ]
+  }
+ ],
+ "plaza": {
+  "rect": [
+   58,
+   37,
+   138,
+   75
+  ],
+  "fountain": [
+   97,
+   56
+  ]
+ }
+}

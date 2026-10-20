@@ -4381,5 +4381,13 @@
    ],
    "block": "barrel_u"
   }
- ]
+ ],
+ "entry": {
+  "at": [
+   16,
+   1,
+   28
+  ],
+  "facing": "south"
+ }
 }

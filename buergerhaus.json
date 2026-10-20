@@ -2324,7 +2324,7 @@
     6,
     7
    ],
-   "block": "st_s"
+   "block": "st_n"
   },
   {
    "op": "fill",
@@ -2338,7 +2338,7 @@
     6,
     9
    ],
-   "block": "st_n"
+   "block": "st_s"
   },
   {
    "op": "setblock",
@@ -2347,7 +2347,7 @@
     6,
     4
    ],
-   "block": "st_e"
+   "block": "st_w"
   },
   {
    "op": "setblock",
@@ -2356,7 +2356,7 @@
     6,
     4
    ],
-   "block": "st_w"
+   "block": "st_e"
   },
   {
    "op": "fill",
@@ -3040,7 +3040,7 @@
     17,
     17
    ],
-   "block": "st_n"
+   "block": "st_s"
   },
   {
    "op": "setblock",

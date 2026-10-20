@@ -16,8 +16,8 @@
     "roofstair": "minecraft:brick_stairs",
     "fence": "minecraft:spruce_fence",
     "plate": "minecraft:spruce_pressure_plate",
-    "bench_e": "minecraft:spruce_stairs[facing=east,half=bottom]",
-    "bench_w": "minecraft:spruce_stairs[facing=west,half=bottom]",
+    "bench_e": "minecraft:spruce_stairs[facing=west,half=bottom]",
+    "bench_w": "minecraft:spruce_stairs[facing=east,half=bottom]",
     "bench_n": "minecraft:spruce_stairs[facing=north,half=bottom]",
     "step_e": "minecraft:spruce_stairs[facing=east,half=bottom]",
     "bar": "minecraft:dark_oak_planks",
@@ -46,189 +46,1908 @@
     "hay": "minecraft:hay_block[axis=y]"
   },
   "ops": [
-    {"op": "fill", "from": [0,0,0], "to": [24,0,20], "block": "grass"},
-    {"op": "fill", "from": [0,0,16], "to": [24,0,20], "block": "path"},
-
-    {"op": "hollow_box", "from": [1,0,1], "to": [23,9,15], "block": "plaster"},
-    {"op": "fill", "from": [1,1,1], "to": [23,1,1], "block": "stone"},
-    {"op": "fill", "from": [1,1,15], "to": [23,1,15], "block": "stone"},
-    {"op": "fill", "from": [1,1,1], "to": [1,1,15], "block": "stone"},
-    {"op": "fill", "from": [23,1,1], "to": [23,1,15], "block": "stone"},
-
-    {"op": "fill", "from": [1,5,1],  "to": [23,5,1],  "block": "beam_x"},
-    {"op": "fill", "from": [1,5,15], "to": [23,5,15], "block": "beam_x"},
-    {"op": "fill", "from": [1,5,1],  "to": [1,5,15],  "block": "beam_z"},
-    {"op": "fill", "from": [23,5,1], "to": [23,5,15], "block": "beam_z"},
-    {"op": "fill", "from": [1,9,1],  "to": [23,9,1],  "block": "beam_x"},
-    {"op": "fill", "from": [1,9,15], "to": [23,9,15], "block": "beam_x"},
-    {"op": "fill", "from": [1,9,1],  "to": [1,9,15],  "block": "beam_z"},
-    {"op": "fill", "from": [23,9,1], "to": [23,9,15], "block": "beam_z"},
-
-    {"op": "fill", "from": [1,1,1],  "to": [1,9,1],  "block": "post"},
-    {"op": "fill", "from": [23,1,1], "to": [23,9,1], "block": "post"},
-    {"op": "fill", "from": [1,1,15], "to": [1,9,15], "block": "post"},
-    {"op": "fill", "from": [23,1,15],"to": [23,9,15],"block": "post"},
-    {"op": "repeat", "count": 4, "step": [4,0,0], "ops": [
-      {"op": "fill", "from": [6,2,1],  "to": [6,8,1],  "block": "post"},
-      {"op": "fill", "from": [6,2,15], "to": [6,8,15], "block": "post"}
-    ]},
-    {"op": "fill", "from": [1,2,6],  "to": [1,8,6],  "block": "post"},
-    {"op": "fill", "from": [1,2,10], "to": [1,8,10], "block": "post"},
-    {"op": "fill", "from": [23,2,6], "to": [23,8,6], "block": "post"},
-    {"op": "fill", "from": [23,2,10],"to": [23,8,10],"block": "post"},
-
-    {"op": "gable_roof", "from": [1,10,0], "to": [23,10,16], "axis": "x",
-     "stairs": "roofstair", "gable": "plaster"},
-
-    {"op": "fill", "from": [2,0,2],  "to": [15,0,14], "block": "floor"},
-    {"op": "fill", "from": [17,0,2], "to": [22,0,14], "block": "cobble"},
-    {"op": "fill", "from": [2,5,2],  "to": [22,5,14], "block": "floor2"},
-
-    {"op": "fill", "from": [16,1,2], "to": [16,9,14], "block": "plaster"},
-    {"op": "fill", "from": [16,5,2], "to": [16,5,14], "block": "beam_z"},
-    {"op": "carve", "from": [16,1,8], "to": [16,2,8]},
-    {"op": "setblock", "at": [16,1,8], "block": "door_e_lo"},
-    {"op": "setblock", "at": [16,2,8], "block": "door_e_hi"},
-
-    {"op": "carve", "from": [12,1,15], "to": [12,2,15]},
-    {"op": "setblock", "at": [12,1,15], "block": "door_s_lo"},
-    {"op": "setblock", "at": [12,2,15], "block": "door_s_hi"},
-
-    {"op": "repeat", "count": 2, "step": [4,0,0], "ops": [
-      {"op": "fill", "from": [4,2,15], "to": [4,3,15], "block": "glass"}
-    ]},
-    {"op": "fill", "from": [15,2,15], "to": [15,3,15], "block": "glass"},
-    {"op": "fill", "from": [19,2,15], "to": [19,3,15], "block": "glass"},
-    {"op": "repeat", "count": 3, "step": [4,0,0], "ops": [
-      {"op": "fill", "from": [5,2,1], "to": [5,3,1], "block": "glass"}
-    ]},
-    {"op": "fill", "from": [19,2,1], "to": [19,3,1], "block": "glass"},
-    {"op": "repeat", "count": 3, "step": [0,0,4], "ops": [
-      {"op": "fill", "from": [1,2,4], "to": [1,3,4], "block": "glass"}
-    ]},
-    {"op": "fill", "from": [23,2,4],  "to": [23,3,4],  "block": "glass"},
-    {"op": "fill", "from": [23,2,13], "to": [23,3,13], "block": "glass"},
-
-    {"op": "fill", "from": [18,7,15], "to": [18,8,15], "block": "glass"},
-    {"op": "fill", "from": [21,7,15], "to": [21,8,15], "block": "glass"},
-    {"op": "fill", "from": [3,7,15],  "to": [3,8,15],  "block": "glass"},
-    {"op": "fill", "from": [6,7,15],  "to": [6,8,15], "block": "glass"},
-    {"op": "fill", "from": [10,7,15], "to": [10,8,15], "block": "glass"},
-    {"op": "fill", "from": [14,7,15], "to": [14,8,15], "block": "glass"},
-    {"op": "fill", "from": [4,7,1],   "to": [4,8,1],   "block": "glass"},
-    {"op": "fill", "from": [12,7,1],  "to": [12,8,1],  "block": "glass"},
-    {"op": "fill", "from": [20,7,1],  "to": [20,8,1],  "block": "glass"},
-    {"op": "fill", "from": [1,7,12],  "to": [1,8,12],  "block": "glass"},
-    {"op": "fill", "from": [23,7,12], "to": [23,8,12], "block": "glass"},
-
-    {"op": "fill", "from": [2,6,4], "to": [22,8,4], "block": "plaster"},
-    {"op": "fill", "from": [8,6,5], "to": [8,8,14], "block": "plaster"},
-    {"op": "fill", "from": [16,6,5], "to": [16,8,14], "block": "plaster"},
-    {"op": "carve", "from": [5,6,4],  "to": [5,7,4]},
-    {"op": "carve", "from": [12,6,4], "to": [12,7,4]},
-    {"op": "carve", "from": [19,6,4], "to": [19,7,4]},
-    {"op": "setblock", "at": [5,6,4],  "block": "door_r_lo"},
-    {"op": "setblock", "at": [5,7,4],  "block": "door_r_hi"},
-    {"op": "setblock", "at": [12,6,4], "block": "door_r_lo"},
-    {"op": "setblock", "at": [12,7,4], "block": "door_r_hi"},
-    {"op": "setblock", "at": [19,6,4], "block": "door_r_lo"},
-    {"op": "setblock", "at": [19,7,4], "block": "door_r_hi"},
-
-    {"op": "carve", "from": [3,5,2], "to": [6,5,2]},
-    {"op": "setblock", "at": [3,1,2], "block": "step_e"},
-    {"op": "setblock", "at": [4,2,2], "block": "step_e"},
-    {"op": "setblock", "at": [5,3,2], "block": "step_e"},
-    {"op": "setblock", "at": [6,4,2], "block": "step_e"},
-    {"op": "setblock", "at": [7,5,2], "block": "step_e"},
-
-    {"op": "fill", "from": [10,4,3], "to": [10,4,13], "block": "beam_z"},
-    {"op": "fill", "from": [6,4,3],  "to": [6,4,13],  "block": "beam_z"},
-    {"op": "fill", "from": [14,4,3], "to": [14,4,13], "block": "beam_z"},
-    {"op": "setblock", "at": [6,3,6],  "block": "lantern_h"},
-    {"op": "setblock", "at": [6,3,11], "block": "lantern_h"},
-    {"op": "setblock", "at": [10,3,6], "block": "lantern_h"},
-    {"op": "setblock", "at": [10,3,11],"block": "lantern_h"},
-    {"op": "setblock", "at": [14,3,5], "block": "lantern_h"},
-    {"op": "setblock", "at": [14,3,11],"block": "lantern_h"},
-
-    {"op": "repeat", "count": 3, "step": [0,0,4], "ops": [
-      {"op": "fill", "from": [2,1,4], "to": [3,2,5], "block": "cask"}
-    ]},
-    {"op": "repeat", "count": 3, "step": [0,0,4], "ops": [
-      {"op": "fill", "from": [2,3,4], "to": [2,3,5], "block": "cask_up"}
-    ]},
-
-    {"op": "repeat", "count": 2, "step": [0,0,5], "ops": [
-      {"op": "fill", "from": [6,1,5], "to": [6,1,7], "block": "fence"},
-      {"op": "fill", "from": [6,2,5], "to": [6,2,7], "block": "plate"},
-      {"op": "fill", "from": [10,1,5], "to": [10,1,7], "block": "fence"},
-      {"op": "fill", "from": [10,2,5], "to": [10,2,7], "block": "plate"},
-      {"op": "fill", "from": [5,1,5], "to": [5,1,7], "block": "bench_e"},
-      {"op": "fill", "from": [7,1,5], "to": [7,1,7], "block": "bench_w"},
-      {"op": "fill", "from": [9,1,5], "to": [9,1,7], "block": "bench_e"},
-      {"op": "fill", "from": [11,1,5], "to": [11,1,7], "block": "bench_w"}
-    ]},
-
-    {"op": "fill", "from": [13,1,4], "to": [13,1,9], "block": "bar"},
-    {"op": "fill", "from": [13,2,4], "to": [13,2,9], "block": "bar_top"},
-    {"op": "setblock", "at": [14,1,4],  "block": "cask_w"},
-    {"op": "setblock", "at": [14,2,4],  "block": "cask_w"},
-    {"op": "setblock", "at": [15,1,4],  "block": "cask_w"},
-    {"op": "setblock", "at": [15,2,4],  "block": "cask_w"},
-    {"op": "fill", "from": [15,1,10], "to": [15,1,13], "block": "cask_w"},
-    {"op": "fill", "from": [15,2,10], "to": [15,2,13], "block": "cask_w"},
-    {"op": "fill", "from": [15,1,6],  "to": [15,2,6], "block": "cask_w"},
-
-    {"op": "fill", "from": [9,1,16], "to": [10,1,16], "block": "bench_n"},
-    {"op": "fill", "from": [10,1,17], "to": [10,2,17], "block": "fence"},
-    {"op": "setblock", "at": [10,3,17], "block": "lantern"},
-    {"op": "fill", "from": [14,1,17], "to": [14,2,17], "block": "fence"},
-    {"op": "setblock", "at": [14,3,17], "block": "lantern"},
-    {"op": "fill", "from": [16,1,16], "to": [17,1,16], "block": "cask_up"},
-    {"op": "setblock", "at": [16,2,16], "block": "cask_up"},
-    {"op": "fill", "from": [20,1,17], "to": [21,1,18], "block": "hay"},
-
-    {"op": "fill", "from": [12,4,16], "to": [12,4,17], "block": "beam_z"},
-    {"op": "setblock", "at": [12,3,17], "block": "sign"},
-    {"op": "fill", "from": [11,4,15], "to": [13,4,15], "block": "beam_x"},
-
-    {"op": "fill", "from": [3,0,17], "to": [6,0,20], "block": "cobble"},
-    {"op": "fill", "from": [4,0,18], "to": [5,0,19], "block": "water"},
-    {"op": "fill", "from": [3,1,17], "to": [6,1,17], "block": "cobble"},
-    {"op": "fill", "from": [3,1,20], "to": [6,1,20], "block": "cobble"},
-    {"op": "fill", "from": [3,1,18], "to": [3,1,19], "block": "cobble"},
-    {"op": "fill", "from": [6,1,18], "to": [6,1,19], "block": "cobble"},
-
-    {"op": "fill", "from": [18,1,2], "to": [18,1,2], "block": "furnace"},
-    {"op": "setblock", "at": [19,1,2], "block": "smoker"},
-    {"op": "setblock", "at": [20,1,2], "block": "crafting"},
-    {"op": "setblock", "at": [21,1,2], "block": "cauldron"},
-    {"op": "setblock", "at": [22,1,2], "block": "composter"},
-    {"op": "fill", "from": [18,1,5], "to": [20,1,5], "block": "fence"},
-    {"op": "fill", "from": [18,2,5], "to": [20,2,5], "block": "plate"},
-    {"op": "setblock", "at": [19,3,5], "block": "lantern_h"},
-    {"op": "fill", "from": [18,1,14], "to": [21,1,14], "block": "cask_up"},
-    {"op": "setblock", "at": [22,1,14], "block": "chest_n"},
-    {"op": "fill", "from": [18,1,11], "to": [19,1,11], "block": "hay"},
-
-    {"op": "fill", "from": [21,1,7], "to": [22,20,9], "block": "stone"},
-    {"op": "carve", "from": [21,1,8], "to": [21,2,8]},
-    {"op": "setblock", "at": [21,1,8], "block": "campfire"},
-    {"op": "carve", "from": [21,3,8], "to": [21,20,8]},
-    {"op": "fill", "from": [1,11,8], "to": [1,12,8], "block": "glass"},
-    {"op": "fill", "from": [23,11,8], "to": [23,12,8], "block": "glass"},
-
-    {"op": "setblock", "at": [3,6,13], "block": "bed_foot"},
-    {"op": "setblock", "at": [3,6,14], "block": "bed_head"},
-    {"op": "setblock", "at": [6,6,13], "block": "bed_foot"},
-    {"op": "setblock", "at": [6,6,14], "block": "bed_head"},
-    {"op": "setblock", "at": [10,6,13], "block": "bed_foot"},
-    {"op": "setblock", "at": [10,6,14], "block": "bed_head"},
-    {"op": "setblock", "at": [14,6,13], "block": "bed_foot"},
-    {"op": "setblock", "at": [14,6,14], "block": "bed_head"},
-    {"op": "setblock", "at": [18,6,13], "block": "bed_foot"},
-    {"op": "setblock", "at": [18,6,14], "block": "bed_head"},
-    {"op": "setblock", "at": [21,6,13], "block": "bed_foot"},
-    {"op": "setblock", "at": [21,6,14], "block": "bed_head"}
+    {
+      "op": "fill",
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        24,
+        0,
+        20
+      ],
+      "block": "grass"
+    },
+    {
+      "op": "fill",
+      "from": [
+        0,
+        0,
+        16
+      ],
+      "to": [
+        24,
+        0,
+        20
+      ],
+      "block": "path"
+    },
+    {
+      "op": "hollow_box",
+      "from": [
+        1,
+        0,
+        1
+      ],
+      "to": [
+        23,
+        9,
+        15
+      ],
+      "block": "plaster"
+    },
+    {
+      "op": "fill",
+      "from": [
+        1,
+        1,
+        1
+      ],
+      "to": [
+        23,
+        1,
+        1
+      ],
+      "block": "stone"
+    },
+    {
+      "op": "fill",
+      "from": [
+        1,
+        1,
+        15
+      ],
+      "to": [
+        23,
+        1,
+        15
+      ],
+      "block": "stone"
+    },
+    {
+      "op": "fill",
+      "from": [
+        1,
+        1,
+        1
+      ],
+      "to": [
+        1,
+        1,
+        15
+      ],
+      "block": "stone"
+    },
+    {
+      "op": "fill",
+      "from": [
+        23,
+        1,
+        1
+      ],
+      "to": [
+        23,
+        1,
+        15
+      ],
+      "block": "stone"
+    },
+    {
+      "op": "fill",
+      "from": [
+        1,
+        5,
+        1
+      ],
+      "to": [
+        23,
+        5,
+        1
+      ],
+      "block": "beam_x"
+    },
+    {
+      "op": "fill",
+      "from": [
+        1,
+        5,
+        15
+      ],
+      "to": [
+        23,
+        5,
+        15
+      ],
+      "block": "beam_x"
+    },
+    {
+      "op": "fill",
+      "from": [
+        1,
+        5,
+        1
+      ],
+      "to": [
+        1,
+        5,
+        15
+      ],
+      "block": "beam_z"
+    },
+    {
+      "op": "fill",
+      "from": [
+        23,
+        5,
+        1
+      ],
+      "to": [
+        23,
+        5,
+        15
+      ],
+      "block": "beam_z"
+    },
+    {
+      "op": "fill",
+      "from": [
+        1,
+        9,
+        1
+      ],
+      "to": [
+        23,
+        9,
+        1
+      ],
+      "block": "beam_x"
+    },
+    {
+      "op": "fill",
+      "from": [
+        1,
+        9,
+        15
+      ],
+      "to": [
+        23,
+        9,
+        15
+      ],
+      "block": "beam_x"
+    },
+    {
+      "op": "fill",
+      "from": [
+        1,
+        9,
+        1
+      ],
+      "to": [
+        1,
+        9,
+        15
+      ],
+      "block": "beam_z"
+    },
+    {
+      "op": "fill",
+      "from": [
+        23,
+        9,
+        1
+      ],
+      "to": [
+        23,
+        9,
+        15
+      ],
+      "block": "beam_z"
+    },
+    {
+      "op": "fill",
+      "from": [
+        1,
+        1,
+        1
+      ],
+      "to": [
+        1,
+        9,
+        1
+      ],
+      "block": "post"
+    },
+    {
+      "op": "fill",
+      "from": [
+        23,
+        1,
+        1
+      ],
+      "to": [
+        23,
+        9,
+        1
+      ],
+      "block": "post"
+    },
+    {
+      "op": "fill",
+      "from": [
+        1,
+        1,
+        15
+      ],
+      "to": [
+        1,
+        9,
+        15
+      ],
+      "block": "post"
+    },
+    {
+      "op": "fill",
+      "from": [
+        23,
+        1,
+        15
+      ],
+      "to": [
+        23,
+        9,
+        15
+      ],
+      "block": "post"
+    },
+    {
+      "op": "repeat",
+      "count": 4,
+      "step": [
+        4,
+        0,
+        0
+      ],
+      "ops": [
+        {
+          "op": "fill",
+          "from": [
+            6,
+            2,
+            1
+          ],
+          "to": [
+            6,
+            8,
+            1
+          ],
+          "block": "post"
+        },
+        {
+          "op": "fill",
+          "from": [
+            6,
+            2,
+            15
+          ],
+          "to": [
+            6,
+            8,
+            15
+          ],
+          "block": "post"
+        }
+      ]
+    },
+    {
+      "op": "fill",
+      "from": [
+        1,
+        2,
+        6
+      ],
+      "to": [
+        1,
+        8,
+        6
+      ],
+      "block": "post"
+    },
+    {
+      "op": "fill",
+      "from": [
+        1,
+        2,
+        10
+      ],
+      "to": [
+        1,
+        8,
+        10
+      ],
+      "block": "post"
+    },
+    {
+      "op": "fill",
+      "from": [
+        23,
+        2,
+        6
+      ],
+      "to": [
+        23,
+        8,
+        6
+      ],
+      "block": "post"
+    },
+    {
+      "op": "fill",
+      "from": [
+        23,
+        2,
+        10
+      ],
+      "to": [
+        23,
+        8,
+        10
+      ],
+      "block": "post"
+    },
+    {
+      "op": "gable_roof",
+      "from": [
+        1,
+        10,
+        0
+      ],
+      "to": [
+        23,
+        10,
+        16
+      ],
+      "axis": "x",
+      "stairs": "roofstair",
+      "gable": "plaster"
+    },
+    {
+      "op": "fill",
+      "from": [
+        2,
+        0,
+        2
+      ],
+      "to": [
+        15,
+        0,
+        14
+      ],
+      "block": "floor"
+    },
+    {
+      "op": "fill",
+      "from": [
+        17,
+        0,
+        2
+      ],
+      "to": [
+        22,
+        0,
+        14
+      ],
+      "block": "cobble"
+    },
+    {
+      "op": "fill",
+      "from": [
+        2,
+        5,
+        2
+      ],
+      "to": [
+        22,
+        5,
+        14
+      ],
+      "block": "floor2"
+    },
+    {
+      "op": "fill",
+      "from": [
+        16,
+        1,
+        2
+      ],
+      "to": [
+        16,
+        9,
+        14
+      ],
+      "block": "plaster"
+    },
+    {
+      "op": "fill",
+      "from": [
+        16,
+        5,
+        2
+      ],
+      "to": [
+        16,
+        5,
+        14
+      ],
+      "block": "beam_z"
+    },
+    {
+      "op": "carve",
+      "from": [
+        16,
+        1,
+        8
+      ],
+      "to": [
+        16,
+        2,
+        8
+      ]
+    },
+    {
+      "op": "setblock",
+      "at": [
+        16,
+        1,
+        8
+      ],
+      "block": "door_e_lo"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        16,
+        2,
+        8
+      ],
+      "block": "door_e_hi"
+    },
+    {
+      "op": "carve",
+      "from": [
+        12,
+        1,
+        15
+      ],
+      "to": [
+        12,
+        2,
+        15
+      ]
+    },
+    {
+      "op": "setblock",
+      "at": [
+        12,
+        1,
+        15
+      ],
+      "block": "door_s_lo"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        12,
+        2,
+        15
+      ],
+      "block": "door_s_hi"
+    },
+    {
+      "op": "repeat",
+      "count": 2,
+      "step": [
+        4,
+        0,
+        0
+      ],
+      "ops": [
+        {
+          "op": "fill",
+          "from": [
+            4,
+            2,
+            15
+          ],
+          "to": [
+            4,
+            3,
+            15
+          ],
+          "block": "glass"
+        }
+      ]
+    },
+    {
+      "op": "fill",
+      "from": [
+        15,
+        2,
+        15
+      ],
+      "to": [
+        15,
+        3,
+        15
+      ],
+      "block": "glass"
+    },
+    {
+      "op": "fill",
+      "from": [
+        19,
+        2,
+        15
+      ],
+      "to": [
+        19,
+        3,
+        15
+      ],
+      "block": "glass"
+    },
+    {
+      "op": "repeat",
+      "count": 3,
+      "step": [
+        4,
+        0,
+        0
+      ],
+      "ops": [
+        {
+          "op": "fill",
+          "from": [
+            5,
+            2,
+            1
+          ],
+          "to": [
+            5,
+            3,
+            1
+          ],
+          "block": "glass"
+        }
+      ]
+    },
+    {
+      "op": "fill",
+      "from": [
+        19,
+        2,
+        1
+      ],
+      "to": [
+        19,
+        3,
+        1
+      ],
+      "block": "glass"
+    },
+    {
+      "op": "repeat",
+      "count": 3,
+      "step": [
+        0,
+        0,
+        4
+      ],
+      "ops": [
+        {
+          "op": "fill",
+          "from": [
+            1,
+            2,
+            4
+          ],
+          "to": [
+            1,
+            3,
+            4
+          ],
+          "block": "glass"
+        }
+      ]
+    },
+    {
+      "op": "fill",
+      "from": [
+        23,
+        2,
+        4
+      ],
+      "to": [
+        23,
+        3,
+        4
+      ],
+      "block": "glass"
+    },
+    {
+      "op": "fill",
+      "from": [
+        23,
+        2,
+        13
+      ],
+      "to": [
+        23,
+        3,
+        13
+      ],
+      "block": "glass"
+    },
+    {
+      "op": "fill",
+      "from": [
+        18,
+        7,
+        15
+      ],
+      "to": [
+        18,
+        8,
+        15
+      ],
+      "block": "glass"
+    },
+    {
+      "op": "fill",
+      "from": [
+        21,
+        7,
+        15
+      ],
+      "to": [
+        21,
+        8,
+        15
+      ],
+      "block": "glass"
+    },
+    {
+      "op": "fill",
+      "from": [
+        3,
+        7,
+        15
+      ],
+      "to": [
+        3,
+        8,
+        15
+      ],
+      "block": "glass"
+    },
+    {
+      "op": "fill",
+      "from": [
+        6,
+        7,
+        15
+      ],
+      "to": [
+        6,
+        8,
+        15
+      ],
+      "block": "glass"
+    },
+    {
+      "op": "fill",
+      "from": [
+        10,
+        7,
+        15
+      ],
+      "to": [
+        10,
+        8,
+        15
+      ],
+      "block": "glass"
+    },
+    {
+      "op": "fill",
+      "from": [
+        14,
+        7,
+        15
+      ],
+      "to": [
+        14,
+        8,
+        15
+      ],
+      "block": "glass"
+    },
+    {
+      "op": "fill",
+      "from": [
+        4,
+        7,
+        1
+      ],
+      "to": [
+        4,
+        8,
+        1
+      ],
+      "block": "glass"
+    },
+    {
+      "op": "fill",
+      "from": [
+        12,
+        7,
+        1
+      ],
+      "to": [
+        12,
+        8,
+        1
+      ],
+      "block": "glass"
+    },
+    {
+      "op": "fill",
+      "from": [
+        20,
+        7,
+        1
+      ],
+      "to": [
+        20,
+        8,
+        1
+      ],
+      "block": "glass"
+    },
+    {
+      "op": "fill",
+      "from": [
+        1,
+        7,
+        12
+      ],
+      "to": [
+        1,
+        8,
+        12
+      ],
+      "block": "glass"
+    },
+    {
+      "op": "fill",
+      "from": [
+        23,
+        7,
+        12
+      ],
+      "to": [
+        23,
+        8,
+        12
+      ],
+      "block": "glass"
+    },
+    {
+      "op": "fill",
+      "from": [
+        2,
+        6,
+        4
+      ],
+      "to": [
+        22,
+        8,
+        4
+      ],
+      "block": "plaster"
+    },
+    {
+      "op": "fill",
+      "from": [
+        8,
+        6,
+        5
+      ],
+      "to": [
+        8,
+        8,
+        14
+      ],
+      "block": "plaster"
+    },
+    {
+      "op": "fill",
+      "from": [
+        16,
+        6,
+        5
+      ],
+      "to": [
+        16,
+        8,
+        14
+      ],
+      "block": "plaster"
+    },
+    {
+      "op": "carve",
+      "from": [
+        5,
+        6,
+        4
+      ],
+      "to": [
+        5,
+        7,
+        4
+      ]
+    },
+    {
+      "op": "carve",
+      "from": [
+        12,
+        6,
+        4
+      ],
+      "to": [
+        12,
+        7,
+        4
+      ]
+    },
+    {
+      "op": "carve",
+      "from": [
+        19,
+        6,
+        4
+      ],
+      "to": [
+        19,
+        7,
+        4
+      ]
+    },
+    {
+      "op": "setblock",
+      "at": [
+        5,
+        6,
+        4
+      ],
+      "block": "door_r_lo"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        5,
+        7,
+        4
+      ],
+      "block": "door_r_hi"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        12,
+        6,
+        4
+      ],
+      "block": "door_r_lo"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        12,
+        7,
+        4
+      ],
+      "block": "door_r_hi"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        19,
+        6,
+        4
+      ],
+      "block": "door_r_lo"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        19,
+        7,
+        4
+      ],
+      "block": "door_r_hi"
+    },
+    {
+      "op": "carve",
+      "from": [
+        3,
+        5,
+        2
+      ],
+      "to": [
+        6,
+        5,
+        2
+      ]
+    },
+    {
+      "op": "setblock",
+      "at": [
+        3,
+        1,
+        2
+      ],
+      "block": "step_e"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        4,
+        2,
+        2
+      ],
+      "block": "step_e"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        5,
+        3,
+        2
+      ],
+      "block": "step_e"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        6,
+        4,
+        2
+      ],
+      "block": "step_e"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        7,
+        5,
+        2
+      ],
+      "block": "step_e"
+    },
+    {
+      "op": "fill",
+      "from": [
+        10,
+        4,
+        3
+      ],
+      "to": [
+        10,
+        4,
+        13
+      ],
+      "block": "beam_z"
+    },
+    {
+      "op": "fill",
+      "from": [
+        6,
+        4,
+        3
+      ],
+      "to": [
+        6,
+        4,
+        13
+      ],
+      "block": "beam_z"
+    },
+    {
+      "op": "fill",
+      "from": [
+        14,
+        4,
+        3
+      ],
+      "to": [
+        14,
+        4,
+        13
+      ],
+      "block": "beam_z"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        6,
+        3,
+        6
+      ],
+      "block": "lantern_h"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        6,
+        3,
+        11
+      ],
+      "block": "lantern_h"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        10,
+        3,
+        6
+      ],
+      "block": "lantern_h"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        10,
+        3,
+        11
+      ],
+      "block": "lantern_h"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        14,
+        3,
+        5
+      ],
+      "block": "lantern_h"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        14,
+        3,
+        11
+      ],
+      "block": "lantern_h"
+    },
+    {
+      "op": "repeat",
+      "count": 3,
+      "step": [
+        0,
+        0,
+        4
+      ],
+      "ops": [
+        {
+          "op": "fill",
+          "from": [
+            2,
+            1,
+            4
+          ],
+          "to": [
+            3,
+            2,
+            5
+          ],
+          "block": "cask"
+        }
+      ]
+    },
+    {
+      "op": "repeat",
+      "count": 3,
+      "step": [
+        0,
+        0,
+        4
+      ],
+      "ops": [
+        {
+          "op": "fill",
+          "from": [
+            2,
+            3,
+            4
+          ],
+          "to": [
+            2,
+            3,
+            5
+          ],
+          "block": "cask_up"
+        }
+      ]
+    },
+    {
+      "op": "repeat",
+      "count": 2,
+      "step": [
+        0,
+        0,
+        5
+      ],
+      "ops": [
+        {
+          "op": "fill",
+          "from": [
+            6,
+            1,
+            5
+          ],
+          "to": [
+            6,
+            1,
+            7
+          ],
+          "block": "fence"
+        },
+        {
+          "op": "fill",
+          "from": [
+            6,
+            2,
+            5
+          ],
+          "to": [
+            6,
+            2,
+            7
+          ],
+          "block": "plate"
+        },
+        {
+          "op": "fill",
+          "from": [
+            10,
+            1,
+            5
+          ],
+          "to": [
+            10,
+            1,
+            7
+          ],
+          "block": "fence"
+        },
+        {
+          "op": "fill",
+          "from": [
+            10,
+            2,
+            5
+          ],
+          "to": [
+            10,
+            2,
+            7
+          ],
+          "block": "plate"
+        },
+        {
+          "op": "fill",
+          "from": [
+            5,
+            1,
+            5
+          ],
+          "to": [
+            5,
+            1,
+            7
+          ],
+          "block": "bench_e"
+        },
+        {
+          "op": "fill",
+          "from": [
+            7,
+            1,
+            5
+          ],
+          "to": [
+            7,
+            1,
+            7
+          ],
+          "block": "bench_w"
+        },
+        {
+          "op": "fill",
+          "from": [
+            9,
+            1,
+            5
+          ],
+          "to": [
+            9,
+            1,
+            7
+          ],
+          "block": "bench_e"
+        },
+        {
+          "op": "fill",
+          "from": [
+            11,
+            1,
+            5
+          ],
+          "to": [
+            11,
+            1,
+            7
+          ],
+          "block": "bench_w"
+        }
+      ]
+    },
+    {
+      "op": "fill",
+      "from": [
+        13,
+        1,
+        4
+      ],
+      "to": [
+        13,
+        1,
+        9
+      ],
+      "block": "bar"
+    },
+    {
+      "op": "fill",
+      "from": [
+        13,
+        2,
+        4
+      ],
+      "to": [
+        13,
+        2,
+        9
+      ],
+      "block": "bar_top"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        14,
+        1,
+        4
+      ],
+      "block": "cask_w"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        14,
+        2,
+        4
+      ],
+      "block": "cask_w"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        15,
+        1,
+        4
+      ],
+      "block": "cask_w"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        15,
+        2,
+        4
+      ],
+      "block": "cask_w"
+    },
+    {
+      "op": "fill",
+      "from": [
+        15,
+        1,
+        10
+      ],
+      "to": [
+        15,
+        1,
+        13
+      ],
+      "block": "cask_w"
+    },
+    {
+      "op": "fill",
+      "from": [
+        15,
+        2,
+        10
+      ],
+      "to": [
+        15,
+        2,
+        13
+      ],
+      "block": "cask_w"
+    },
+    {
+      "op": "fill",
+      "from": [
+        15,
+        1,
+        6
+      ],
+      "to": [
+        15,
+        2,
+        6
+      ],
+      "block": "cask_w"
+    },
+    {
+      "op": "fill",
+      "from": [
+        9,
+        1,
+        16
+      ],
+      "to": [
+        10,
+        1,
+        16
+      ],
+      "block": "bench_n"
+    },
+    {
+      "op": "fill",
+      "from": [
+        10,
+        1,
+        17
+      ],
+      "to": [
+        10,
+        2,
+        17
+      ],
+      "block": "fence"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        10,
+        3,
+        17
+      ],
+      "block": "lantern"
+    },
+    {
+      "op": "fill",
+      "from": [
+        14,
+        1,
+        17
+      ],
+      "to": [
+        14,
+        2,
+        17
+      ],
+      "block": "fence"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        14,
+        3,
+        17
+      ],
+      "block": "lantern"
+    },
+    {
+      "op": "fill",
+      "from": [
+        16,
+        1,
+        16
+      ],
+      "to": [
+        17,
+        1,
+        16
+      ],
+      "block": "cask_up"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        16,
+        2,
+        16
+      ],
+      "block": "cask_up"
+    },
+    {
+      "op": "fill",
+      "from": [
+        20,
+        1,
+        17
+      ],
+      "to": [
+        21,
+        1,
+        18
+      ],
+      "block": "hay"
+    },
+    {
+      "op": "fill",
+      "from": [
+        12,
+        4,
+        16
+      ],
+      "to": [
+        12,
+        4,
+        17
+      ],
+      "block": "beam_z"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        12,
+        3,
+        17
+      ],
+      "block": "sign"
+    },
+    {
+      "op": "fill",
+      "from": [
+        11,
+        4,
+        15
+      ],
+      "to": [
+        13,
+        4,
+        15
+      ],
+      "block": "beam_x"
+    },
+    {
+      "op": "fill",
+      "from": [
+        3,
+        0,
+        17
+      ],
+      "to": [
+        6,
+        0,
+        20
+      ],
+      "block": "cobble"
+    },
+    {
+      "op": "fill",
+      "from": [
+        4,
+        0,
+        18
+      ],
+      "to": [
+        5,
+        0,
+        19
+      ],
+      "block": "water"
+    },
+    {
+      "op": "fill",
+      "from": [
+        3,
+        1,
+        17
+      ],
+      "to": [
+        6,
+        1,
+        17
+      ],
+      "block": "cobble"
+    },
+    {
+      "op": "fill",
+      "from": [
+        3,
+        1,
+        20
+      ],
+      "to": [
+        6,
+        1,
+        20
+      ],
+      "block": "cobble"
+    },
+    {
+      "op": "fill",
+      "from": [
+        3,
+        1,
+        18
+      ],
+      "to": [
+        3,
+        1,
+        19
+      ],
+      "block": "cobble"
+    },
+    {
+      "op": "fill",
+      "from": [
+        6,
+        1,
+        18
+      ],
+      "to": [
+        6,
+        1,
+        19
+      ],
+      "block": "cobble"
+    },
+    {
+      "op": "fill",
+      "from": [
+        18,
+        1,
+        2
+      ],
+      "to": [
+        18,
+        1,
+        2
+      ],
+      "block": "furnace"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        19,
+        1,
+        2
+      ],
+      "block": "smoker"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        20,
+        1,
+        2
+      ],
+      "block": "crafting"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        21,
+        1,
+        2
+      ],
+      "block": "cauldron"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        22,
+        1,
+        2
+      ],
+      "block": "composter"
+    },
+    {
+      "op": "fill",
+      "from": [
+        18,
+        1,
+        5
+      ],
+      "to": [
+        20,
+        1,
+        5
+      ],
+      "block": "fence"
+    },
+    {
+      "op": "fill",
+      "from": [
+        18,
+        2,
+        5
+      ],
+      "to": [
+        20,
+        2,
+        5
+      ],
+      "block": "plate"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        19,
+        3,
+        5
+      ],
+      "block": "lantern_h"
+    },
+    {
+      "op": "fill",
+      "from": [
+        18,
+        1,
+        14
+      ],
+      "to": [
+        21,
+        1,
+        14
+      ],
+      "block": "cask_up"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        22,
+        1,
+        14
+      ],
+      "block": "chest_n"
+    },
+    {
+      "op": "fill",
+      "from": [
+        18,
+        1,
+        11
+      ],
+      "to": [
+        19,
+        1,
+        11
+      ],
+      "block": "hay"
+    },
+    {
+      "op": "fill",
+      "from": [
+        21,
+        1,
+        7
+      ],
+      "to": [
+        22,
+        20,
+        9
+      ],
+      "block": "stone"
+    },
+    {
+      "op": "carve",
+      "from": [
+        21,
+        1,
+        8
+      ],
+      "to": [
+        21,
+        2,
+        8
+      ]
+    },
+    {
+      "op": "setblock",
+      "at": [
+        21,
+        1,
+        8
+      ],
+      "block": "campfire"
+    },
+    {
+      "op": "carve",
+      "from": [
+        21,
+        3,
+        8
+      ],
+      "to": [
+        21,
+        20,
+        8
+      ]
+    },
+    {
+      "op": "fill",
+      "from": [
+        1,
+        11,
+        8
+      ],
+      "to": [
+        1,
+        12,
+        8
+      ],
+      "block": "glass"
+    },
+    {
+      "op": "fill",
+      "from": [
+        23,
+        11,
+        8
+      ],
+      "to": [
+        23,
+        12,
+        8
+      ],
+      "block": "glass"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        3,
+        6,
+        13
+      ],
+      "block": "bed_foot"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        3,
+        6,
+        14
+      ],
+      "block": "bed_head"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        6,
+        6,
+        13
+      ],
+      "block": "bed_foot"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        6,
+        6,
+        14
+      ],
+      "block": "bed_head"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        10,
+        6,
+        13
+      ],
+      "block": "bed_foot"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        10,
+        6,
+        14
+      ],
+      "block": "bed_head"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        14,
+        6,
+        13
+      ],
+      "block": "bed_foot"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        14,
+        6,
+        14
+      ],
+      "block": "bed_head"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        18,
+        6,
+        13
+      ],
+      "block": "bed_foot"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        18,
+        6,
+        14
+      ],
+      "block": "bed_head"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        21,
+        6,
+        13
+      ],
+      "block": "bed_foot"
+    },
+    {
+      "op": "setblock",
+      "at": [
+        21,
+        6,
+        14
+      ],
+      "block": "bed_head"
+    }
   ]
 }

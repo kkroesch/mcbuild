@@ -1011,7 +1011,7 @@
     1,
     32
    ],
-   "block": "bench_e"
+   "block": "bench_w"
   },
   {
    "op": "setblock",
@@ -1020,7 +1020,7 @@
     1,
     32
    ],
-   "block": "bench_w"
+   "block": "bench_e"
   },
   {
    "op": "fill",

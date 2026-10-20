@@ -1,0 +1,6477 @@
+{
+ "name": "burg_v2",
+ "palette": {
+  "rock": "minecraft:andesite",
+  "paving": "minecraft:cobblestone",
+  "stone": "minecraft:stone_bricks",
+  "plaster": "minecraft:calcite",
+  "slate": "minecraft:deepslate_tiles",
+  "slate_stair": "minecraft:deepslate_tile_stairs",
+  "post": "minecraft:dark_oak_log[axis=y]",
+  "beam_x": "minecraft:dark_oak_log[axis=x]",
+  "beam_z": "minecraft:dark_oak_log[axis=z]",
+  "floor": "minecraft:spruce_planks",
+  "glass": "minecraft:glass_pane",
+  "bars": "minecraft:iron_bars",
+  "lantern": "minecraft:lantern[hanging=true]",
+  "fence": "minecraft:spruce_fence",
+  "table": "minecraft:spruce_slab[type=bottom]",
+  "bench": "minecraft:oak_slab[type=bottom]",
+  "shut_n": "minecraft:spruce_trapdoor[facing=north,half=bottom,open=true]",
+  "shut_s": "minecraft:spruce_trapdoor[facing=south,half=bottom,open=true]",
+  "shut_w": "minecraft:spruce_trapdoor[facing=west,half=bottom,open=true]",
+  "shut_e": "minecraft:spruce_trapdoor[facing=east,half=bottom,open=true]",
+  "door_s_lo": "minecraft:oak_door[facing=north,half=lower,hinge=left,open=false]",
+  "door_s_hi": "minecraft:oak_door[facing=north,half=upper,hinge=left,open=false]",
+  "stair_in": "minecraft:spruce_stairs[facing=south,half=bottom]",
+  "netherrack": "minecraft:netherrack",
+  "fire": "minecraft:fire",
+  "water": "minecraft:water",
+  "neu_mossy_stone_bricks": "minecraft:mossy_stone_bricks",
+  "neu_spruce_slab_type_top": "minecraft:spruce_slab[type=top]",
+  "neu_cobblestone": "minecraft:cobblestone",
+  "neu_stone_bricks": "minecraft:stone_bricks",
+  "neu_birch_slab_type_top": "minecraft:birch_slab[type=top]",
+  "neu_spruce_stairs_facing_south_half_bottom": "minecraft:spruce_stairs[facing=south,half=bottom]",
+  "neu_mossy_cobblestone_stairs_facing_east_half_bottom": "minecraft:mossy_cobblestone_stairs[facing=east,half=bottom]",
+  "neu_mossy_cobblestone_stairs_facing_north_half_bottom": "minecraft:mossy_cobblestone_stairs[facing=north,half=bottom]",
+  "neu_oak_fence": "minecraft:oak_fence",
+  "neu_iron_bars": "minecraft:iron_bars",
+  "neu_calcite": "minecraft:calcite",
+  "neu_waxed_copper_trapdoor_facing_west_half_bottom_open_true": "minecraft:waxed_copper_trapdoor[facing=west,half=bottom,open=true]",
+  "neu_mossy_cobblestone_stairs_facing_west_half_bottom": "minecraft:mossy_cobblestone_stairs[facing=west,half=bottom]",
+  "neu_lantern_hanging_true": "minecraft:lantern[hanging=true]",
+  "neu_spruce_stairs_facing_north_half_bottom": "minecraft:spruce_stairs[facing=north,half=bottom]",
+  "neu_copper_bars": "minecraft:copper_bars",
+  "neu_fire_age_15": "minecraft:fire[age=15]",
+  "neu_wall_torch_facing_north": "minecraft:wall_torch[facing=north]",
+  "neu_wall_torch_facing_south": "minecraft:wall_torch[facing=south]",
+  "neu_birch_stairs_facing_south_half_bottom": "minecraft:birch_stairs[facing=south,half=bottom]",
+  "neu_birch_stairs_facing_north_half_bottom": "minecraft:birch_stairs[facing=north,half=bottom]",
+  "neu_wall_torch_facing_east": "minecraft:wall_torch[facing=east]",
+  "neu_birch_slab_type_bottom": "minecraft:birch_slab[type=bottom]",
+  "neu_spruce_stairs_facing_east_half_top": "minecraft:spruce_stairs[facing=east,half=top]",
+  "neu_netherrack": "minecraft:netherrack",
+  "neu_wall_torch_facing_west": "minecraft:wall_torch[facing=west]",
+  "neu_dark_oak_door_facing_west_half_lower_hinge_right_open_true": "minecraft:dark_oak_door[facing=west,half=lower,hinge=right,open=true]",
+  "neu_dark_oak_door_facing_east_half_lower_hinge_right_open_true": "minecraft:dark_oak_door[facing=east,half=lower,hinge=right,open=true]",
+  "neu_dark_oak_door_facing_north_half_lower_hinge_left_open_true": "minecraft:dark_oak_door[facing=north,half=lower,hinge=left,open=true]",
+  "neu_dark_oak_door_facing_north_half_lower_hinge_right_open_true": "minecraft:dark_oak_door[facing=north,half=lower,hinge=right,open=true]",
+  "neu_waxed_copper_chain_axis_y": "minecraft:waxed_copper_chain[axis=y]",
+  "neu_dark_oak_door_facing_west_half_upper_hinge_right_open_true": "minecraft:dark_oak_door[facing=west,half=upper,hinge=right,open=true]",
+  "neu_dark_oak_door_facing_east_half_upper_hinge_right_open_true": "minecraft:dark_oak_door[facing=east,half=upper,hinge=right,open=true]",
+  "neu_dark_oak_door_facing_north_half_upper_hinge_left_open_true": "minecraft:dark_oak_door[facing=north,half=upper,hinge=left,open=true]",
+  "neu_dark_oak_door_facing_north_half_upper_hinge_right_open_true": "minecraft:dark_oak_door[facing=north,half=upper,hinge=right,open=true]",
+  "neu_spruce_stairs_facing_west_half_bottom": "minecraft:spruce_stairs[facing=west,half=bottom]",
+  "neu_spruce_stairs_facing_north_half_top": "minecraft:spruce_stairs[facing=north,half=top]",
+  "neu_waxed_copper_trapdoor_facing_west_half_top_open_true": "minecraft:waxed_copper_trapdoor[facing=west,half=top,open=true]",
+  "neu_spruce_stairs_facing_south_half_top": "minecraft:spruce_stairs[facing=south,half=top]",
+  "neu_waxed_copper_trapdoor_facing_south_half_bottom_open_true": "minecraft:waxed_copper_trapdoor[facing=south,half=bottom,open=true]",
+  "neu3_stone_brick_slab_type_bottom": "minecraft:stone_brick_slab[type=bottom]",
+  "neu3_bamboo_fence": "minecraft:bamboo_fence",
+  "neu3_oak_trapdoor_facing_south_half_bottom_open_true": "minecraft:oak_trapdoor[facing=south,half=bottom,open=true]",
+  "neu3_ladder_facing_east": "minecraft:ladder[facing=east]",
+  "neu3_iron_chain_axis_y": "minecraft:iron_chain[axis=y]",
+  "neu3_candle_candles_4": "minecraft:candle[candles=4]",
+  "neu3_cobblestone_stairs_facing_south_half_bottom": "minecraft:cobblestone_stairs[facing=south,half=bottom]",
+  "neu3_bamboo_trapdoor_facing_north_half_top_open_false": "minecraft:bamboo_trapdoor[facing=north,half=top,open=false]",
+  "neu3_stone_brick_stairs_facing_east_half_bottom": "minecraft:stone_brick_stairs[facing=east,half=bottom]",
+  "neu3_red_wall_banner_facing_west": "minecraft:red_wall_banner[facing=west]",
+  "neu3_bamboo_trapdoor_facing_east_half_top_open_false": "minecraft:bamboo_trapdoor[facing=east,half=top,open=false]",
+  "neu3_red_wall_banner_facing_south": "minecraft:red_wall_banner[facing=south]",
+  "neu3_bamboo_trapdoor_facing_south_half_top_open_false": "minecraft:bamboo_trapdoor[facing=south,half=top,open=false]",
+  "neu3_candle_candles_1": "minecraft:candle[candles=1]",
+  "neu3_stone_brick_slab_type_top": "minecraft:stone_brick_slab[type=top]",
+  "neu3_red_wall_banner_facing_north": "minecraft:red_wall_banner[facing=north]",
+  "neu3_weathered_copper_chain_axis_y": "minecraft:weathered_copper_chain[axis=y]",
+  "neu3_oak_trapdoor_facing_east_half_bottom_open_true": "minecraft:oak_trapdoor[facing=east,half=bottom,open=true]",
+  "neu3_oak_trapdoor_facing_north_half_bottom_open_true": "minecraft:oak_trapdoor[facing=north,half=bottom,open=true]",
+  "neu3_waxed_copper_lantern_hanging_true": "minecraft:waxed_copper_lantern[hanging=true]",
+  "neu3_cobblestone_stairs_facing_east_half_bottom": "minecraft:cobblestone_stairs[facing=east,half=bottom]",
+  "neu3_lantern_hanging_false": "minecraft:lantern[hanging=false]",
+  "neu3_yellow_bed_facing_south_occupied_false_part_head": "minecraft:yellow_bed[facing=south,occupied=false,part=head]",
+  "neu3_exposed_copper_chain_axis_y": "minecraft:exposed_copper_chain[axis=y]",
+  "neu3_mossy_cobblestone_stairs_facing_south_half_bottom": "minecraft:mossy_cobblestone_stairs[facing=south,half=bottom]",
+  "neu3_dark_oak_door_facing_east_half_lower_hinge_left_open_true": "minecraft:dark_oak_door[facing=east,half=lower,hinge=left,open=true]",
+  "neu3_iron_door_facing_north_half_lower_hinge_right_open_false": "minecraft:iron_door[facing=north,half=lower,hinge=right,open=false]",
+  "neu3_iron_door_facing_north_half_upper_hinge_right_open_false": "minecraft:iron_door[facing=north,half=upper,hinge=right,open=false]",
+  "neu3_campfire_facing_east_signal_fire_false": "minecraft:campfire[facing=east,signal_fire=false]",
+  "neu3_oak_door_facing_north_half_lower_hinge_left_open_true": "minecraft:oak_door[facing=north,half=lower,hinge=left,open=true]",
+  "neu3_mangrove_button_face_wall_facing_south": "minecraft:mangrove_button[face=wall,facing=south]",
+  "neu3_skeleton_skull_rotation_12": "minecraft:skeleton_skull[rotation=12]",
+  "neu3_red_wall_banner_facing_east": "minecraft:red_wall_banner[facing=east]",
+  "neu3_oak_trapdoor_facing_north_half_top_open_false": "minecraft:oak_trapdoor[facing=north,half=top,open=false]",
+  "neu3_barrel_facing_north_open_false": "minecraft:barrel[facing=north,open=false]",
+  "neu3_skeleton_skull_rotation_13": "minecraft:skeleton_skull[rotation=13]",
+  "neu3_chiseled_bookshelf_facing_north_slot_0_occupied_false_slot_1_occupied_false_slot_2_occupied_false_slot_3_occupied_false_slot_4_occupied_false_slot_5_occupied_false": "minecraft:chiseled_bookshelf[facing=north,slot_0_occupied=false,slot_1_occupied=false,slot_2_occupied=false,slot_3_occupied=false,slot_4_occupied=false,slot_5_occupied=false]",
+  "neu3_skeleton_skull_rotation_14": "minecraft:skeleton_skull[rotation=14]",
+  "neu3_yellow_bed_facing_south_occupied_false_part_foot": "minecraft:yellow_bed[facing=south,occupied=false,part=foot]",
+  "neu3_chiseled_bookshelf_facing_south_slot_0_occupied_false_slot_1_occupied_false_slot_2_occupied_false_slot_3_occupied_false_slot_4_occupied_false_slot_5_occupied_false": "minecraft:chiseled_bookshelf[facing=south,slot_0_occupied=false,slot_1_occupied=false,slot_2_occupied=false,slot_3_occupied=false,slot_4_occupied=false,slot_5_occupied=false]",
+  "neu3_dark_oak_door_facing_east_half_upper_hinge_left_open_true": "minecraft:dark_oak_door[facing=east,half=upper,hinge=left,open=true]",
+  "neu3_oak_door_facing_north_half_upper_hinge_left_open_true": "minecraft:oak_door[facing=north,half=upper,hinge=left,open=true]"
+ },
+ "ops": [
+  {
+   "op": "fill",
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    50,
+    1,
+    50
+   ],
+   "block": "rock"
+  },
+  {
+   "op": "fill",
+   "from": [
+    1,
+    2,
+    1
+   ],
+   "to": [
+    49,
+    3,
+    49
+   ],
+   "block": "rock"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    4,
+    2
+   ],
+   "to": [
+    48,
+    5,
+    48
+   ],
+   "block": "rock"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    5,
+    2
+   ],
+   "to": [
+    48,
+    5,
+    48
+   ],
+   "block": "paving"
+  },
+  {
+   "op": "hollow_box",
+   "from": [
+    33,
+    6,
+    7
+   ],
+   "to": [
+    45,
+    9,
+    27
+   ],
+   "block": "stone"
+  },
+  {
+   "op": "hollow_box",
+   "from": [
+    33,
+    10,
+    7
+   ],
+   "to": [
+    45,
+    23,
+    27
+   ],
+   "block": "plaster"
+  },
+  {
+   "op": "carve",
+   "from": [
+    34,
+    7,
+    8
+   ],
+   "to": [
+    44,
+    22,
+    26
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    34,
+    6,
+    8
+   ],
+   "to": [
+    44,
+    6,
+    26
+   ],
+   "block": "floor"
+  },
+  {
+   "op": "repeat",
+   "count": 3,
+   "step": [
+    0,
+    4,
+    0
+   ],
+   "ops": [
+    {
+     "op": "fill",
+     "from": [
+      34,
+      10,
+      8
+     ],
+     "to": [
+      44,
+      10,
+      26
+     ],
+     "block": "floor"
+    }
+   ]
+  },
+  {
+   "op": "repeat",
+   "count": 4,
+   "step": [
+    0,
+    4,
+    0
+   ],
+   "ops": [
+    {
+     "op": "fill",
+     "from": [
+      33,
+      10,
+      7
+     ],
+     "to": [
+      45,
+      10,
+      7
+     ],
+     "block": "beam_x"
+    },
+    {
+     "op": "fill",
+     "from": [
+      33,
+      10,
+      27
+     ],
+     "to": [
+      45,
+      10,
+      27
+     ],
+     "block": "beam_x"
+    },
+    {
+     "op": "fill",
+     "from": [
+      33,
+      10,
+      7
+     ],
+     "to": [
+      33,
+      10,
+      27
+     ],
+     "block": "beam_z"
+    },
+    {
+     "op": "fill",
+     "from": [
+      45,
+      10,
+      7
+     ],
+     "to": [
+      45,
+      10,
+      27
+     ],
+     "block": "beam_z"
+    }
+   ]
+  },
+  {
+   "op": "repeat",
+   "count": 3,
+   "step": [
+    0,
+    4,
+    0
+   ],
+   "ops": [
+    {
+     "op": "repeat",
+     "count": 3,
+     "step": [
+      6,
+      0,
+      0
+     ],
+     "ops": [
+      {
+       "op": "fill",
+       "from": [
+        33,
+        11,
+        7
+       ],
+       "to": [
+        33,
+        13,
+        7
+       ],
+       "block": "post"
+      },
+      {
+       "op": "fill",
+       "from": [
+        33,
+        11,
+        27
+       ],
+       "to": [
+        33,
+        13,
+        27
+       ],
+       "block": "post"
+      }
+     ]
+    },
+    {
+     "op": "repeat",
+     "count": 7,
+     "step": [
+      0,
+      0,
+      3
+     ],
+     "ops": [
+      {
+       "op": "fill",
+       "from": [
+        45,
+        11,
+        7
+       ],
+       "to": [
+        45,
+        13,
+        7
+       ],
+       "block": "post"
+      }
+     ]
+    },
+    {
+     "op": "fill",
+     "from": [
+      45,
+      11,
+      27
+     ],
+     "to": [
+      45,
+      13,
+      27
+     ],
+     "block": "post"
+    }
+   ]
+  },
+  {
+   "op": "repeat",
+   "count": 3,
+   "step": [
+    0,
+    0,
+    6
+   ],
+   "ops": [
+    {
+     "op": "repeat",
+     "count": 4,
+     "step": [
+      0,
+      4,
+      0
+     ],
+     "ops": [
+      {
+       "op": "fill",
+       "from": [
+        45,
+        8,
+        11
+       ],
+       "to": [
+        45,
+        9,
+        11
+       ],
+       "block": "glass"
+      },
+      {
+       "op": "fill",
+       "from": [
+        46,
+        8,
+        10
+       ],
+       "to": [
+        46,
+        9,
+        10
+       ],
+       "block": "shut_e"
+      },
+      {
+       "op": "fill",
+       "from": [
+        46,
+        8,
+        12
+       ],
+       "to": [
+        46,
+        9,
+        12
+       ],
+       "block": "shut_e"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "op": "repeat",
+   "count": 2,
+   "step": [
+    6,
+    0,
+    0
+   ],
+   "ops": [
+    {
+     "op": "repeat",
+     "count": 4,
+     "step": [
+      0,
+      4,
+      0
+     ],
+     "ops": [
+      {
+       "op": "fill",
+       "from": [
+        36,
+        8,
+        27
+       ],
+       "to": [
+        36,
+        9,
+        27
+       ],
+       "block": "glass"
+      },
+      {
+       "op": "fill",
+       "from": [
+        35,
+        8,
+        28
+       ],
+       "to": [
+        35,
+        9,
+        28
+       ],
+       "block": "shut_s"
+      },
+      {
+       "op": "fill",
+       "from": [
+        37,
+        8,
+        28
+       ],
+       "to": [
+        37,
+        9,
+        28
+       ],
+       "block": "shut_s"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    39,
+    7,
+    27
+   ],
+   "to": [
+    39,
+    8,
+    27
+   ]
+  },
+  {
+   "op": "setblock",
+   "at": [
+    39,
+    7,
+    27
+   ],
+   "block": "door_s_lo"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    39,
+    8,
+    27
+   ],
+   "block": "door_s_hi"
+  },
+  {
+   "op": "repeat",
+   "count": 3,
+   "step": [
+    0,
+    4,
+    0
+   ],
+   "ops": [
+    {
+     "op": "carve",
+     "from": [
+      34,
+      10,
+      10
+     ],
+     "to": [
+      34,
+      10,
+      12
+     ]
+    },
+    {
+     "op": "setblock",
+     "at": [
+      34,
+      7,
+      9
+     ],
+     "block": "stair_in"
+    },
+    {
+     "op": "setblock",
+     "at": [
+      34,
+      8,
+      10
+     ],
+     "block": "stair_in"
+    },
+    {
+     "op": "setblock",
+     "at": [
+      34,
+      9,
+      11
+     ],
+     "block": "stair_in"
+    },
+    {
+     "op": "setblock",
+     "at": [
+      34,
+      10,
+      12
+     ],
+     "block": "stair_in"
+    },
+    {
+     "op": "setblock",
+     "at": [
+      34,
+      11,
+      13
+     ],
+     "block": "stair_in"
+    }
+   ]
+  },
+  {
+   "op": "hollow_box",
+   "from": [
+    7,
+    6,
+    7
+   ],
+   "to": [
+    33,
+    11,
+    17
+   ],
+   "block": "stone"
+  },
+  {
+   "op": "hollow_box",
+   "from": [
+    7,
+    12,
+    7
+   ],
+   "to": [
+    33,
+    17,
+    17
+   ],
+   "block": "plaster"
+  },
+  {
+   "op": "carve",
+   "from": [
+    8,
+    7,
+    8
+   ],
+   "to": [
+    32,
+    16,
+    16
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    8,
+    6,
+    8
+   ],
+   "to": [
+    32,
+    6,
+    16
+   ],
+   "block": "floor"
+  },
+  {
+   "op": "fill",
+   "from": [
+    7,
+    12,
+    7
+   ],
+   "to": [
+    33,
+    12,
+    7
+   ],
+   "block": "beam_x"
+  },
+  {
+   "op": "fill",
+   "from": [
+    7,
+    12,
+    17
+   ],
+   "to": [
+    33,
+    12,
+    17
+   ],
+   "block": "beam_x"
+  },
+  {
+   "op": "fill",
+   "from": [
+    7,
+    17,
+    7
+   ],
+   "to": [
+    33,
+    17,
+    7
+   ],
+   "block": "beam_x"
+  },
+  {
+   "op": "fill",
+   "from": [
+    7,
+    17,
+    17
+   ],
+   "to": [
+    33,
+    17,
+    17
+   ],
+   "block": "beam_x"
+  },
+  {
+   "op": "fill",
+   "from": [
+    7,
+    12,
+    7
+   ],
+   "to": [
+    7,
+    12,
+    17
+   ],
+   "block": "beam_z"
+  },
+  {
+   "op": "fill",
+   "from": [
+    33,
+    12,
+    7
+   ],
+   "to": [
+    33,
+    12,
+    17
+   ],
+   "block": "beam_z"
+  },
+  {
+   "op": "fill",
+   "from": [
+    7,
+    17,
+    7
+   ],
+   "to": [
+    7,
+    17,
+    17
+   ],
+   "block": "beam_z"
+  },
+  {
+   "op": "fill",
+   "from": [
+    33,
+    17,
+    7
+   ],
+   "to": [
+    33,
+    17,
+    17
+   ],
+   "block": "beam_z"
+  },
+  {
+   "op": "repeat",
+   "count": 7,
+   "step": [
+    4,
+    0,
+    0
+   ],
+   "ops": [
+    {
+     "op": "fill",
+     "from": [
+      7,
+      13,
+      7
+     ],
+     "to": [
+      7,
+      16,
+      7
+     ],
+     "block": "post"
+    },
+    {
+     "op": "fill",
+     "from": [
+      7,
+      13,
+      17
+     ],
+     "to": [
+      7,
+      16,
+      17
+     ],
+     "block": "post"
+    }
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    33,
+    13,
+    7
+   ],
+   "to": [
+    33,
+    16,
+    7
+   ],
+   "block": "post"
+  },
+  {
+   "op": "fill",
+   "from": [
+    33,
+    13,
+    17
+   ],
+   "to": [
+    33,
+    16,
+    17
+   ],
+   "block": "post"
+  },
+  {
+   "op": "fill",
+   "from": [
+    7,
+    13,
+    12
+   ],
+   "to": [
+    7,
+    16,
+    12
+   ],
+   "block": "post"
+  },
+  {
+   "op": "repeat",
+   "count": 6,
+   "step": [
+    4,
+    0,
+    0
+   ],
+   "ops": [
+    {
+     "op": "fill",
+     "from": [
+      9,
+      13,
+      7
+     ],
+     "to": [
+      9,
+      14,
+      7
+     ],
+     "block": "glass"
+    },
+    {
+     "op": "fill",
+     "from": [
+      9,
+      13,
+      17
+     ],
+     "to": [
+      9,
+      14,
+      17
+     ],
+     "block": "glass"
+    }
+   ]
+  },
+  {
+   "op": "repeat",
+   "count": 5,
+   "step": [
+    5,
+    0,
+    0
+   ],
+   "ops": [
+    {
+     "op": "fill",
+     "from": [
+      10,
+      8,
+      7
+     ],
+     "to": [
+      10,
+      10,
+      7
+     ],
+     "block": "glass"
+    },
+    {
+     "op": "fill",
+     "from": [
+      10,
+      8,
+      17
+     ],
+     "to": [
+      10,
+      10,
+      17
+     ],
+     "block": "glass"
+    }
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    22,
+    7,
+    17
+   ],
+   "to": [
+    22,
+    8,
+    17
+   ]
+  },
+  {
+   "op": "setblock",
+   "at": [
+    22,
+    7,
+    17
+   ],
+   "block": "door_s_lo"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    22,
+    8,
+    17
+   ],
+   "block": "door_s_hi"
+  },
+  {
+   "op": "repeat",
+   "count": 3,
+   "step": [
+    8,
+    0,
+    0
+   ],
+   "ops": [
+    {
+     "op": "fill",
+     "from": [
+      12,
+      13,
+      12
+     ],
+     "to": [
+      12,
+      16,
+      12
+     ],
+     "block": "bars"
+    },
+    {
+     "op": "setblock",
+     "at": [
+      12,
+      12,
+      12
+     ],
+     "block": "lantern"
+    }
+   ]
+  },
+  {
+   "op": "repeat",
+   "count": 5,
+   "step": [
+    4,
+    0,
+    0
+   ],
+   "ops": [
+    {
+     "op": "setblock",
+     "at": [
+      11,
+      7,
+      11
+     ],
+     "block": "fence"
+    },
+    {
+     "op": "setblock",
+     "at": [
+      11,
+      7,
+      13
+     ],
+     "block": "fence"
+    }
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    11,
+    8,
+    11
+   ],
+   "to": [
+    27,
+    8,
+    13
+   ],
+   "block": "table"
+  },
+  {
+   "op": "fill",
+   "from": [
+    11,
+    7,
+    10
+   ],
+   "to": [
+    27,
+    7,
+    10
+   ],
+   "block": "bench"
+  },
+  {
+   "op": "fill",
+   "from": [
+    11,
+    7,
+    14
+   ],
+   "to": [
+    27,
+    7,
+    14
+   ],
+   "block": "bench"
+  },
+  {
+   "op": "fill",
+   "from": [
+    31,
+    7,
+    10
+   ],
+   "to": [
+    32,
+    11,
+    14
+   ],
+   "block": "stone"
+  },
+  {
+   "op": "carve",
+   "from": [
+    31,
+    7,
+    12
+   ],
+   "to": [
+    32,
+    8,
+    12
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    31,
+    6,
+    12
+   ],
+   "to": [
+    32,
+    6,
+    12
+   ],
+   "block": "netherrack"
+  },
+  {
+   "op": "fill",
+   "from": [
+    31,
+    7,
+    12
+   ],
+   "to": [
+    32,
+    7,
+    12
+   ],
+   "block": "fire"
+  },
+  {
+   "op": "gable_roof",
+   "from": [
+    7,
+    18,
+    6
+   ],
+   "to": [
+    33,
+    18,
+    18
+   ],
+   "axis": "x",
+   "stairs": "slate_stair",
+   "gable": "plaster"
+  },
+  {
+   "op": "gable_roof",
+   "from": [
+    32,
+    24,
+    6
+   ],
+   "to": [
+    46,
+    24,
+    28
+   ],
+   "axis": "z",
+   "stairs": "slate_stair",
+   "gable": "plaster"
+  },
+  {
+   "op": "fill",
+   "from": [
+    3,
+    6,
+    3
+   ],
+   "to": [
+    4,
+    12,
+    47
+   ],
+   "block": "stone"
+  },
+  {
+   "op": "fill",
+   "from": [
+    3,
+    6,
+    46
+   ],
+   "to": [
+    47,
+    12,
+    47
+   ],
+   "block": "stone"
+  },
+  {
+   "op": "fill",
+   "from": [
+    46,
+    6,
+    28
+   ],
+   "to": [
+    47,
+    12,
+    47
+   ],
+   "block": "stone"
+  },
+  {
+   "op": "repeat",
+   "count": 15,
+   "step": [
+    0,
+    0,
+    2
+   ],
+   "ops": [
+    {
+     "op": "setblock",
+     "at": [
+      3,
+      13,
+      9
+     ],
+     "block": "stone"
+    }
+   ]
+  },
+  {
+   "op": "repeat",
+   "count": 13,
+   "step": [
+    2,
+    0,
+    0
+   ],
+   "ops": [
+    {
+     "op": "setblock",
+     "at": [
+      12,
+      13,
+      47
+     ],
+     "block": "stone"
+    }
+   ]
+  },
+  {
+   "op": "repeat",
+   "count": 5,
+   "step": [
+    0,
+    0,
+    2
+   ],
+   "ops": [
+    {
+     "op": "setblock",
+     "at": [
+      47,
+      13,
+      28
+     ],
+     "block": "stone"
+    }
+   ]
+  },
+  {
+   "op": "hollow_box",
+   "from": [
+    21,
+    6,
+    44
+   ],
+   "to": [
+    29,
+    16,
+    48
+   ],
+   "block": "stone"
+  },
+  {
+   "op": "carve",
+   "from": [
+    24,
+    6,
+    44
+   ],
+   "to": [
+    26,
+    10,
+    48
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    24,
+    9,
+    45
+   ],
+   "to": [
+    26,
+    10,
+    45
+   ],
+   "block": "bars"
+  },
+  {
+   "op": "gable_roof",
+   "from": [
+    20,
+    17,
+    43
+   ],
+   "to": [
+    30,
+    17,
+    49
+   ],
+   "axis": "x",
+   "stairs": "slate_stair",
+   "gable": "stone"
+  },
+  {
+   "op": "cylinder",
+   "center": [
+    5,
+    6,
+    5
+   ],
+   "radius": 3,
+   "height": 25,
+   "block": "stone",
+   "hollow": true
+  },
+  {
+   "op": "repeat",
+   "count": 4,
+   "step": [
+    0,
+    5,
+    0
+   ],
+   "ops": [
+    {
+     "op": "carve",
+     "from": [
+      5,
+      10,
+      2
+     ],
+     "to": [
+      5,
+      11,
+      2
+     ]
+    },
+    {
+     "op": "carve",
+     "from": [
+      5,
+      10,
+      8
+     ],
+     "to": [
+      5,
+      11,
+      8
+     ]
+    },
+    {
+     "op": "carve",
+     "from": [
+      2,
+      10,
+      5
+     ],
+     "to": [
+      2,
+      11,
+      5
+     ]
+    },
+    {
+     "op": "carve",
+     "from": [
+      8,
+      10,
+      5
+     ],
+     "to": [
+      8,
+      11,
+      5
+     ]
+    }
+   ]
+  },
+  {
+   "op": "cone",
+   "center": [
+    5,
+    31,
+    5
+   ],
+   "radius": 4,
+   "steep": 2,
+   "block": "slate"
+  },
+  {
+   "op": "cylinder",
+   "center": [
+    7,
+    6,
+    43
+   ],
+   "radius": 4,
+   "height": 20,
+   "block": "stone",
+   "hollow": true
+  },
+  {
+   "op": "repeat",
+   "count": 3,
+   "step": [
+    0,
+    5,
+    0
+   ],
+   "ops": [
+    {
+     "op": "carve",
+     "from": [
+      7,
+      10,
+      39
+     ],
+     "to": [
+      7,
+      11,
+      39
+     ]
+    },
+    {
+     "op": "carve",
+     "from": [
+      11,
+      10,
+      43
+     ],
+     "to": [
+      11,
+      11,
+      43
+     ]
+    }
+   ]
+  },
+  {
+   "op": "cone",
+   "center": [
+    7,
+    26,
+    43
+   ],
+   "radius": 5,
+   "steep": 2,
+   "block": "slate"
+  },
+  {
+   "op": "hollow_box",
+   "from": [
+    38,
+    6,
+    38
+   ],
+   "to": [
+    47,
+    21,
+    47
+   ],
+   "block": "stone"
+  },
+  {
+   "op": "hollow_box",
+   "from": [
+    38,
+    22,
+    38
+   ],
+   "to": [
+    47,
+    33,
+    47
+   ],
+   "block": "plaster"
+  },
+  {
+   "op": "carve",
+   "from": [
+    39,
+    7,
+    39
+   ],
+   "to": [
+    46,
+    32,
+    46
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    38,
+    22,
+    38
+   ],
+   "to": [
+    38,
+    33,
+    38
+   ],
+   "block": "post"
+  },
+  {
+   "op": "fill",
+   "from": [
+    47,
+    22,
+    38
+   ],
+   "to": [
+    47,
+    33,
+    38
+   ],
+   "block": "post"
+  },
+  {
+   "op": "fill",
+   "from": [
+    38,
+    22,
+    47
+   ],
+   "to": [
+    38,
+    33,
+    47
+   ],
+   "block": "post"
+  },
+  {
+   "op": "fill",
+   "from": [
+    47,
+    22,
+    47
+   ],
+   "to": [
+    47,
+    33,
+    47
+   ],
+   "block": "post"
+  },
+  {
+   "op": "fill",
+   "from": [
+    38,
+    22,
+    38
+   ],
+   "to": [
+    47,
+    22,
+    38
+   ],
+   "block": "beam_x"
+  },
+  {
+   "op": "fill",
+   "from": [
+    38,
+    22,
+    47
+   ],
+   "to": [
+    47,
+    22,
+    47
+   ],
+   "block": "beam_x"
+  },
+  {
+   "op": "fill",
+   "from": [
+    38,
+    22,
+    38
+   ],
+   "to": [
+    38,
+    22,
+    47
+   ],
+   "block": "beam_z"
+  },
+  {
+   "op": "fill",
+   "from": [
+    47,
+    22,
+    38
+   ],
+   "to": [
+    47,
+    22,
+    47
+   ],
+   "block": "beam_z"
+  },
+  {
+   "op": "fill",
+   "from": [
+    38,
+    33,
+    38
+   ],
+   "to": [
+    47,
+    33,
+    38
+   ],
+   "block": "beam_x"
+  },
+  {
+   "op": "fill",
+   "from": [
+    38,
+    33,
+    47
+   ],
+   "to": [
+    47,
+    33,
+    47
+   ],
+   "block": "beam_x"
+  },
+  {
+   "op": "fill",
+   "from": [
+    38,
+    33,
+    38
+   ],
+   "to": [
+    38,
+    33,
+    47
+   ],
+   "block": "beam_z"
+  },
+  {
+   "op": "fill",
+   "from": [
+    47,
+    33,
+    38
+   ],
+   "to": [
+    47,
+    33,
+    47
+   ],
+   "block": "beam_z"
+  },
+  {
+   "op": "repeat",
+   "count": 2,
+   "step": [
+    0,
+    12,
+    0
+   ],
+   "ops": [
+    {
+     "op": "fill",
+     "from": [
+      42,
+      14,
+      38
+     ],
+     "to": [
+      42,
+      15,
+      38
+     ],
+     "block": "glass"
+    },
+    {
+     "op": "fill",
+     "from": [
+      41,
+      14,
+      37
+     ],
+     "to": [
+      41,
+      15,
+      37
+     ],
+     "block": "shut_n"
+    },
+    {
+     "op": "fill",
+     "from": [
+      43,
+      14,
+      37
+     ],
+     "to": [
+      43,
+      15,
+      37
+     ],
+     "block": "shut_n"
+    },
+    {
+     "op": "fill",
+     "from": [
+      42,
+      14,
+      47
+     ],
+     "to": [
+      42,
+      15,
+      47
+     ],
+     "block": "glass"
+    },
+    {
+     "op": "fill",
+     "from": [
+      41,
+      14,
+      48
+     ],
+     "to": [
+      41,
+      15,
+      48
+     ],
+     "block": "shut_s"
+    },
+    {
+     "op": "fill",
+     "from": [
+      43,
+      14,
+      48
+     ],
+     "to": [
+      43,
+      15,
+      48
+     ],
+     "block": "shut_s"
+    },
+    {
+     "op": "fill",
+     "from": [
+      38,
+      14,
+      42
+     ],
+     "to": [
+      38,
+      15,
+      42
+     ],
+     "block": "glass"
+    },
+    {
+     "op": "fill",
+     "from": [
+      37,
+      14,
+      41
+     ],
+     "to": [
+      37,
+      15,
+      41
+     ],
+     "block": "shut_w"
+    },
+    {
+     "op": "fill",
+     "from": [
+      37,
+      14,
+      43
+     ],
+     "to": [
+      37,
+      15,
+      43
+     ],
+     "block": "shut_w"
+    },
+    {
+     "op": "fill",
+     "from": [
+      47,
+      14,
+      42
+     ],
+     "to": [
+      47,
+      15,
+      42
+     ],
+     "block": "glass"
+    },
+    {
+     "op": "fill",
+     "from": [
+      48,
+      14,
+      41
+     ],
+     "to": [
+      48,
+      15,
+      41
+     ],
+     "block": "shut_e"
+    },
+    {
+     "op": "fill",
+     "from": [
+      48,
+      14,
+      43
+     ],
+     "to": [
+      48,
+      15,
+      43
+     ],
+     "block": "shut_e"
+    }
+   ]
+  },
+  {
+   "op": "pyramid",
+   "from": [
+    37,
+    34,
+    37
+   ],
+   "to": [
+    48,
+    34,
+    48
+   ],
+   "steep": 2,
+   "block": "slate"
+  },
+  {
+   "op": "fill",
+   "from": [
+    23,
+    6,
+    29
+   ],
+   "to": [
+    25,
+    6,
+    31
+   ],
+   "block": "stone"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    24,
+    6,
+    30
+   ],
+   "block": "water"
+  },
+  {
+   "op": "carve",
+   "from": [
+    39,
+    6,
+    42
+   ],
+   "to": [
+    39,
+    6,
+    42
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    11,
+    6,
+    43
+   ],
+   "to": [
+    11,
+    7,
+    43
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    31,
+    8,
+    11
+   ],
+   "to": [
+    32,
+    8,
+    11
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    31,
+    8,
+    13
+   ],
+   "to": [
+    32,
+    8,
+    13
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    34,
+    10,
+    9
+   ],
+   "to": [
+    35,
+    10,
+    9
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    31,
+    10,
+    10
+   ],
+   "to": [
+    31,
+    11,
+    11
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    35,
+    10,
+    10
+   ],
+   "to": [
+    35,
+    10,
+    11
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    31,
+    10,
+    14
+   ],
+   "to": [
+    31,
+    11,
+    14
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    34,
+    11,
+    13
+   ],
+   "to": [
+    34,
+    11,
+    13
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    34,
+    14,
+    9
+   ],
+   "to": [
+    35,
+    14,
+    9
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    35,
+    14,
+    10
+   ],
+   "to": [
+    35,
+    14,
+    11
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    34,
+    15,
+    13
+   ],
+   "to": [
+    34,
+    15,
+    13
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    37,
+    16,
+    7
+   ],
+   "to": [
+    37,
+    16,
+    7
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    41,
+    16,
+    7
+   ],
+   "to": [
+    41,
+    16,
+    7
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    34,
+    18,
+    9
+   ],
+   "to": [
+    35,
+    18,
+    9
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    35,
+    18,
+    10
+   ],
+   "to": [
+    35,
+    18,
+    11
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    36,
+    19,
+    7
+   ],
+   "to": [
+    36,
+    20,
+    7
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    34,
+    19,
+    13
+   ],
+   "to": [
+    34,
+    19,
+    13
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    42,
+    20,
+    7
+   ],
+   "to": [
+    42,
+    20,
+    7
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    41,
+    7,
+    46
+   ],
+   "to": [
+    42,
+    7,
+    46
+   ],
+   "block": "neu_mossy_stone_bricks"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    42,
+    8,
+    46
+   ],
+   "block": "neu_mossy_stone_bricks"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    43,
+    9,
+    46
+   ],
+   "block": "neu_mossy_stone_bricks"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    44,
+    10,
+    46
+   ],
+   "block": "neu_mossy_stone_bricks"
+  },
+  {
+   "op": "fill",
+   "from": [
+    45,
+    11,
+    46
+   ],
+   "to": [
+    46,
+    11,
+    46
+   ],
+   "block": "neu_mossy_stone_bricks"
+  },
+  {
+   "op": "fill",
+   "from": [
+    45,
+    12,
+    45
+   ],
+   "to": [
+    46,
+    12,
+    45
+   ],
+   "block": "neu_mossy_stone_bricks"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    46,
+    12,
+    46
+   ],
+   "block": "neu_mossy_stone_bricks"
+  },
+  {
+   "op": "fill",
+   "from": [
+    39,
+    13,
+    39
+   ],
+   "to": [
+    43,
+    13,
+    45
+   ],
+   "block": "neu_mossy_stone_bricks"
+  },
+  {
+   "op": "fill",
+   "from": [
+    45,
+    13,
+    39
+   ],
+   "to": [
+    46,
+    13,
+    44
+   ],
+   "block": "neu_mossy_stone_bricks"
+  },
+  {
+   "op": "fill",
+   "from": [
+    44,
+    13,
+    40
+   ],
+   "to": [
+    44,
+    13,
+    45
+   ],
+   "block": "neu_mossy_stone_bricks"
+  },
+  {
+   "op": "fill",
+   "from": [
+    39,
+    13,
+    46
+   ],
+   "to": [
+    41,
+    13,
+    46
+   ],
+   "block": "neu_mossy_stone_bricks"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    44,
+    14,
+    39
+   ],
+   "block": "neu_mossy_stone_bricks"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    43,
+    15,
+    39
+   ],
+   "block": "neu_mossy_stone_bricks"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    42,
+    16,
+    39
+   ],
+   "block": "neu_mossy_stone_bricks"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    41,
+    17,
+    39
+   ],
+   "block": "neu_mossy_stone_bricks"
+  },
+  {
+   "op": "fill",
+   "from": [
+    39,
+    18,
+    39
+   ],
+   "to": [
+    40,
+    18,
+    46
+   ],
+   "block": "neu_mossy_stone_bricks"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    41,
+    19,
+    46
+   ],
+   "block": "neu_mossy_stone_bricks"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    42,
+    20,
+    46
+   ],
+   "block": "neu_mossy_stone_bricks"
+  },
+  {
+   "op": "fill",
+   "from": [
+    39,
+    21,
+    39
+   ],
+   "to": [
+    46,
+    21,
+    42
+   ],
+   "block": "neu_mossy_stone_bricks"
+  },
+  {
+   "op": "fill",
+   "from": [
+    42,
+    21,
+    43
+   ],
+   "to": [
+    46,
+    21,
+    43
+   ],
+   "block": "neu_mossy_stone_bricks"
+  },
+  {
+   "op": "fill",
+   "from": [
+    42,
+    21,
+    44
+   ],
+   "to": [
+    45,
+    21,
+    45
+   ],
+   "block": "neu_mossy_stone_bricks"
+  },
+  {
+   "op": "fill",
+   "from": [
+    46,
+    21,
+    45
+   ],
+   "to": [
+    46,
+    21,
+    46
+   ],
+   "block": "neu_mossy_stone_bricks"
+  },
+  {
+   "op": "fill",
+   "from": [
+    43,
+    21,
+    46
+   ],
+   "to": [
+    45,
+    21,
+    46
+   ],
+   "block": "neu_mossy_stone_bricks"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    12,
+    44
+   ],
+   "to": [
+    12,
+    12,
+    45
+   ],
+   "block": "neu_spruce_slab_type_top"
+  },
+  {
+   "op": "fill",
+   "from": [
+    13,
+    12,
+    45
+   ],
+   "to": [
+    20,
+    12,
+    45
+   ],
+   "block": "neu_spruce_slab_type_top"
+  },
+  {
+   "op": "fill",
+   "from": [
+    39,
+    25,
+    39
+   ],
+   "to": [
+    46,
+    25,
+    40
+   ],
+   "block": "neu_spruce_slab_type_top"
+  },
+  {
+   "op": "fill",
+   "from": [
+    39,
+    25,
+    41
+   ],
+   "to": [
+    45,
+    25,
+    46
+   ],
+   "block": "neu_spruce_slab_type_top"
+  },
+  {
+   "op": "fill",
+   "from": [
+    46,
+    25,
+    45
+   ],
+   "to": [
+    46,
+    25,
+    46
+   ],
+   "block": "neu_spruce_slab_type_top"
+  },
+  {
+   "op": "fill",
+   "from": [
+    31,
+    6,
+    10
+   ],
+   "to": [
+    32,
+    6,
+    10
+   ],
+   "block": "neu_cobblestone"
+  },
+  {
+   "op": "fill",
+   "from": [
+    31,
+    6,
+    11
+   ],
+   "to": [
+    31,
+    6,
+    14
+   ],
+   "block": "neu_cobblestone"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    33,
+    6,
+    11
+   ],
+   "block": "neu_cobblestone"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    32,
+    6,
+    14
+   ],
+   "block": "neu_cobblestone"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    6,
+    45
+   ],
+   "block": "neu_cobblestone"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    7,
+    45
+   ],
+   "block": "neu_cobblestone"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    8,
+    45
+   ],
+   "block": "neu_cobblestone"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    5,
+    9,
+    45
+   ],
+   "block": "neu_cobblestone"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    5,
+    10,
+    44
+   ],
+   "block": "neu_cobblestone"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    5,
+    11,
+    43
+   ],
+   "block": "neu_cobblestone"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    5,
+    12,
+    42
+   ],
+   "block": "neu_cobblestone"
+  },
+  {
+   "op": "fill",
+   "from": [
+    6,
+    13,
+    40
+   ],
+   "to": [
+    6,
+    13,
+    41
+   ],
+   "block": "neu_cobblestone"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    5,
+    13,
+    41
+   ],
+   "block": "neu_cobblestone"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    14,
+    40
+   ],
+   "block": "neu_cobblestone"
+  },
+  {
+   "op": "fill",
+   "from": [
+    8,
+    15,
+    40
+   ],
+   "to": [
+    8,
+    15,
+    41
+   ],
+   "block": "neu_cobblestone"
+  },
+  {
+   "op": "fill",
+   "from": [
+    9,
+    15,
+    41
+   ],
+   "to": [
+    9,
+    15,
+    45
+   ],
+   "block": "neu_cobblestone"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    15,
+    42
+   ],
+   "to": [
+    10,
+    15,
+    44
+   ],
+   "block": "neu_cobblestone"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    16,
+    41
+   ],
+   "block": "neu_cobblestone"
+  },
+  {
+   "op": "fill",
+   "from": [
+    9,
+    17,
+    42
+   ],
+   "to": [
+    10,
+    17,
+    42
+   ],
+   "block": "neu_cobblestone"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    18,
+    43
+   ],
+   "to": [
+    10,
+    18,
+    44
+   ],
+   "block": "neu_cobblestone"
+  },
+  {
+   "op": "fill",
+   "from": [
+    9,
+    18,
+    44
+   ],
+   "to": [
+    9,
+    18,
+    45
+   ],
+   "block": "neu_cobblestone"
+  },
+  {
+   "op": "fill",
+   "from": [
+    8,
+    19,
+    45
+   ],
+   "to": [
+    9,
+    19,
+    45
+   ],
+   "block": "neu_cobblestone"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    19,
+    46
+   ],
+   "block": "neu_cobblestone"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    20,
+    46
+   ],
+   "block": "neu_cobblestone"
+  },
+  {
+   "op": "fill",
+   "from": [
+    4,
+    21,
+    43
+   ],
+   "to": [
+    4,
+    21,
+    44
+   ],
+   "block": "neu_cobblestone"
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    21,
+    44
+   ],
+   "to": [
+    5,
+    21,
+    45
+   ],
+   "block": "neu_cobblestone"
+  },
+  {
+   "op": "fill",
+   "from": [
+    6,
+    21,
+    45
+   ],
+   "to": [
+    6,
+    21,
+    46
+   ],
+   "block": "neu_cobblestone"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    22,
+    43
+   ],
+   "block": "neu_cobblestone"
+  },
+  {
+   "op": "fill",
+   "from": [
+    6,
+    23,
+    40
+   ],
+   "to": [
+    6,
+    23,
+    41
+   ],
+   "block": "neu_cobblestone"
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    23,
+    41
+   ],
+   "to": [
+    5,
+    23,
+    42
+   ],
+   "block": "neu_cobblestone"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    23,
+    42
+   ],
+   "block": "neu_cobblestone"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    24,
+    40
+   ],
+   "block": "neu_cobblestone"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    25,
+    40
+   ],
+   "block": "neu_cobblestone"
+  },
+  {
+   "op": "fill",
+   "from": [
+    8,
+    25,
+    41
+   ],
+   "to": [
+    9,
+    25,
+    45
+   ],
+   "block": "neu_stone_bricks"
+  },
+  {
+   "op": "fill",
+   "from": [
+    7,
+    25,
+    42
+   ],
+   "to": [
+    7,
+    25,
+    46
+   ],
+   "block": "neu_stone_bricks"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    25,
+    42
+   ],
+   "to": [
+    10,
+    25,
+    44
+   ],
+   "block": "neu_stone_bricks"
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    25,
+    43
+   ],
+   "to": [
+    6,
+    25,
+    45
+   ],
+   "block": "neu_stone_bricks"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    25,
+    46
+   ],
+   "block": "neu_stone_bricks"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    25,
+    46
+   ],
+   "block": "neu_stone_bricks"
+  },
+  {
+   "op": "fill",
+   "from": [
+    24,
+    5,
+    49
+   ],
+   "to": [
+    26,
+    5,
+    54
+   ],
+   "block": "neu_birch_slab_type_top"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    35,
+    7,
+    9
+   ],
+   "block": "neu_spruce_stairs_facing_south_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    35,
+    8,
+    10
+   ],
+   "block": "neu_spruce_stairs_facing_south_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    35,
+    10,
+    12
+   ],
+   "block": "neu_spruce_stairs_facing_south_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    35,
+    11,
+    9
+   ],
+   "block": "neu_spruce_stairs_facing_south_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    35,
+    12,
+    10
+   ],
+   "block": "neu_spruce_stairs_facing_south_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    35,
+    13,
+    11
+   ],
+   "block": "neu_spruce_stairs_facing_south_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    35,
+    14,
+    12
+   ],
+   "block": "neu_spruce_stairs_facing_south_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    35,
+    15,
+    9
+   ],
+   "block": "neu_spruce_stairs_facing_south_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    35,
+    16,
+    10
+   ],
+   "block": "neu_spruce_stairs_facing_south_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    35,
+    17,
+    11
+   ],
+   "block": "neu_spruce_stairs_facing_south_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    35,
+    18,
+    12
+   ],
+   "block": "neu_spruce_stairs_facing_south_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    40,
+    6,
+    42
+   ],
+   "block": "neu_mossy_cobblestone_stairs_facing_east_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    40,
+    7,
+    46
+   ],
+   "block": "neu_mossy_cobblestone_stairs_facing_east_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    41,
+    8,
+    46
+   ],
+   "block": "neu_mossy_cobblestone_stairs_facing_east_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    42,
+    9,
+    46
+   ],
+   "block": "neu_mossy_cobblestone_stairs_facing_east_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    43,
+    10,
+    46
+   ],
+   "block": "neu_mossy_cobblestone_stairs_facing_east_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    44,
+    11,
+    46
+   ],
+   "block": "neu_mossy_cobblestone_stairs_facing_east_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    45,
+    12,
+    46
+   ],
+   "block": "neu_mossy_cobblestone_stairs_facing_east_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    40,
+    19,
+    46
+   ],
+   "block": "neu_mossy_cobblestone_stairs_facing_east_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    41,
+    20,
+    46
+   ],
+   "block": "neu_mossy_cobblestone_stairs_facing_east_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    42,
+    21,
+    46
+   ],
+   "block": "neu_mossy_cobblestone_stairs_facing_east_half_bottom"
+  },
+  {
+   "op": "fill",
+   "from": [
+    21,
+    6,
+    18
+   ],
+   "to": [
+    24,
+    6,
+    18
+   ],
+   "block": "neu_mossy_cobblestone_stairs_facing_north_half_bottom"
+  },
+  {
+   "op": "fill",
+   "from": [
+    38,
+    6,
+    28
+   ],
+   "to": [
+    40,
+    6,
+    28
+   ],
+   "block": "neu_mossy_cobblestone_stairs_facing_north_half_bottom"
+  },
+  {
+   "op": "fill",
+   "from": [
+    45,
+    13,
+    45
+   ],
+   "to": [
+    46,
+    13,
+    45
+   ],
+   "block": "neu_mossy_cobblestone_stairs_facing_north_half_bottom"
+  },
+  {
+   "op": "fill",
+   "from": [
+    23,
+    7,
+    29
+   ],
+   "to": [
+    23,
+    7,
+    31
+   ],
+   "block": "neu_oak_fence"
+  },
+  {
+   "op": "fill",
+   "from": [
+    25,
+    7,
+    29
+   ],
+   "to": [
+    25,
+    7,
+    31
+   ],
+   "block": "neu_oak_fence"
+  },
+  {
+   "op": "fill",
+   "from": [
+    23,
+    8,
+    30
+   ],
+   "to": [
+    25,
+    8,
+    30
+   ],
+   "block": "neu_oak_fence"
+  },
+  {
+   "op": "fill",
+   "from": [
+    41,
+    14,
+    45
+   ],
+   "to": [
+    44,
+    14,
+    45
+   ],
+   "block": "neu_iron_bars"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    41,
+    14,
+    46
+   ],
+   "block": "neu_iron_bars"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    15,
+    39
+   ],
+   "block": "neu_iron_bars"
+  },
+  {
+   "op": "fill",
+   "from": [
+    11,
+    15,
+    43
+   ],
+   "to": [
+    11,
+    16,
+    43
+   ],
+   "block": "neu_iron_bars"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    33,
+    19,
+    17
+   ],
+   "block": "neu_calcite"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    33,
+    20,
+    8
+   ],
+   "block": "neu_calcite"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    33,
+    20,
+    16
+   ],
+   "block": "neu_calcite"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    33,
+    21,
+    9
+   ],
+   "block": "neu_calcite"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    33,
+    21,
+    15
+   ],
+   "block": "neu_calcite"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    33,
+    22,
+    10
+   ],
+   "block": "neu_calcite"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    33,
+    22,
+    14
+   ],
+   "block": "neu_calcite"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    45,
+    23,
+    43
+   ],
+   "block": "neu_waxed_copper_trapdoor_facing_west_half_bottom_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    45,
+    24,
+    42
+   ],
+   "block": "neu_waxed_copper_trapdoor_facing_west_half_bottom_open_true"
+  },
+  {
+   "op": "fill",
+   "from": [
+    45,
+    26,
+    41
+   ],
+   "to": [
+    45,
+    26,
+    44
+   ],
+   "block": "neu_waxed_copper_trapdoor_facing_west_half_bottom_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    45,
+    14,
+    39
+   ],
+   "block": "neu_mossy_cobblestone_stairs_facing_west_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    44,
+    15,
+    39
+   ],
+   "block": "neu_mossy_cobblestone_stairs_facing_west_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    43,
+    16,
+    39
+   ],
+   "block": "neu_mossy_cobblestone_stairs_facing_west_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    42,
+    17,
+    39
+   ],
+   "block": "neu_mossy_cobblestone_stairs_facing_west_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    41,
+    18,
+    39
+   ],
+   "block": "neu_mossy_cobblestone_stairs_facing_west_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    37,
+    9,
+    8
+   ],
+   "block": "neu_lantern_hanging_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    44,
+    9,
+    13
+   ],
+   "block": "neu_lantern_hanging_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    34,
+    9,
+    26
+   ],
+   "block": "neu_lantern_hanging_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    44,
+    9,
+    26
+   ],
+   "block": "neu_lantern_hanging_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    46,
+    22,
+    44
+   ],
+   "block": "neu_spruce_stairs_facing_north_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    46,
+    23,
+    43
+   ],
+   "block": "neu_spruce_stairs_facing_north_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    46,
+    24,
+    42
+   ],
+   "block": "neu_spruce_stairs_facing_north_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    46,
+    25,
+    41
+   ],
+   "block": "neu_spruce_stairs_facing_north_half_bottom"
+  },
+  {
+   "op": "fill",
+   "from": [
+    31,
+    7,
+    11
+   ],
+   "to": [
+    31,
+    7,
+    13
+   ],
+   "block": "neu_copper_bars"
+  },
+  {
+   "op": "fill",
+   "from": [
+    32,
+    7,
+    11
+   ],
+   "to": [
+    32,
+    7,
+    13
+   ],
+   "block": "neu_fire_age_15"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    23,
+    7,
+    43
+   ],
+   "block": "neu_wall_torch_facing_north"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    27,
+    7,
+    43
+   ],
+   "block": "neu_wall_torch_facing_north"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    39,
+    20,
+    46
+   ],
+   "block": "neu_wall_torch_facing_north"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    21,
+    8,
+    18
+   ],
+   "block": "neu_wall_torch_facing_south"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    24,
+    8,
+    18
+   ],
+   "block": "neu_wall_torch_facing_south"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    26,
+    39
+   ],
+   "block": "neu_wall_torch_facing_south"
+  },
+  {
+   "op": "fill",
+   "from": [
+    23,
+    8,
+    29
+   ],
+   "to": [
+    25,
+    8,
+    29
+   ],
+   "block": "neu_birch_stairs_facing_south_half_bottom"
+  },
+  {
+   "op": "fill",
+   "from": [
+    23,
+    8,
+    31
+   ],
+   "to": [
+    25,
+    8,
+    31
+   ],
+   "block": "neu_birch_stairs_facing_north_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    39,
+    8,
+    41
+   ],
+   "block": "neu_wall_torch_facing_east"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    39,
+    8,
+    43
+   ],
+   "block": "neu_wall_torch_facing_east"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    28,
+    40
+   ],
+   "block": "neu_wall_torch_facing_east"
+  },
+  {
+   "op": "fill",
+   "from": [
+    23,
+    9,
+    30
+   ],
+   "to": [
+    25,
+    9,
+    30
+   ],
+   "block": "neu_birch_slab_type_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    46,
+    21,
+    44
+   ],
+   "block": "neu_spruce_stairs_facing_east_half_top"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    46,
+    22,
+    43
+   ],
+   "block": "neu_spruce_stairs_facing_east_half_top"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    46,
+    24,
+    41
+   ],
+   "block": "neu_spruce_stairs_facing_east_half_top"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    32,
+    6,
+    11
+   ],
+   "block": "neu_netherrack"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    32,
+    6,
+    13
+   ],
+   "block": "neu_netherrack"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    46,
+    15,
+    40
+   ],
+   "block": "neu_wall_torch_facing_west"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    28,
+    41
+   ],
+   "block": "neu_wall_torch_facing_west"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    38,
+    6,
+    42
+   ],
+   "block": "neu_dark_oak_door_facing_west_half_lower_hinge_right_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    33,
+    7,
+    16
+   ],
+   "block": "neu_dark_oak_door_facing_east_half_lower_hinge_right_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    22,
+    7,
+    17
+   ],
+   "block": "neu_dark_oak_door_facing_north_half_lower_hinge_left_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    23,
+    7,
+    17
+   ],
+   "block": "neu_dark_oak_door_facing_north_half_lower_hinge_right_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    24,
+    7,
+    30
+   ],
+   "block": "neu_waxed_copper_chain_axis_y"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    38,
+    7,
+    42
+   ],
+   "block": "neu_dark_oak_door_facing_west_half_upper_hinge_right_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    33,
+    8,
+    16
+   ],
+   "block": "neu_dark_oak_door_facing_east_half_upper_hinge_right_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    22,
+    8,
+    17
+   ],
+   "block": "neu_dark_oak_door_facing_north_half_upper_hinge_left_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    23,
+    8,
+    17
+   ],
+   "block": "neu_dark_oak_door_facing_north_half_upper_hinge_right_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    35,
+    9,
+    11
+   ],
+   "block": "neu_spruce_stairs_facing_west_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    35,
+    16,
+    11
+   ],
+   "block": "neu_spruce_stairs_facing_north_half_top"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    45,
+    22,
+    44
+   ],
+   "block": "neu_waxed_copper_trapdoor_facing_west_half_top_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    46,
+    23,
+    42
+   ],
+   "block": "neu_spruce_stairs_facing_south_half_top"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    46,
+    26,
+    45
+   ],
+   "block": "neu_waxed_copper_trapdoor_facing_south_half_bottom_open_true"
+  },
+  {
+   "op": "carve",
+   "from": [
+    5,
+    5,
+    5
+   ],
+   "to": [
+    7,
+    5,
+    6
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    5,
+    5,
+    7
+   ],
+   "to": [
+    6,
+    5,
+    8
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    5,
+    6,
+    8
+   ],
+   "to": [
+    6,
+    7,
+    8
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    23,
+    7,
+    30
+   ],
+   "to": [
+    23,
+    7,
+    30
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    25,
+    7,
+    30
+   ],
+   "to": [
+    25,
+    7,
+    30
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    24,
+    8,
+    29
+   ],
+   "to": [
+    24,
+    8,
+    29
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    24,
+    8,
+    31
+   ],
+   "to": [
+    24,
+    8,
+    31
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    32,
+    9,
+    11
+   ],
+   "to": [
+    32,
+    9,
+    13
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    31,
+    10,
+    12
+   ],
+   "to": [
+    31,
+    11,
+    13
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    32,
+    11,
+    10
+   ],
+   "to": [
+    32,
+    11,
+    10
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    32,
+    11,
+    14
+   ],
+   "to": [
+    32,
+    11,
+    14
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    28,
+    12,
+    12
+   ],
+   "to": [
+    28,
+    16,
+    12
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    12,
+    12,
+    44
+   ],
+   "to": [
+    12,
+    12,
+    44
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    6,
+    13,
+    40
+   ],
+   "to": [
+    6,
+    13,
+    41
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    5,
+    13,
+    41
+   ],
+   "to": [
+    5,
+    13,
+    41
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    10,
+    13,
+    45
+   ],
+   "to": [
+    11,
+    14,
+    45
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    21,
+    13,
+    46
+   ],
+   "to": [
+    21,
+    14,
+    46
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    29,
+    13,
+    46
+   ],
+   "to": [
+    29,
+    14,
+    46
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    39,
+    13,
+    46
+   ],
+   "to": [
+    39,
+    13,
+    46
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    22,
+    13,
+    47
+   ],
+   "to": [
+    22,
+    13,
+    47
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    24,
+    13,
+    47
+   ],
+   "to": [
+    24,
+    13,
+    47
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    26,
+    13,
+    47
+   ],
+   "to": [
+    26,
+    13,
+    47
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    28,
+    13,
+    47
+   ],
+   "to": [
+    28,
+    13,
+    47
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    12,
+    14,
+    12
+   ],
+   "to": [
+    12,
+    16,
+    12
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    7,
+    14,
+    40
+   ],
+   "to": [
+    7,
+    14,
+    40
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    8,
+    15,
+    40
+   ],
+   "to": [
+    8,
+    15,
+    41
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    9,
+    15,
+    41
+   ],
+   "to": [
+    9,
+    15,
+    45
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    10,
+    15,
+    42
+   ],
+   "to": [
+    10,
+    15,
+    44
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    9,
+    16,
+    41
+   ],
+   "to": [
+    9,
+    16,
+    41
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    9,
+    17,
+    42
+   ],
+   "to": [
+    10,
+    17,
+    42
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    34,
+    18,
+    8
+   ],
+   "to": [
+    35,
+    18,
+    8
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    10,
+    18,
+    43
+   ],
+   "to": [
+    10,
+    18,
+    44
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    9,
+    18,
+    44
+   ],
+   "to": [
+    9,
+    18,
+    45
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    8,
+    19,
+    45
+   ],
+   "to": [
+    9,
+    19,
+    45
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    8,
+    19,
+    46
+   ],
+   "to": [
+    8,
+    19,
+    46
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    7,
+    20,
+    46
+   ],
+   "to": [
+    7,
+    20,
+    46
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    39,
+    21,
+    39
+   ],
+   "to": [
+    41,
+    21,
+    42
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    4,
+    21,
+    43
+   ],
+   "to": [
+    4,
+    21,
+    44
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    5,
+    21,
+    44
+   ],
+   "to": [
+    5,
+    21,
+    45
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    6,
+    21,
+    45
+   ],
+   "to": [
+    6,
+    21,
+    46
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    4,
+    22,
+    43
+   ],
+   "to": [
+    4,
+    22,
+    43
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    6,
+    23,
+    40
+   ],
+   "to": [
+    6,
+    23,
+    41
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    5,
+    23,
+    41
+   ],
+   "to": [
+    5,
+    23,
+    42
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    4,
+    23,
+    42
+   ],
+   "to": [
+    4,
+    23,
+    42
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    7,
+    24,
+    40
+   ],
+   "to": [
+    7,
+    24,
+    40
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    8,
+    25,
+    40
+   ],
+   "to": [
+    8,
+    25,
+    40
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    6,
+    10
+   ],
+   "to": [
+    5,
+    8,
+    10
+   ],
+   "block": "neu_stone_bricks"
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    8,
+    9
+   ],
+   "to": [
+    6,
+    8,
+    9
+   ],
+   "block": "neu_stone_bricks"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    8,
+    10
+   ],
+   "block": "neu_stone_bricks"
+  },
+  {
+   "op": "fill",
+   "from": [
+    32,
+    12,
+    11
+   ],
+   "to": [
+    32,
+    16,
+    13
+   ],
+   "block": "neu_stone_bricks"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    5,
+    12,
+    41
+   ],
+   "block": "neu_stone_bricks"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    22,
+    12,
+    45
+   ],
+   "block": "neu_stone_bricks"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    28,
+    12,
+    45
+   ],
+   "block": "neu_stone_bricks"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    39,
+    12,
+    46
+   ],
+   "block": "neu_stone_bricks"
+  },
+  {
+   "op": "fill",
+   "from": [
+    32,
+    17,
+    12
+   ],
+   "to": [
+    32,
+    26,
+    13
+   ],
+   "block": "neu_stone_bricks"
+  },
+  {
+   "op": "fill",
+   "from": [
+    31,
+    18,
+    12
+   ],
+   "to": [
+    31,
+    28,
+    13
+   ],
+   "block": "neu_stone_bricks"
+  },
+  {
+   "op": "fill",
+   "from": [
+    31,
+    24,
+    11
+   ],
+   "to": [
+    31,
+    28,
+    11
+   ],
+   "block": "neu_stone_bricks"
+  },
+  {
+   "op": "fill",
+   "from": [
+    32,
+    25,
+    11
+   ],
+   "to": [
+    32,
+    28,
+    11
+   ],
+   "block": "neu_stone_bricks"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    25,
+    41
+   ],
+   "block": "neu_stone_bricks"
+  },
+  {
+   "op": "fill",
+   "from": [
+    33,
+    26,
+    11
+   ],
+   "to": [
+    33,
+    28,
+    13
+   ],
+   "block": "neu_stone_bricks"
+  },
+  {
+   "op": "fill",
+   "from": [
+    32,
+    27,
+    13
+   ],
+   "to": [
+    32,
+    28,
+    13
+   ],
+   "block": "neu_stone_bricks"
+  },
+  {
+   "op": "fill",
+   "from": [
+    23,
+    9,
+    45
+   ],
+   "to": [
+    23,
+    10,
+    45
+   ],
+   "block": "neu_iron_bars"
+  },
+  {
+   "op": "fill",
+   "from": [
+    27,
+    9,
+    45
+   ],
+   "to": [
+    27,
+    10,
+    45
+   ],
+   "block": "neu_iron_bars"
+  },
+  {
+   "op": "fill",
+   "from": [
+    13,
+    13,
+    12
+   ],
+   "to": [
+    13,
+    16,
+    12
+   ],
+   "block": "neu_iron_bars"
+  },
+  {
+   "op": "fill",
+   "from": [
+    26,
+    13,
+    12
+   ],
+   "to": [
+    26,
+    16,
+    12
+   ],
+   "block": "neu_iron_bars"
+  },
+  {
+   "op": "fill",
+   "from": [
+    44,
+    15,
+    40
+   ],
+   "to": [
+    45,
+    15,
+    40
+   ],
+   "block": "neu_iron_bars"
+  },
+  {
+   "op": "fill",
+   "from": [
+    43,
+    16,
+    40
+   ],
+   "to": [
+    44,
+    16,
+    40
+   ],
+   "block": "neu_iron_bars"
+  },
+  {
+   "op": "fill",
+   "from": [
+    42,
+    17,
+    40
+   ],
+   "to": [
+    43,
+    18,
+    40
+   ],
+   "block": "neu_iron_bars"
+  },
+  {
+   "op": "fill",
+   "from": [
+    40,
+    19,
+    40
+   ],
+   "to": [
+    42,
+    19,
+    40
+   ],
+   "block": "neu_iron_bars"
+  },
+  {
+   "op": "fill",
+   "from": [
+    40,
+    19,
+    41
+   ],
+   "to": [
+    40,
+    19,
+    45
+   ],
+   "block": "neu_iron_bars"
+  },
+  {
+   "op": "fill",
+   "from": [
+    40,
+    20,
+    45
+   ],
+   "to": [
+    41,
+    21,
+    45
+   ],
+   "block": "neu_iron_bars"
+  },
+  {
+   "op": "fill",
+   "from": [
+    42,
+    22,
+    39
+   ],
+   "to": [
+    42,
+    22,
+    45
+   ],
+   "block": "neu_iron_bars"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    41,
+    22,
+    45
+   ],
+   "block": "neu_iron_bars"
+  },
+  {
+   "op": "fill",
+   "from": [
+    6,
+    12,
+    40
+   ],
+   "to": [
+    8,
+    12,
+    43
+   ],
+   "block": "neu_spruce_slab_type_top"
+  },
+  {
+   "op": "fill",
+   "from": [
+    9,
+    12,
+    41
+   ],
+   "to": [
+    9,
+    12,
+    45
+   ],
+   "block": "neu_spruce_slab_type_top"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    12,
+    42
+   ],
+   "to": [
+    10,
+    12,
+    44
+   ],
+   "block": "neu_spruce_slab_type_top"
+  },
+  {
+   "op": "fill",
+   "from": [
+    8,
+    12,
+    44
+   ],
+   "to": [
+    8,
+    12,
+    45
+   ],
+   "block": "neu_spruce_slab_type_top"
+  },
+  {
+   "op": "fill",
+   "from": [
+    30,
+    12,
+    45
+   ],
+   "to": [
+    37,
+    12,
+    45
+   ],
+   "block": "neu_spruce_slab_type_top"
+  },
+  {
+   "op": "fill",
+   "from": [
+    24,
+    11,
+    47
+   ],
+   "to": [
+    24,
+    11,
+    50
+   ],
+   "block": "table"
+  },
+  {
+   "op": "fill",
+   "from": [
+    26,
+    11,
+    47
+   ],
+   "to": [
+    26,
+    11,
+    50
+   ],
+   "block": "table"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    41,
+    26,
+    42
+   ],
+   "block": "table"
+  },
+  {
+   "op": "fill",
+   "from": [
+    40,
+    26,
+    43
+   ],
+   "to": [
+    40,
+    26,
+    44
+   ],
+   "block": "table"
+  },
+  {
+   "op": "fill",
+   "from": [
+    42,
+    26,
+    43
+   ],
+   "to": [
+    42,
+    26,
+    44
+   ],
+   "block": "table"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    41,
+    26,
+    45
+   ],
+   "block": "table"
+  },
+  {
+   "op": "fill",
+   "from": [
+    40,
+    28,
+    42
+   ],
+   "to": [
+    42,
+    28,
+    45
+   ],
+   "block": "table"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    13,
+    47
+   ],
+   "to": [
+    11,
+    13,
+    47
+   ],
+   "block": "neu3_stone_brick_slab_type_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    13,
+    13,
+    47
+   ],
+   "block": "neu3_stone_brick_slab_type_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    15,
+    13,
+    47
+   ],
+   "block": "neu3_stone_brick_slab_type_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    17,
+    13,
+    47
+   ],
+   "block": "neu3_stone_brick_slab_type_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    19,
+    13,
+    47
+   ],
+   "block": "neu3_stone_brick_slab_type_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    31,
+    13,
+    47
+   ],
+   "block": "neu3_stone_brick_slab_type_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    33,
+    13,
+    47
+   ],
+   "block": "neu3_stone_brick_slab_type_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    35,
+    13,
+    47
+   ],
+   "block": "neu3_stone_brick_slab_type_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    37,
+    13,
+    47
+   ],
+   "block": "neu3_stone_brick_slab_type_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    14,
+    47
+   ],
+   "block": "neu3_stone_brick_slab_type_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    14,
+    47
+   ],
+   "block": "neu3_stone_brick_slab_type_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    16,
+    14,
+    47
+   ],
+   "block": "neu3_stone_brick_slab_type_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    18,
+    14,
+    47
+   ],
+   "block": "neu3_stone_brick_slab_type_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    20,
+    14,
+    47
+   ],
+   "block": "neu3_stone_brick_slab_type_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    30,
+    14,
+    47
+   ],
+   "block": "neu3_stone_brick_slab_type_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    32,
+    14,
+    47
+   ],
+   "block": "neu3_stone_brick_slab_type_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    34,
+    14,
+    47
+   ],
+   "block": "neu3_stone_brick_slab_type_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    36,
+    14,
+    47
+   ],
+   "block": "neu3_stone_brick_slab_type_bottom"
+  },
+  {
+   "op": "fill",
+   "from": [
+    13,
+    11,
+    12
+   ],
+   "to": [
+    13,
+    12,
+    12
+   ],
+   "block": "neu3_bamboo_fence"
+  },
+  {
+   "op": "fill",
+   "from": [
+    20,
+    11,
+    12
+   ],
+   "to": [
+    20,
+    12,
+    12
+   ],
+   "block": "neu3_bamboo_fence"
+  },
+  {
+   "op": "fill",
+   "from": [
+    26,
+    11,
+    12
+   ],
+   "to": [
+    26,
+    12,
+    12
+   ],
+   "block": "neu3_bamboo_fence"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    13,
+    12,
+    11
+   ],
+   "block": "neu3_bamboo_fence"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    20,
+    12,
+    11
+   ],
+   "block": "neu3_bamboo_fence"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    26,
+    12,
+    11
+   ],
+   "block": "neu3_bamboo_fence"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    12,
+    12
+   ],
+   "block": "neu3_bamboo_fence"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    12,
+    12
+   ],
+   "block": "neu3_bamboo_fence"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    19,
+    12,
+    12
+   ],
+   "block": "neu3_bamboo_fence"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    21,
+    12,
+    12
+   ],
+   "block": "neu3_bamboo_fence"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    25,
+    12,
+    12
+   ],
+   "block": "neu3_bamboo_fence"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    27,
+    12,
+    12
+   ],
+   "block": "neu3_bamboo_fence"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    13,
+    12,
+    13
+   ],
+   "block": "neu3_bamboo_fence"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    20,
+    12,
+    13
+   ],
+   "block": "neu3_bamboo_fence"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    26,
+    12,
+    13
+   ],
+   "block": "neu3_bamboo_fence"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    3,
+    6
+   ],
+   "block": "neu_lantern_hanging_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    39,
+    13,
+    8
+   ],
+   "block": "neu_lantern_hanging_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    44,
+    13,
+    13
+   ],
+   "block": "neu_lantern_hanging_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    44,
+    13,
+    16
+   ],
+   "block": "neu_lantern_hanging_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    44,
+    13,
+    25
+   ],
+   "block": "neu_lantern_hanging_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    34,
+    13,
+    26
+   ],
+   "block": "neu_lantern_hanging_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    39,
+    13,
+    26
+   ],
+   "block": "neu_lantern_hanging_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    39,
+    17,
+    8
+   ],
+   "block": "neu_lantern_hanging_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    44,
+    17,
+    13
+   ],
+   "block": "neu_lantern_hanging_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    44,
+    17,
+    19
+   ],
+   "block": "neu_lantern_hanging_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    44,
+    17,
+    25
+   ],
+   "block": "neu_lantern_hanging_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    39,
+    17,
+    26
+   ],
+   "block": "neu_lantern_hanging_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    39,
+    22,
+    8
+   ],
+   "block": "neu_lantern_hanging_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    44,
+    22,
+    13
+   ],
+   "block": "neu_lantern_hanging_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    44,
+    22,
+    16
+   ],
+   "block": "neu_lantern_hanging_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    44,
+    22,
+    19
+   ],
+   "block": "neu_lantern_hanging_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    39,
+    22,
+    26
+   ],
+   "block": "neu_lantern_hanging_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    23,
+    8,
+    29
+   ],
+   "block": "neu_oak_fence"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    25,
+    8,
+    29
+   ],
+   "block": "neu_oak_fence"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    23,
+    8,
+    31
+   ],
+   "block": "neu_oak_fence"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    25,
+    8,
+    31
+   ],
+   "block": "neu_oak_fence"
+  },
+  {
+   "op": "fill",
+   "from": [
+    23,
+    9,
+    30
+   ],
+   "to": [
+    25,
+    9,
+    30
+   ],
+   "block": "neu_oak_fence"
+  },
+  {
+   "op": "fill",
+   "from": [
+    40,
+    26,
+    42
+   ],
+   "to": [
+    40,
+    27,
+    42
+   ],
+   "block": "neu_oak_fence"
+  },
+  {
+   "op": "fill",
+   "from": [
+    42,
+    26,
+    42
+   ],
+   "to": [
+    42,
+    27,
+    42
+   ],
+   "block": "neu_oak_fence"
+  },
+  {
+   "op": "fill",
+   "from": [
+    40,
+    26,
+    45
+   ],
+   "to": [
+    40,
+    27,
+    45
+   ],
+   "block": "neu_oak_fence"
+  },
+  {
+   "op": "fill",
+   "from": [
+    42,
+    26,
+    45
+   ],
+   "to": [
+    42,
+    27,
+    45
+   ],
+   "block": "neu_oak_fence"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    43,
+    26,
+    46
+   ],
+   "block": "neu_oak_fence"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    45,
+    26,
+    46
+   ],
+   "block": "neu_oak_fence"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    13,
+    45
+   ],
+   "to": [
+    20,
+    13,
+    45
+   ],
+   "block": "neu3_oak_trapdoor_facing_south_half_bottom_open_true"
+  },
+  {
+   "op": "fill",
+   "from": [
+    30,
+    13,
+    45
+   ],
+   "to": [
+    37,
+    13,
+    45
+   ],
+   "block": "neu3_oak_trapdoor_facing_south_half_bottom_open_true"
+  },
+  {
+   "op": "fill",
+   "from": [
+    30,
+    6,
+    44
+   ],
+   "to": [
+    30,
+    14,
+    44
+   ],
+   "block": "neu3_ladder_facing_east"
+  },
+  {
+   "op": "fill",
+   "from": [
+    34,
+    19,
+    22
+   ],
+   "to": [
+    34,
+    23,
+    22
+   ],
+   "block": "neu3_ladder_facing_east"
+  },
+  {
+   "op": "fill",
+   "from": [
+    23,
+    7,
+    45
+   ],
+   "to": [
+    23,
+    8,
+    45
+   ],
+   "block": "neu3_iron_chain_axis_y"
+  },
+  {
+   "op": "fill",
+   "from": [
+    27,
+    7,
+    45
+   ],
+   "to": [
+    27,
+    8,
+    45
+   ],
+   "block": "neu3_iron_chain_axis_y"
+  },
+  {
+   "op": "fill",
+   "from": [
+    23,
+    11,
+    45
+   ],
+   "to": [
+    23,
+    15,
+    45
+   ],
+   "block": "neu3_iron_chain_axis_y"
+  },
+  {
+   "op": "fill",
+   "from": [
+    27,
+    11,
+    45
+   ],
+   "to": [
+    27,
+    15,
+    45
+   ],
+   "block": "neu3_iron_chain_axis_y"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    13,
+    13,
+    11
+   ],
+   "block": "neu3_candle_candles_4"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    20,
+    13,
+    11
+   ],
+   "block": "neu3_candle_candles_4"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    26,
+    13,
+    11
+   ],
+   "block": "neu3_candle_candles_4"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    13,
+    12
+   ],
+   "block": "neu3_candle_candles_4"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    13,
+    12
+   ],
+   "block": "neu3_candle_candles_4"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    19,
+    13,
+    12
+   ],
+   "block": "neu3_candle_candles_4"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    21,
+    13,
+    12
+   ],
+   "block": "neu3_candle_candles_4"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    25,
+    13,
+    12
+   ],
+   "block": "neu3_candle_candles_4"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    27,
+    13,
+    12
+   ],
+   "block": "neu3_candle_candles_4"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    13,
+    13,
+    13
+   ],
+   "block": "neu3_candle_candles_4"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    20,
+    13,
+    13
+   ],
+   "block": "neu3_candle_candles_4"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    26,
+    13,
+    13
+   ],
+   "block": "neu3_candle_candles_4"
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    2,
+    6
+   ],
+   "to": [
+    6,
+    2,
+    6
+   ],
+   "block": "neu3_cobblestone_stairs_facing_south_half_bottom"
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    3,
+    7
+   ],
+   "to": [
+    6,
+    3,
+    7
+   ],
+   "block": "neu3_cobblestone_stairs_facing_south_half_bottom"
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    4,
+    8
+   ],
+   "to": [
+    6,
+    4,
+    8
+   ],
+   "block": "neu3_cobblestone_stairs_facing_south_half_bottom"
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    5,
+    9
+   ],
+   "to": [
+    6,
+    5,
+    9
+   ],
+   "block": "neu3_cobblestone_stairs_facing_south_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    13,
+    11,
+    11
+   ],
+   "block": "neu3_bamboo_trapdoor_facing_north_half_top_open_false"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    20,
+    11,
+    11
+   ],
+   "block": "neu3_bamboo_trapdoor_facing_north_half_top_open_false"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    26,
+    11,
+    11
+   ],
+   "block": "neu3_bamboo_trapdoor_facing_north_half_top_open_false"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    11,
+    12
+   ],
+   "block": "neu3_bamboo_trapdoor_facing_north_half_top_open_false"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    21,
+    11,
+    12
+   ],
+   "block": "neu3_bamboo_trapdoor_facing_north_half_top_open_false"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    27,
+    11,
+    12
+   ],
+   "block": "neu3_bamboo_trapdoor_facing_north_half_top_open_false"
+  },
+  {
+   "op": "fill",
+   "from": [
+    31,
+    9,
+    10
+   ],
+   "to": [
+    31,
+    9,
+    14
+   ],
+   "block": "neu3_stone_brick_stairs_facing_east_half_bottom"
+  },
+  {
+   "op": "fill",
+   "from": [
+    39,
+    28,
+    42
+   ],
+   "to": [
+    39,
+    28,
+    45
+   ],
+   "block": "neu3_red_wall_banner_facing_west"
+  },
+  {
+   "op": "fill",
+   "from": [
+    37,
+    16,
+    7
+   ],
+   "to": [
+    37,
+    17,
+    7
+   ],
+   "block": "glass"
+  },
+  {
+   "op": "fill",
+   "from": [
+    41,
+    16,
+    7
+   ],
+   "to": [
+    41,
+    17,
+    7
+   ],
+   "block": "glass"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    7,
+    45
+   ],
+   "block": "neu_mossy_cobblestone_stairs_facing_west_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    8,
+    45
+   ],
+   "block": "neu_mossy_cobblestone_stairs_facing_west_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    9,
+    45
+   ],
+   "block": "neu_mossy_cobblestone_stairs_facing_west_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    5,
+    10,
+    45
+   ],
+   "block": "neu_mossy_cobblestone_stairs_facing_west_half_bottom"
+  },
+  {
+   "op": "fill",
+   "from": [
+    39,
+    17,
+    39
+   ],
+   "to": [
+    40,
+    17,
+    39
+   ],
+   "block": "neu_mossy_stone_bricks"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    43,
+    20,
+    46
+   ],
+   "block": "neu_mossy_stone_bricks"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    13,
+    11,
+    13
+   ],
+   "block": "neu3_bamboo_trapdoor_facing_east_half_top_open_false"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    20,
+    11,
+    13
+   ],
+   "block": "neu3_bamboo_trapdoor_facing_east_half_top_open_false"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    26,
+    11,
+    13
+   ],
+   "block": "neu3_bamboo_trapdoor_facing_east_half_top_open_false"
+  },
+  {
+   "op": "fill",
+   "from": [
+    23,
+    9,
+    31
+   ],
+   "to": [
+    25,
+    9,
+    31
+   ],
+   "block": "neu_birch_stairs_facing_north_half_bottom"
+  },
+  {
+   "op": "fill",
+   "from": [
+    40,
+    28,
+    46
+   ],
+   "to": [
+    42,
+    28,
+    46
+   ],
+   "block": "neu3_red_wall_banner_facing_south"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    11,
+    12
+   ],
+   "block": "neu3_bamboo_trapdoor_facing_south_half_top_open_false"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    19,
+    11,
+    12
+   ],
+   "block": "neu3_bamboo_trapdoor_facing_south_half_top_open_false"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    25,
+    11,
+    12
+   ],
+   "block": "neu3_bamboo_trapdoor_facing_south_half_top_open_false"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    24,
+    5,
+    30
+   ],
+   "block": "neu3_candle_candles_1"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    43,
+    27,
+    46
+   ],
+   "block": "neu3_candle_candles_1"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    45,
+    27,
+    46
+   ],
+   "block": "neu3_candle_candles_1"
+  },
+  {
+   "op": "fill",
+   "from": [
+    23,
+    9,
+    29
+   ],
+   "to": [
+    25,
+    9,
+    29
+   ],
+   "block": "neu_birch_stairs_facing_south_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    23,
+    14,
+    48
+   ],
+   "block": "neu3_stone_brick_slab_type_top"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    25,
+    14,
+    48
+   ],
+   "block": "neu3_stone_brick_slab_type_top"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    27,
+    14,
+    48
+   ],
+   "block": "neu3_stone_brick_slab_type_top"
+  },
+  {
+   "op": "fill",
+   "from": [
+    23,
+    10,
+    30
+   ],
+   "to": [
+    25,
+    10,
+    30
+   ],
+   "block": "neu_birch_slab_type_bottom"
+  },
+  {
+   "op": "fill",
+   "from": [
+    40,
+    28,
+    41
+   ],
+   "to": [
+    42,
+    28,
+    41
+   ],
+   "block": "neu3_red_wall_banner_facing_north"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    24,
+    6,
+    30
+   ],
+   "block": "neu3_weathered_copper_chain_axis_y"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    24,
+    8,
+    30
+   ],
+   "block": "neu3_weathered_copper_chain_axis_y"
+  },
+  {
+   "op": "fill",
+   "from": [
+    8,
+    13,
+    44
+   ],
+   "to": [
+    8,
+    13,
+    45
+   ],
+   "block": "neu3_oak_trapdoor_facing_east_half_bottom_open_true"
+  },
+  {
+   "op": "fill",
+   "from": [
+    36,
+    19,
+    7
+   ],
+   "to": [
+    36,
+    20,
+    7
+   ],
+   "block": "neu_calcite"
+  },
+  {
+   "op": "fill",
+   "from": [
+    6,
+    13,
+    43
+   ],
+   "to": [
+    7,
+    13,
+    43
+   ],
+   "block": "neu3_oak_trapdoor_facing_north_half_bottom_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    22,
+    15,
+    47
+   ],
+   "block": "neu3_waxed_copper_lantern_hanging_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    28,
+    15,
+    47
+   ],
+   "block": "neu3_waxed_copper_lantern_hanging_true"
+  },
+  {
+   "op": "fill",
+   "from": [
+    4,
+    1,
+    5
+   ],
+   "to": [
+    4,
+    1,
+    6
+   ],
+   "block": "neu3_cobblestone_stairs_facing_east_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    8,
+    8
+   ],
+   "block": "neu3_lantern_hanging_false"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    8,
+    16
+   ],
+   "block": "neu3_lantern_hanging_false"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    5,
+    11,
+    44
+   ],
+   "block": "neu_mossy_cobblestone_stairs_facing_north_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    5,
+    12,
+    43
+   ],
+   "block": "neu_mossy_cobblestone_stairs_facing_north_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    41,
+    26,
+    44
+   ],
+   "block": "neu3_yellow_bed_facing_south_occupied_false_part_head"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    24,
+    7,
+    30
+   ],
+   "block": "neu3_exposed_copper_chain_axis_y"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    6,
+    45
+   ],
+   "block": "neu3_mossy_cobblestone_stairs_facing_south_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    38,
+    13,
+    46
+   ],
+   "block": "neu3_dark_oak_door_facing_east_half_lower_hinge_left_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    6,
+    10
+   ],
+   "block": "neu3_iron_door_facing_north_half_lower_hinge_right_open_false"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    7,
+    10
+   ],
+   "block": "neu3_iron_door_facing_north_half_upper_hinge_right_open_false"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    32,
+    27,
+    12
+   ],
+   "block": "neu3_campfire_facing_east_signal_fire_false"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    39,
+    7,
+    27
+   ],
+   "block": "neu3_oak_door_facing_north_half_lower_hinge_left_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    5,
+    7,
+    11
+   ],
+   "block": "neu3_mangrove_button_face_wall_facing_south"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    2,
+    41
+   ],
+   "block": "neu_wall_torch_facing_south"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    1,
+    44
+   ],
+   "block": "neu3_skeleton_skull_rotation_12"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    43,
+    28,
+    42
+   ],
+   "block": "neu3_red_wall_banner_facing_east"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    5,
+    43
+   ],
+   "block": "neu3_oak_trapdoor_facing_north_half_top_open_false"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    44,
+    26,
+    46
+   ],
+   "block": "neu3_barrel_facing_north_open_false"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    1,
+    45
+   ],
+   "block": "neu3_skeleton_skull_rotation_13"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    7,
+    16
+   ],
+   "block": "neu3_chiseled_bookshelf_facing_north_slot_0_occupied_false_slot_1_occupied_false_slot_2_occupied_false_slot_3_occupied_false_slot_4_occupied_false_slot_5_occupied_false"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    1,
+    45
+   ],
+   "block": "neu3_skeleton_skull_rotation_14"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    41,
+    26,
+    43
+   ],
+   "block": "neu3_yellow_bed_facing_south_occupied_false_part_foot"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    7,
+    8
+   ],
+   "block": "neu3_chiseled_bookshelf_facing_south_slot_0_occupied_false_slot_1_occupied_false_slot_2_occupied_false_slot_3_occupied_false_slot_4_occupied_false_slot_5_occupied_false"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    38,
+    14,
+    46
+   ],
+   "block": "neu3_dark_oak_door_facing_east_half_upper_hinge_left_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    39,
+    8,
+    27
+   ],
+   "block": "neu3_oak_door_facing_north_half_upper_hinge_left_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    40,
+    13,
+    46
+   ],
+   "block": "neu_mossy_cobblestone_stairs_facing_east_half_bottom"
+  }
+ ]
+}

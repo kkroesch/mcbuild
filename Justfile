@@ -1,12 +1,15 @@
 RCON_PASSWORD := "changeme"
 PLAYER := "FoolBar"
-LEVEL := "world"
-LEVEL_TYPE := "normal"
+LEVEL := "flach1"
+LEVEL_TYPE := "flat"
 # Plugins von Modrinth (Slugs, kommagetrennt); lädt itzg beim Start nach data/plugins
 PLUGINS := "worldedit"
-POS_X := "23"
-POS_Y := "-60"
-POS_Z := "-44"
+SCHEMA := "haus3.json"
+# Versatz zur Spielerposition (dx dy dz), z.B. "0 -1 0" = Boden bündig mit dem Gelände
+OFFSET := "0 0 0"
+POS_X := "-804"
+POS_Y := "71"
+POS_Z := "597"
 
 # Container neu anlegen; Daten in ./data bleiben erhalten.
 # Optional mit Seed:  just init 12345   (ohne Seed zufällig; wirkt nur bei neuer Welt)
@@ -54,26 +57,32 @@ seed:
 position:
   podman exec mc-preprod rcon-cli data get entity {{PLAYER}} Pos
 
-build_here schema="haus3.json":
-  MC_RCON_PASSWORD={{RCON_PASSWORD}} ./bp2rcon.py {{schema}} --at-player {{PLAYER}}
+# Blueprint dort bauen, wo der Spieler gerade steht (Position per RCON, abgerundet).
+# Anker = Ecke links vorne unten des Blueprints (Nordwest-Ecke, Haus wächst nach Osten/Süden).
+#   just build                  # Blueprint aus SCHEMA
+#   just build haus2.json       # anderer Blueprint
+build schema=SCHEMA:
+  MC_RCON_PASSWORD={{RCON_PASSWORD}} ./bp2rcon.py {{schema}} --at-player {{PLAYER}} --offset {{OFFSET}}
 
-# Blueprint in einem Rutsch bauen
-build schema="haus3.json":
-  MC_RCON_PASSWORD={{RCON_PASSWORD}} ./bp2rcon.py {{schema}} --anchor {{POS_X}} {{POS_Y}} {{POS_Z}}
+# Wie build, aber räumt die Baufläche vorher mit dem Axiom-Plugin (/cleararea) leer
+build-clean schema=SCHEMA:
+  MC_RCON_PASSWORD={{RCON_PASSWORD}} ./bp2rcon.py {{schema}} --at-player {{PLAYER}} --offset {{OFFSET}} --clear
 
-# Blueprint Schritt für Schritt bauen (Enter = nächster Schritt, q = Abbruch)
-step schema="haus3.json":
-  MC_RCON_PASSWORD={{RCON_PASSWORD}} ./bp2rcon.py {{schema}} --anchor {{POS_X}} {{POS_Y}} {{POS_Z}} --step
-backup:
-  podman exec mc-preprod rcon-cli save-off
-  podman exec mc-preprod rcon-cli save-all flush
-  podman unshare tar -C data -czf backup-{{LEVEL}}.tgz {{LEVEL}}
-  podman exec mc-preprod rcon-cli save-on
+# Wie build, aber Schritt für Schritt (Enter = nächster Schritt, q = Abbruch)
+step schema=SCHEMA:
+  MC_RCON_PASSWORD={{RCON_PASSWORD}} ./bp2rcon.py {{schema}} --at-player {{PLAYER}} --offset {{OFFSET}} --step
 
-# Gesicherte Welt zurückspielen (Server wird gestoppt)
-restore:
-  -podman stop mc-preprod
-  podman unshare rm -rf data/{{LEVEL}}
-  podman unshare tar -C data -xzf backup-{{LEVEL}}.tgz
-  podman start mc-preprod
+# Wie step, räumt aber vorher die Baufläche
+step-clean schema=SCHEMA:
+  MC_RCON_PASSWORD={{RCON_PASSWORD}} ./bp2rcon.py {{schema}} --at-player {{PLAYER}} --offset {{OFFSET}} --clear --step
 
+# Nur anzeigen, was gebaut würde (liest die Spielerposition, setzt nichts)
+dry schema=SCHEMA:
+  MC_RCON_PASSWORD={{RCON_PASSWORD}} ./bp2rcon.py {{schema}} --at-player {{PLAYER}} --offset {{OFFSET}} --dry-run
+
+# Mit festen Koordinaten bauen:  just build-at 100 70 200   |   just POS_X=-804 POS_Y=71 POS_Z=597 build-at
+build-at x=POS_X y=POS_Y z=POS_Z schema=SCHEMA:
+  MC_RCON_PASSWORD={{RCON_PASSWORD}} ./bp2rcon.py {{schema}} --anchor {{x}} {{y}} {{z}}
+
+step-at x=POS_X y=POS_Y z=POS_Z schema=SCHEMA:
+  MC_RCON_PASSWORD={{RCON_PASSWORD}} ./bp2rcon.py {{schema}} --anchor {{x}} {{y}} {{z}} --step

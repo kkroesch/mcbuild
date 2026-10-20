@@ -12,6 +12,10 @@ Operationen (alle Koordinaten relativ zum Ursprung [0,0,0], keine negativen Wert
   repeat      {"op":"repeat","count":4,"step":[3,0,0],"ops":[ ...beliebige Ops... ]}
   cylinder    {"op":"cylinder","center":[x,y,z],"radius":3,"height":10,"block":"..","hollow":true}
               center = Mitte der untersten Ebene; Achse immer senkrecht (y)
+  speckle     Zufällig verstreute Blöcke: {"op":"speckle","from":[..],"to":[..],"block":"brick",
+              "only":"plaster","chance":0.06,"seed":1}; ersetzt nur Blöcke vom Typ "only"
+              (chance 0..0.5, Standard 0.06). Für dünne Flächen wie eine Wandseite gedacht;
+              mit repeat ergibt jede Wiederholung ein anderes Muster.
   cone        Kegeldach: {"op":"cone","center":[x,y,z],"radius":4,"steep":2,"block":".."}
               center = Mitte der untersten Ebene; steep = Ebenen pro Schritt nach innen
               (Standard 2, je grösser desto steiler); "hollow": true (Standard) = nur Hülle
@@ -28,6 +32,7 @@ import argparse
 import gzip
 import json
 import math
+import random
 import re
 import struct
 import sys
@@ -268,6 +273,32 @@ def _gable_roof(op, palette, where, off):
     return out
 
 
+def _speckle(op, palette, where, off):
+    """Zufällig verstreute Einzelblöcke (z.B. Ziegel in weissen Wänden).
+
+    Ersetzt nur Blöcke, die dort gerade 'only' sind. Reproduzierbar über 'seed'.
+    Gedacht für dünne Flächen (eine Wandseite); die Zahl der Treffer ist chance*Volumen."""
+    f = _shift(vec(op, "from", where), off)
+    t = _shift(vec(op, "to", where), off)
+    lo = [min(a, b) for a, b in zip(f, t)]
+    hi = [max(a, b) for a, b in zip(f, t)]
+    chance = op.get("chance", 0.06)
+    if isinstance(chance, bool) or not isinstance(chance, (int, float)) or not 0 < chance <= 0.5:
+        raise BlueprintError(f"{where}: 'chance' muss eine Zahl zwischen 0 und 0.5 sein")
+    state = _state(op.get("block"), palette, where)
+    only = _state(op.get("only"), palette, where)
+    vol = 1
+    for l, h in zip(lo, hi):
+        vol *= h - l + 1
+    n = min(vol, round(vol * chance))
+    rng = random.Random(f"{op.get('seed', 0)}:{where}")
+    picked = set()
+    while len(picked) < n:
+        picked.add(tuple(rng.randint(lo[k], hi[k]) for k in range(3)))
+    return [{"op": "setblock", "at": list(p), "block": state, "only": only, "_src": where}
+            for p in sorted(picked)]
+
+
 def _lower_op(op, palette, where, off, depth):
     if not isinstance(op, dict):
         raise BlueprintError(f"{where}: Operation muss ein Objekt sein")
@@ -300,6 +331,8 @@ def _lower_op(op, palette, where, off, depth):
 
     if kind == "cylinder":
         return _cylinder(op, palette, where, off)
+    if kind == "speckle":
+        return _speckle(op, palette, where, off)
     if kind == "cone":
         return _cone(op, palette, where, off)
     if kind == "pyramid":
@@ -346,6 +379,8 @@ def expand(bp, max_volume):
                 x, y, z = vec(op, "at", where)
                 if min(x, y, z) < 0:
                     raise BlueprintError(f"{where}: negative Koordinaten nicht erlaubt")
+                if op.get("only") and cells.get((x, y, z)) != op["only"]:
+                    continue  # speckle: nur dort ersetzen, wo 'only' steht
                 cells[(x, y, z)] = state
                 continue
 

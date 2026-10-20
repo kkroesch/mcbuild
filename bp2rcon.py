@@ -6,6 +6,7 @@ Beispiele:
   bp2rcon.py haus.json --anchor 100 64 200 --step
   bp2rcon.py haus.json --anchor 100 64 200 --delay 1.5 --backup-at 100 120 200
   bp2rcon.py haus.json --anchor 100 64 200 --prefix "execute at Karsten run "
+  bp2rcon.py burg.json --at-player Karsten --offset 0 -6 0 --clear
   bp2rcon.py haus.json --at-player Karsten --step            # dort bauen, wo der Spieler steht
   bp2rcon.py haus.json --at-player Karsten --offset 0 -1 0   # Anker eine Zelle tiefer
 
@@ -121,6 +122,11 @@ def prim_commands(op, palette, anchor, max_fill):
         if min(p) < 0:
             raise BlueprintError(f"{where}: negative Koordinaten nicht erlaubt")
         a = [anchor[k] + p[k] for k in range(3)]
+        if op.get("only"):
+            # speckle: nur ersetzen, wo der Block gerade 'only' ist -> /fill ... replace <filter>
+            return (f"setblock {p} {state} (nur wo {op['only']})",
+                    [f"fill {a[0]} {a[1]} {a[2]} {a[0]} {a[1]} {a[2]} {state} replace {op['only']}"],
+                    a, a)
         return (f"setblock {p} {state}",
                 [f"setblock {a[0]} {a[1]} {a[2]} {state}"], a, a)
 
@@ -207,6 +213,9 @@ def main():
                          "(für Multiverse-Welten)")
     ap.add_argument("--backup-at", nargs=3, type=int, metavar=("X", "Y", "Z"),
                     help="Zielbereich: Baufläche vorher per /clone dorthin sichern")
+    ap.add_argument("--clear", action="store_true",
+                    help="Baufläche vorher mit dem Axiom-Plugin räumen (/cleararea ... corner sync, "
+                         "läuft über die Konsole in der Hauptwelt)")
     ap.add_argument("--max-fill", type=int, default=DEFAULT_MAX_FILL,
                     help="max. Blöcke pro /fill (an gamerule commandModificationBlockLimit anpassen)")
     ap.add_argument("--dry-run", action="store_true", help="Befehle nur ausgeben, nichts senden")
@@ -260,9 +269,18 @@ def main():
             backup_cmd = (f"clone {lo[0]} {lo[1]} {lo[2]} {hi[0]} {hi[1]} {hi[2]} "
                           f"{b[0]} {b[1]} {b[2]}")
 
+        clear_cmd = None
+        if args.clear:
+            # sync: das Plugin räumt in einem Tick, danach kann sofort gebaut werden
+            clear_cmd = (f"cleararea {hi[0] - lo[0] + 1} {hi[2] - lo[2] + 1} {hi[1] - lo[1] + 1} "
+                         f"corner sync {lo[0]} {lo[1]} {lo[2]}")
+
         if args.dry_run:
             if backup_cmd:
                 print(args.prefix + backup_cmd)
+            if clear_cmd:
+                print("# Fläche räumen (Axiom, ohne --prefix)")
+                print(clear_cmd)
             for desc, cmds in steps:
                 print(f"# {desc}")
                 for c in cmds:
@@ -271,6 +289,12 @@ def main():
 
         if backup_cmd:
             print("Backup:", rcon.command(args.prefix + backup_cmd) or "ok")
+        if clear_cmd:
+            resp = rcon.command(clear_cmd)
+            print("Räumen:", resp or "ok")
+            if "Fehler" in resp or any(m in resp for m in ERROR_MARKERS):
+                sys.exit("Abbruch: /cleararea fehlgeschlagen (Axiom-Plugin installiert? "
+                         "Gleiche Welt wie Hauptwelt?)")
         for n, (desc, cmds) in enumerate(steps, 1):
             if args.step:
                 if input(f"[{n}/{len(steps)}] {desc}  -- Enter = ausführen, q = Abbruch: ").strip() == "q":

@@ -1,0 +1,1748 @@
+{
+ "name": "gewoelbekeller",
+ "palette": {
+  "brick": "minecraft:bricks",
+  "path": "minecraft:dirt_path",
+  "st_w": "minecraft:brick_stairs[facing=west,half=top]",
+  "st_e": "minecraft:brick_stairs[facing=east,half=top]",
+  "moss": "minecraft:mossy_stone_bricks",
+  "mosscob": "minecraft:mossy_cobblestone",
+  "mstair": "minecraft:mossy_stone_brick_stairs[facing=north,half=bottom]",
+  "mwall": "minecraft:mossy_cobblestone_wall",
+  "lantern_h": "minecraft:lantern[hanging=true]",
+  "lantern": "minecraft:lantern[hanging=false]",
+  "cask_e": "minecraft:barrel[facing=east,open=false]",
+  "cask_w": "minecraft:barrel[facing=west,open=false]",
+  "cask_n": "minecraft:barrel[facing=north,open=false]",
+  "cask_u": "minecraft:barrel[facing=up,open=false]",
+  "chest_n": "minecraft:chest[facing=north]",
+  "fence": "minecraft:spruce_fence",
+  "plate": "minecraft:spruce_pressure_plate",
+  "bench_e": "minecraft:spruce_stairs[facing=east,half=bottom]",
+  "bench_w": "minecraft:spruce_stairs[facing=west,half=bottom]",
+  "hay": "minecraft:hay_block[axis=y]"
+ },
+ "ops": [
+  {
+   "op": "fill",
+   "from": [
+    1,
+    0,
+    8
+   ],
+   "to": [
+    11,
+    6,
+    35
+   ],
+   "block": "brick"
+  },
+  {
+   "op": "carve",
+   "from": [
+    2,
+    1,
+    9
+   ],
+   "to": [
+    10,
+    5,
+    34
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    0,
+    9
+   ],
+   "to": [
+    10,
+    0,
+    34
+   ],
+   "block": "path"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    3,
+    9
+   ],
+   "to": [
+    2,
+    3,
+    34
+   ],
+   "block": "st_w"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    3,
+    9
+   ],
+   "to": [
+    10,
+    3,
+    34
+   ],
+   "block": "st_e"
+  },
+  {
+   "op": "fill",
+   "from": [
+    3,
+    4,
+    9
+   ],
+   "to": [
+    3,
+    4,
+    34
+   ],
+   "block": "st_w"
+  },
+  {
+   "op": "fill",
+   "from": [
+    9,
+    4,
+    9
+   ],
+   "to": [
+    9,
+    4,
+    34
+   ],
+   "block": "st_e"
+  },
+  {
+   "op": "fill",
+   "from": [
+    4,
+    5,
+    9
+   ],
+   "to": [
+    4,
+    5,
+    34
+   ],
+   "block": "st_w"
+  },
+  {
+   "op": "fill",
+   "from": [
+    8,
+    5,
+    9
+   ],
+   "to": [
+    8,
+    5,
+    34
+   ],
+   "block": "st_e"
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    6,
+    9
+   ],
+   "to": [
+    7,
+    6,
+    34
+   ],
+   "block": "brick"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    4,
+    9
+   ],
+   "to": [
+    2,
+    5,
+    34
+   ],
+   "block": "brick"
+  },
+  {
+   "op": "fill",
+   "from": [
+    3,
+    5,
+    9
+   ],
+   "to": [
+    3,
+    5,
+    34
+   ],
+   "block": "brick"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    4,
+    9
+   ],
+   "to": [
+    10,
+    5,
+    34
+   ],
+   "block": "brick"
+  },
+  {
+   "op": "fill",
+   "from": [
+    9,
+    5,
+    9
+   ],
+   "to": [
+    9,
+    5,
+    34
+   ],
+   "block": "brick"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    1,
+    12
+   ],
+   "to": [
+    2,
+    3,
+    12
+   ],
+   "block": "brick"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    1,
+    12
+   ],
+   "to": [
+    10,
+    3,
+    12
+   ],
+   "block": "brick"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    3,
+    3,
+    12
+   ],
+   "block": "st_w"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    3,
+    12
+   ],
+   "block": "st_e"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    4,
+    12
+   ],
+   "block": "st_w"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    4,
+    12
+   ],
+   "block": "st_e"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    5,
+    5,
+    12
+   ],
+   "block": "st_w"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    5,
+    12
+   ],
+   "block": "st_e"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    1,
+    18
+   ],
+   "to": [
+    2,
+    3,
+    18
+   ],
+   "block": "brick"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    1,
+    18
+   ],
+   "to": [
+    10,
+    3,
+    18
+   ],
+   "block": "brick"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    3,
+    3,
+    18
+   ],
+   "block": "st_w"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    3,
+    18
+   ],
+   "block": "st_e"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    4,
+    18
+   ],
+   "block": "st_w"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    4,
+    18
+   ],
+   "block": "st_e"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    5,
+    5,
+    18
+   ],
+   "block": "st_w"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    5,
+    18
+   ],
+   "block": "st_e"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    1,
+    24
+   ],
+   "to": [
+    2,
+    3,
+    24
+   ],
+   "block": "brick"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    1,
+    24
+   ],
+   "to": [
+    10,
+    3,
+    24
+   ],
+   "block": "brick"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    3,
+    3,
+    24
+   ],
+   "block": "st_w"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    3,
+    24
+   ],
+   "block": "st_e"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    4,
+    24
+   ],
+   "block": "st_w"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    4,
+    24
+   ],
+   "block": "st_e"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    5,
+    5,
+    24
+   ],
+   "block": "st_w"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    5,
+    24
+   ],
+   "block": "st_e"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    1,
+    30
+   ],
+   "to": [
+    2,
+    3,
+    30
+   ],
+   "block": "brick"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    1,
+    30
+   ],
+   "to": [
+    10,
+    3,
+    30
+   ],
+   "block": "brick"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    3,
+    3,
+    30
+   ],
+   "block": "st_w"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    3,
+    30
+   ],
+   "block": "st_e"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    4,
+    30
+   ],
+   "block": "st_w"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    4,
+    30
+   ],
+   "block": "st_e"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    5,
+    5,
+    30
+   ],
+   "block": "st_w"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    5,
+    30
+   ],
+   "block": "st_e"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    1,
+    14
+   ],
+   "to": [
+    2,
+    2,
+    14
+   ],
+   "block": "cask_e"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    1,
+    14
+   ],
+   "to": [
+    10,
+    2,
+    14
+   ],
+   "block": "cask_w"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    1,
+    15
+   ],
+   "to": [
+    2,
+    2,
+    15
+   ],
+   "block": "cask_e"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    1,
+    15
+   ],
+   "to": [
+    10,
+    2,
+    15
+   ],
+   "block": "cask_w"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    1,
+    16
+   ],
+   "to": [
+    2,
+    2,
+    16
+   ],
+   "block": "cask_e"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    1,
+    16
+   ],
+   "to": [
+    10,
+    2,
+    16
+   ],
+   "block": "cask_w"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    1,
+    20
+   ],
+   "to": [
+    2,
+    2,
+    20
+   ],
+   "block": "cask_e"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    1,
+    20
+   ],
+   "to": [
+    10,
+    2,
+    20
+   ],
+   "block": "cask_w"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    1,
+    21
+   ],
+   "to": [
+    2,
+    2,
+    21
+   ],
+   "block": "cask_e"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    1,
+    21
+   ],
+   "to": [
+    10,
+    2,
+    21
+   ],
+   "block": "cask_w"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    1,
+    22
+   ],
+   "to": [
+    2,
+    2,
+    22
+   ],
+   "block": "cask_e"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    1,
+    22
+   ],
+   "to": [
+    10,
+    2,
+    22
+   ],
+   "block": "cask_w"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    1,
+    26
+   ],
+   "to": [
+    2,
+    2,
+    26
+   ],
+   "block": "cask_e"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    1,
+    26
+   ],
+   "to": [
+    10,
+    2,
+    26
+   ],
+   "block": "cask_w"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    1,
+    27
+   ],
+   "to": [
+    2,
+    2,
+    27
+   ],
+   "block": "cask_e"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    1,
+    27
+   ],
+   "to": [
+    10,
+    2,
+    27
+   ],
+   "block": "cask_w"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    1,
+    28
+   ],
+   "to": [
+    2,
+    2,
+    28
+   ],
+   "block": "cask_e"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    1,
+    28
+   ],
+   "to": [
+    10,
+    2,
+    28
+   ],
+   "block": "cask_w"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    1,
+    10
+   ],
+   "to": [
+    2,
+    2,
+    10
+   ],
+   "block": "cask_e"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    1,
+    10
+   ],
+   "to": [
+    10,
+    2,
+    10
+   ],
+   "block": "cask_w"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    3,
+    1,
+    15
+   ],
+   "block": "cask_u"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    3,
+    2,
+    15
+   ],
+   "block": "lantern"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    1,
+    15
+   ],
+   "block": "cask_u"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    2,
+    15
+   ],
+   "block": "lantern"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    3,
+    1,
+    21
+   ],
+   "block": "cask_u"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    3,
+    2,
+    21
+   ],
+   "block": "lantern"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    1,
+    21
+   ],
+   "block": "cask_u"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    2,
+    21
+   ],
+   "block": "lantern"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    3,
+    1,
+    27
+   ],
+   "block": "cask_u"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    3,
+    2,
+    27
+   ],
+   "block": "lantern"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    1,
+    27
+   ],
+   "block": "cask_u"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    2,
+    27
+   ],
+   "block": "lantern"
+  },
+  {
+   "op": "fill",
+   "from": [
+    3,
+    1,
+    34
+   ],
+   "to": [
+    9,
+    2,
+    34
+   ],
+   "block": "cask_n"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    1,
+    32
+   ],
+   "to": [
+    2,
+    2,
+    33
+   ],
+   "block": "cask_e"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    1,
+    32
+   ],
+   "to": [
+    10,
+    2,
+    33
+   ],
+   "block": "cask_w"
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    1,
+    32
+   ],
+   "to": [
+    7,
+    1,
+    32
+   ],
+   "block": "fence"
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    2,
+    32
+   ],
+   "to": [
+    7,
+    2,
+    32
+   ],
+   "block": "plate"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    1,
+    32
+   ],
+   "block": "bench_e"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    1,
+    32
+   ],
+   "block": "bench_w"
+  },
+  {
+   "op": "fill",
+   "from": [
+    9,
+    1,
+    31
+   ],
+   "to": [
+    9,
+    1,
+    31
+   ],
+   "block": "hay"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    5,
+    10
+   ],
+   "block": "lantern_h"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    5,
+    15
+   ],
+   "block": "lantern_h"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    5,
+    21
+   ],
+   "block": "lantern_h"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    5,
+    27
+   ],
+   "block": "lantern_h"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    5,
+    33
+   ],
+   "block": "lantern_h"
+  },
+  {
+   "op": "fill",
+   "from": [
+    1,
+    0,
+    8
+   ],
+   "to": [
+    11,
+    6,
+    8
+   ],
+   "block": "brick"
+  },
+  {
+   "op": "carve",
+   "from": [
+    5,
+    9,
+    1
+   ],
+   "to": [
+    7,
+    12,
+    1
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    8,
+    1
+   ],
+   "to": [
+    7,
+    8,
+    1
+   ],
+   "block": "mstair"
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    7,
+    1
+   ],
+   "to": [
+    7,
+    7,
+    1
+   ],
+   "block": "mosscob"
+  },
+  {
+   "op": "fill",
+   "from": [
+    4,
+    8,
+    1
+   ],
+   "to": [
+    4,
+    8,
+    1
+   ],
+   "block": "moss"
+  },
+  {
+   "op": "fill",
+   "from": [
+    8,
+    8,
+    1
+   ],
+   "to": [
+    8,
+    8,
+    1
+   ],
+   "block": "moss"
+  },
+  {
+   "op": "carve",
+   "from": [
+    5,
+    8,
+    2
+   ],
+   "to": [
+    7,
+    12,
+    2
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    7,
+    2
+   ],
+   "to": [
+    7,
+    7,
+    2
+   ],
+   "block": "mstair"
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    6,
+    2
+   ],
+   "to": [
+    7,
+    6,
+    2
+   ],
+   "block": "mosscob"
+  },
+  {
+   "op": "fill",
+   "from": [
+    4,
+    7,
+    2
+   ],
+   "to": [
+    4,
+    8,
+    2
+   ],
+   "block": "moss"
+  },
+  {
+   "op": "fill",
+   "from": [
+    8,
+    7,
+    2
+   ],
+   "to": [
+    8,
+    8,
+    2
+   ],
+   "block": "moss"
+  },
+  {
+   "op": "carve",
+   "from": [
+    5,
+    7,
+    3
+   ],
+   "to": [
+    7,
+    12,
+    3
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    6,
+    3
+   ],
+   "to": [
+    7,
+    6,
+    3
+   ],
+   "block": "mstair"
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    5,
+    3
+   ],
+   "to": [
+    7,
+    5,
+    3
+   ],
+   "block": "mosscob"
+  },
+  {
+   "op": "fill",
+   "from": [
+    4,
+    6,
+    3
+   ],
+   "to": [
+    4,
+    8,
+    3
+   ],
+   "block": "moss"
+  },
+  {
+   "op": "fill",
+   "from": [
+    8,
+    6,
+    3
+   ],
+   "to": [
+    8,
+    8,
+    3
+   ],
+   "block": "moss"
+  },
+  {
+   "op": "carve",
+   "from": [
+    5,
+    6,
+    4
+   ],
+   "to": [
+    7,
+    12,
+    4
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    5,
+    4
+   ],
+   "to": [
+    7,
+    5,
+    4
+   ],
+   "block": "mstair"
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    4,
+    4
+   ],
+   "to": [
+    7,
+    4,
+    4
+   ],
+   "block": "mosscob"
+  },
+  {
+   "op": "fill",
+   "from": [
+    4,
+    5,
+    4
+   ],
+   "to": [
+    4,
+    8,
+    4
+   ],
+   "block": "moss"
+  },
+  {
+   "op": "fill",
+   "from": [
+    8,
+    5,
+    4
+   ],
+   "to": [
+    8,
+    8,
+    4
+   ],
+   "block": "moss"
+  },
+  {
+   "op": "carve",
+   "from": [
+    5,
+    5,
+    5
+   ],
+   "to": [
+    7,
+    12,
+    5
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    4,
+    5
+   ],
+   "to": [
+    7,
+    4,
+    5
+   ],
+   "block": "mstair"
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    3,
+    5
+   ],
+   "to": [
+    7,
+    3,
+    5
+   ],
+   "block": "mosscob"
+  },
+  {
+   "op": "fill",
+   "from": [
+    4,
+    4,
+    5
+   ],
+   "to": [
+    4,
+    8,
+    5
+   ],
+   "block": "moss"
+  },
+  {
+   "op": "fill",
+   "from": [
+    8,
+    4,
+    5
+   ],
+   "to": [
+    8,
+    8,
+    5
+   ],
+   "block": "moss"
+  },
+  {
+   "op": "carve",
+   "from": [
+    5,
+    4,
+    6
+   ],
+   "to": [
+    7,
+    12,
+    6
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    3,
+    6
+   ],
+   "to": [
+    7,
+    3,
+    6
+   ],
+   "block": "mstair"
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    2,
+    6
+   ],
+   "to": [
+    7,
+    2,
+    6
+   ],
+   "block": "mosscob"
+  },
+  {
+   "op": "fill",
+   "from": [
+    4,
+    3,
+    6
+   ],
+   "to": [
+    4,
+    8,
+    6
+   ],
+   "block": "moss"
+  },
+  {
+   "op": "fill",
+   "from": [
+    8,
+    3,
+    6
+   ],
+   "to": [
+    8,
+    8,
+    6
+   ],
+   "block": "moss"
+  },
+  {
+   "op": "carve",
+   "from": [
+    5,
+    3,
+    7
+   ],
+   "to": [
+    7,
+    12,
+    7
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    2,
+    7
+   ],
+   "to": [
+    7,
+    2,
+    7
+   ],
+   "block": "mstair"
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    1,
+    7
+   ],
+   "to": [
+    7,
+    1,
+    7
+   ],
+   "block": "mosscob"
+  },
+  {
+   "op": "fill",
+   "from": [
+    4,
+    2,
+    7
+   ],
+   "to": [
+    4,
+    8,
+    7
+   ],
+   "block": "moss"
+  },
+  {
+   "op": "fill",
+   "from": [
+    8,
+    2,
+    7
+   ],
+   "to": [
+    8,
+    8,
+    7
+   ],
+   "block": "moss"
+  },
+  {
+   "op": "carve",
+   "from": [
+    5,
+    2,
+    8
+   ],
+   "to": [
+    7,
+    12,
+    8
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    1,
+    8
+   ],
+   "to": [
+    7,
+    1,
+    8
+   ],
+   "block": "mstair"
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    0,
+    8
+   ],
+   "to": [
+    7,
+    0,
+    8
+   ],
+   "block": "mosscob"
+  },
+  {
+   "op": "fill",
+   "from": [
+    4,
+    1,
+    8
+   ],
+   "to": [
+    4,
+    8,
+    8
+   ],
+   "block": "moss"
+  },
+  {
+   "op": "fill",
+   "from": [
+    8,
+    1,
+    8
+   ],
+   "to": [
+    8,
+    8,
+    8
+   ],
+   "block": "moss"
+  },
+  {
+   "op": "carve",
+   "from": [
+    5,
+    2,
+    8
+   ],
+   "to": [
+    7,
+    12,
+    8
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    0,
+    8
+   ],
+   "to": [
+    7,
+    0,
+    8
+   ],
+   "block": "path"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    9,
+    1
+   ],
+   "block": "mwall"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    9,
+    1
+   ],
+   "block": "mwall"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    10,
+    1
+   ],
+   "block": "lantern"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    10,
+    1
+   ],
+   "block": "lantern"
+  },
+  {
+   "op": "speckle",
+   "from": [
+    4,
+    1,
+    1
+   ],
+   "to": [
+    4,
+    8,
+    8
+   ],
+   "block": "mosscob",
+   "only": "moss",
+   "chance": 0.25,
+   "seed": 3
+  },
+  {
+   "op": "speckle",
+   "from": [
+    8,
+    1,
+    1
+   ],
+   "to": [
+    8,
+    8,
+    8
+   ],
+   "block": "mosscob",
+   "only": "moss",
+   "chance": 0.25,
+   "seed": 4
+  }
+ ]
+}

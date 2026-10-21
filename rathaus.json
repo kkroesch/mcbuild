@@ -57,7 +57,17 @@
   "banner_front": "minecraft:red_wall_banner[facing=south]",
   "chest_s": "minecraft:chest[facing=south]",
   "post": "minecraft:dark_oak_log[axis=y]",
-  "beam_z": "minecraft:dark_oak_log[axis=z]"
+  "beam_z": "minecraft:dark_oak_log[axis=z]",
+  "u_dark_oak_stairs_facing_north_half_top": "minecraft:dark_oak_stairs[facing=north,half=top]",
+  "u_dark_oak_stairs_facing_south_half_top": "minecraft:dark_oak_stairs[facing=south,half=top]",
+  "u_smooth_quartz_stairs_facing_north_half_top": "minecraft:smooth_quartz_stairs[facing=north,half=top]",
+  "u_oak_door_facing_north_half_lower_hinge_left_open_true": "minecraft:oak_door[facing=north,half=lower,hinge=left,open=true]",
+  "u_oak_door_facing_north_half_upper_hinge_left_open_true": "minecraft:oak_door[facing=north,half=upper,hinge=left,open=true]",
+  "u_oak_door_facing_west_half_lower_hinge_left_open_true": "minecraft:oak_door[facing=west,half=lower,hinge=left,open=true]",
+  "u_oak_door_facing_east_half_lower_hinge_left_open_true": "minecraft:oak_door[facing=east,half=lower,hinge=left,open=true]",
+  "u_oak_door_facing_west_half_upper_hinge_left_open_true": "minecraft:oak_door[facing=west,half=upper,hinge=left,open=true]",
+  "u_oak_door_facing_east_half_upper_hinge_left_open_true": "minecraft:oak_door[facing=east,half=upper,hinge=left,open=true]",
+  "u_dark_oak_stairs_facing_west_half_top": "minecraft:dark_oak_stairs[facing=west,half=top]"
  },
  "ops": [
   {
@@ -4380,6 +4390,1273 @@
     19
    ],
    "block": "barrel_u"
+  },
+  {
+   "op": "carve",
+   "from": [
+    4,
+    1,
+    19
+   ],
+   "to": [
+    4,
+    1,
+    19
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    29,
+    7,
+    10
+   ],
+   "to": [
+    29,
+    7,
+    14
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    12,
+    7,
+    13
+   ],
+   "to": [
+    20,
+    7,
+    13
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    12,
+    8,
+    12
+   ],
+   "to": [
+    20,
+    8,
+    12
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    13,
+    8,
+    24
+   ],
+   "to": [
+    13,
+    8,
+    24
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    19,
+    8,
+    24
+   ],
+   "to": [
+    19,
+    8,
+    24
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    12,
+    9,
+    11
+   ],
+   "to": [
+    20,
+    9,
+    11
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    12,
+    10,
+    10
+   ],
+   "to": [
+    20,
+    10,
+    10
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    12,
+    11,
+    9
+   ],
+   "to": [
+    20,
+    11,
+    9
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    12,
+    12,
+    8
+   ],
+   "to": [
+    20,
+    12,
+    8
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    16,
+    13,
+    5
+   ],
+   "to": [
+    16,
+    13,
+    5
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    9,
+    13,
+    12
+   ],
+   "to": [
+    9,
+    13,
+    12
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    11,
+    13,
+    12
+   ],
+   "to": [
+    11,
+    13,
+    12
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    13,
+    13,
+    12
+   ],
+   "to": [
+    13,
+    13,
+    12
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    15,
+    13,
+    12
+   ],
+   "to": [
+    15,
+    13,
+    12
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    17,
+    13,
+    12
+   ],
+   "to": [
+    17,
+    13,
+    12
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    19,
+    13,
+    12
+   ],
+   "to": [
+    19,
+    13,
+    12
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    21,
+    13,
+    12
+   ],
+   "to": [
+    21,
+    13,
+    12
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    23,
+    13,
+    12
+   ],
+   "to": [
+    23,
+    13,
+    12
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    10,
+    13,
+    13
+   ],
+   "to": [
+    10,
+    13,
+    13
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    12,
+    13,
+    13
+   ],
+   "to": [
+    12,
+    13,
+    13
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    14,
+    13,
+    13
+   ],
+   "to": [
+    14,
+    13,
+    13
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    16,
+    13,
+    13
+   ],
+   "to": [
+    16,
+    13,
+    13
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    18,
+    13,
+    13
+   ],
+   "to": [
+    18,
+    13,
+    13
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    20,
+    13,
+    13
+   ],
+   "to": [
+    20,
+    13,
+    13
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    22,
+    13,
+    13
+   ],
+   "to": [
+    22,
+    13,
+    13
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    16,
+    13,
+    17
+   ],
+   "to": [
+    16,
+    13,
+    17
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    10,
+    14,
+    14
+   ],
+   "to": [
+    10,
+    14,
+    14
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    16,
+    14,
+    14
+   ],
+   "to": [
+    16,
+    14,
+    14
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    22,
+    14,
+    14
+   ],
+   "to": [
+    22,
+    14,
+    14
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    7,
+    7
+   ],
+   "to": [
+    20,
+    11,
+    7
+   ],
+   "block": "quartz"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    7,
+    12
+   ],
+   "to": [
+    14,
+    7,
+    12
+   ],
+   "block": "mq_n"
+  },
+  {
+   "op": "fill",
+   "from": [
+    18,
+    7,
+    12
+   ],
+   "to": [
+    20,
+    7,
+    12
+   ],
+   "block": "mq_n"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    8,
+    11
+   ],
+   "to": [
+    14,
+    8,
+    11
+   ],
+   "block": "mq_n"
+  },
+  {
+   "op": "fill",
+   "from": [
+    18,
+    8,
+    11
+   ],
+   "to": [
+    20,
+    8,
+    11
+   ],
+   "block": "mq_n"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    9,
+    10
+   ],
+   "to": [
+    14,
+    9,
+    10
+   ],
+   "block": "mq_n"
+  },
+  {
+   "op": "fill",
+   "from": [
+    18,
+    9,
+    10
+   ],
+   "to": [
+    20,
+    9,
+    10
+   ],
+   "block": "mq_n"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    10,
+    9
+   ],
+   "to": [
+    14,
+    10,
+    9
+   ],
+   "block": "mq_n"
+  },
+  {
+   "op": "fill",
+   "from": [
+    18,
+    10,
+    9
+   ],
+   "to": [
+    20,
+    10,
+    9
+   ],
+   "block": "mq_n"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    11,
+    8
+   ],
+   "to": [
+    14,
+    11,
+    8
+   ],
+   "block": "mq_n"
+  },
+  {
+   "op": "fill",
+   "from": [
+    18,
+    11,
+    8
+   ],
+   "to": [
+    20,
+    11,
+    8
+   ],
+   "block": "mq_n"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    12,
+    7
+   ],
+   "to": [
+    14,
+    12,
+    7
+   ],
+   "block": "mq_n"
+  },
+  {
+   "op": "fill",
+   "from": [
+    18,
+    12,
+    7
+   ],
+   "to": [
+    20,
+    12,
+    7
+   ],
+   "block": "mq_n"
+  },
+  {
+   "op": "fill",
+   "from": [
+    15,
+    7,
+    12
+   ],
+   "to": [
+    17,
+    7,
+    12
+   ],
+   "block": "rb_n"
+  },
+  {
+   "op": "fill",
+   "from": [
+    15,
+    8,
+    11
+   ],
+   "to": [
+    17,
+    8,
+    11
+   ],
+   "block": "rb_n"
+  },
+  {
+   "op": "fill",
+   "from": [
+    15,
+    9,
+    10
+   ],
+   "to": [
+    17,
+    9,
+    10
+   ],
+   "block": "rb_n"
+  },
+  {
+   "op": "fill",
+   "from": [
+    15,
+    10,
+    9
+   ],
+   "to": [
+    17,
+    10,
+    9
+   ],
+   "block": "rb_n"
+  },
+  {
+   "op": "fill",
+   "from": [
+    15,
+    11,
+    8
+   ],
+   "to": [
+    17,
+    11,
+    8
+   ],
+   "block": "rb_n"
+  },
+  {
+   "op": "fill",
+   "from": [
+    15,
+    12,
+    7
+   ],
+   "to": [
+    17,
+    12,
+    7
+   ],
+   "block": "rb_n"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    3,
+    24
+   ],
+   "block": "bars"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    4,
+    24
+   ],
+   "block": "bars"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    24,
+    4,
+    24
+   ],
+   "block": "bars"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    5,
+    24
+   ],
+   "block": "bars"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    23,
+    5,
+    24
+   ],
+   "block": "bars"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    6,
+    24
+   ],
+   "block": "bars"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    22,
+    6,
+    24
+   ],
+   "block": "bars"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    7,
+    24
+   ],
+   "block": "bars"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    21,
+    7,
+    24
+   ],
+   "block": "bars"
+  },
+  {
+   "op": "fill",
+   "from": [
+    11,
+    13,
+    7
+   ],
+   "to": [
+    11,
+    13,
+    8
+   ],
+   "block": "bars"
+  },
+  {
+   "op": "fill",
+   "from": [
+    21,
+    13,
+    7
+   ],
+   "to": [
+    21,
+    13,
+    8
+   ],
+   "block": "bars"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    13,
+    11
+   ],
+   "block": "bars"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    21,
+    13,
+    11
+   ],
+   "block": "bars"
+  },
+  {
+   "op": "fill",
+   "from": [
+    9,
+    13,
+    16
+   ],
+   "to": [
+    23,
+    13,
+    16
+   ],
+   "block": "u_dark_oak_stairs_facing_north_half_top"
+  },
+  {
+   "op": "fill",
+   "from": [
+    9,
+    13,
+    14
+   ],
+   "to": [
+    22,
+    13,
+    14
+   ],
+   "block": "u_dark_oak_stairs_facing_south_half_top"
+  },
+  {
+   "op": "fill",
+   "from": [
+    30,
+    1,
+    14
+   ],
+   "to": [
+    30,
+    1,
+    16
+   ],
+   "block": "sock"
+  },
+  {
+   "op": "fill",
+   "from": [
+    4,
+    1,
+    20
+   ],
+   "to": [
+    4,
+    2,
+    20
+   ],
+   "block": "sock"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    30,
+    2,
+    15
+   ],
+   "block": "sock"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    2,
+    20
+   ],
+   "block": "sock"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    24,
+    2,
+    20
+   ],
+   "block": "sock"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    28,
+    3,
+    20
+   ],
+   "block": "sock"
+  },
+  {
+   "op": "fill",
+   "from": [
+    28,
+    7,
+    8
+   ],
+   "to": [
+    28,
+    7,
+    16
+   ],
+   "block": "dark"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    13,
+    17
+   ],
+   "block": "in_s"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    13,
+    17
+   ],
+   "block": "in_s"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    13,
+    13,
+    17
+   ],
+   "block": "in_s"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    15,
+    13,
+    17
+   ],
+   "block": "in_s"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    17,
+    13,
+    17
+   ],
+   "block": "in_s"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    19,
+    13,
+    17
+   ],
+   "block": "in_s"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    21,
+    13,
+    17
+   ],
+   "block": "in_s"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    23,
+    13,
+    17
+   ],
+   "block": "in_s"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    13,
+    13
+   ],
+   "block": "in_n"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    13,
+    13
+   ],
+   "block": "in_n"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    13,
+    13,
+    13
+   ],
+   "block": "in_n"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    15,
+    13,
+    13
+   ],
+   "block": "in_n"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    17,
+    13,
+    13
+   ],
+   "block": "in_n"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    19,
+    13,
+    13
+   ],
+   "block": "in_n"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    21,
+    13,
+    13
+   ],
+   "block": "in_n"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    23,
+    13,
+    13
+   ],
+   "block": "in_n"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    23,
+    7,
+    9
+   ],
+   "block": "carpet"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    27,
+    7,
+    9
+   ],
+   "block": "carpet"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    23,
+    7,
+    11
+   ],
+   "block": "carpet"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    27,
+    7,
+    11
+   ],
+   "block": "carpet"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    23,
+    7,
+    13
+   ],
+   "block": "carpet"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    27,
+    7,
+    13
+   ],
+   "block": "carpet"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    23,
+    7,
+    15
+   ],
+   "block": "carpet"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    27,
+    7,
+    15
+   ],
+   "block": "carpet"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    2,
+    6,
+    21
+   ],
+   "block": "u_smooth_quartz_stairs_facing_north_half_top"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    6,
+    21
+   ],
+   "block": "u_smooth_quartz_stairs_facing_north_half_top"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    6,
+    21
+   ],
+   "block": "u_smooth_quartz_stairs_facing_north_half_top"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    22,
+    6,
+    21
+   ],
+   "block": "u_smooth_quartz_stairs_facing_north_half_top"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    26,
+    6,
+    21
+   ],
+   "block": "u_smooth_quartz_stairs_facing_north_half_top"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    30,
+    6,
+    21
+   ],
+   "block": "u_smooth_quartz_stairs_facing_north_half_top"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    15,
+    14
+   ],
+   "block": "lantern_h"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    16,
+    15,
+    14
+   ],
+   "block": "lantern_h"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    22,
+    15,
+    14
+   ],
+   "block": "lantern_h"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    28,
+    1,
+    20
+   ],
+   "block": "u_oak_door_facing_north_half_lower_hinge_left_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    16,
+    7,
+    20
+   ],
+   "block": "u_oak_door_facing_north_half_lower_hinge_left_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    28,
+    2,
+    20
+   ],
+   "block": "u_oak_door_facing_north_half_upper_hinge_left_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    16,
+    8,
+    20
+   ],
+   "block": "u_oak_door_facing_north_half_upper_hinge_left_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    7,
+    16
+   ],
+   "block": "u_oak_door_facing_west_half_lower_hinge_left_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    21,
+    7,
+    16
+   ],
+   "block": "u_oak_door_facing_east_half_lower_hinge_left_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    8,
+    16
+   ],
+   "block": "u_oak_door_facing_west_half_upper_hinge_left_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    21,
+    8,
+    16
+   ],
+   "block": "u_oak_door_facing_east_half_upper_hinge_left_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    23,
+    13,
+    14
+   ],
+   "block": "u_dark_oak_stairs_facing_west_half_top"
   }
  ],
  "entry": {

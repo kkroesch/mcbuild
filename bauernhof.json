@@ -60,7 +60,24 @@
   "potato": "minecraft:potatoes[age=7]",
   "beet": "minecraft:beetroots[age=3]",
   "log_x": "minecraft:oak_log[axis=x]",
-  "wall": "minecraft:cobblestone_wall"
+  "wall": "minecraft:cobblestone_wall",
+  "u_dirt": "minecraft:dirt",
+  "u_red_bed_facing_south_part_foot": "minecraft:red_bed[facing=south,part=foot]",
+  "u_red_bed_facing_south_part_head": "minecraft:red_bed[facing=south,part=head]",
+  "u_spruce_slab_type_top": "minecraft:spruce_slab[type=top]",
+  "u_spruce_stairs_facing_west_half_top": "minecraft:spruce_stairs[facing=west,half=top]",
+  "u_oak_door_facing_east_half_upper_hinge_left_open_true": "minecraft:oak_door[facing=east,half=upper,hinge=left,open=true]",
+  "u_stone_stairs_facing_east_half_bottom": "minecraft:stone_stairs[facing=east,half=bottom]",
+  "u_stone_stairs_facing_east_half_top": "minecraft:stone_stairs[facing=east,half=top]",
+  "u_oak_door_facing_north_half_lower_hinge_left_open_true": "minecraft:oak_door[facing=north,half=lower,hinge=left,open=true]",
+  "u_oak_door_facing_east_half_lower_hinge_left_open_true": "minecraft:oak_door[facing=east,half=lower,hinge=left,open=true]",
+  "u_oak_door_facing_north_half_upper_hinge_left_open_true": "minecraft:oak_door[facing=north,half=upper,hinge=left,open=true]",
+  "u_campfire_facing_east": "minecraft:campfire[facing=east]",
+  "u_oak_door_facing_west_half_lower_hinge_left_open_true": "minecraft:oak_door[facing=west,half=lower,hinge=left,open=true]",
+  "u_oak_door_facing_west_half_upper_hinge_left_open_true": "minecraft:oak_door[facing=west,half=upper,hinge=left,open=true]",
+  "u_oak_door_facing_south_half_lower_hinge_left_open_true": "minecraft:oak_door[facing=south,half=lower,hinge=left,open=true]",
+  "u_oak_door_facing_south_half_upper_hinge_left_open_true": "minecraft:oak_door[facing=south,half=upper,hinge=left,open=true]",
+  "u_spruce_fence_gate_facing_north_open_true": "minecraft:spruce_fence_gate[facing=north,open=true]"
  },
  "ops": [
   {
@@ -4977,6 +4994,865 @@
     34
    ],
    "block": "gate_e"
+  },
+  {
+   "op": "carve",
+   "from": [
+    25,
+    1,
+    4
+   ],
+   "to": [
+    25,
+    1,
+    4
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    29,
+    1,
+    4
+   ],
+   "to": [
+    29,
+    1,
+    4
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    33,
+    1,
+    4
+   ],
+   "to": [
+    33,
+    1,
+    4
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    37,
+    1,
+    4
+   ],
+   "to": [
+    37,
+    1,
+    4
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    17,
+    1,
+    5
+   ],
+   "to": [
+    17,
+    1,
+    5
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    24,
+    1,
+    6
+   ],
+   "to": [
+    24,
+    1,
+    6
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    28,
+    1,
+    6
+   ],
+   "to": [
+    28,
+    1,
+    6
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    32,
+    1,
+    6
+   ],
+   "to": [
+    32,
+    1,
+    6
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    36,
+    1,
+    6
+   ],
+   "to": [
+    36,
+    1,
+    6
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    8,
+    1,
+    12
+   ],
+   "to": [
+    8,
+    1,
+    12
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    10,
+    1,
+    12
+   ],
+   "to": [
+    12,
+    1,
+    12
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    14,
+    1,
+    12
+   ],
+   "to": [
+    14,
+    1,
+    12
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    30,
+    1,
+    12
+   ],
+   "to": [
+    32,
+    1,
+    12
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    11,
+    1,
+    13
+   ],
+   "to": [
+    11,
+    1,
+    16
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    40,
+    1,
+    15
+   ],
+   "to": [
+    40,
+    1,
+    18
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    38,
+    1,
+    16
+   ],
+   "to": [
+    38,
+    1,
+    16
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    11,
+    1,
+    18
+   ],
+   "to": [
+    11,
+    1,
+    22
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    34,
+    1,
+    20
+   ],
+   "to": [
+    35,
+    1,
+    20
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    38,
+    1,
+    20
+   ],
+   "to": [
+    38,
+    1,
+    20
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    18,
+    2,
+    5
+   ],
+   "to": [
+    18,
+    2,
+    5
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    17,
+    3,
+    5
+   ],
+   "to": [
+    17,
+    3,
+    5
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    5,
+    4,
+    4
+   ],
+   "to": [
+    5,
+    4,
+    4
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    13,
+    5,
+    9
+   ],
+   "to": [
+    13,
+    5,
+    10
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    16,
+    6,
+    28
+   ],
+   "to": [
+    24,
+    6,
+    28
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    16,
+    6,
+    29
+   ],
+   "to": [
+    19,
+    6,
+    36
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    20,
+    6,
+    36
+   ],
+   "to": [
+    24,
+    6,
+    36
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    18,
+    14,
+    4
+   ],
+   "to": [
+    18,
+    15,
+    5
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    17,
+    14,
+    5
+   ],
+   "to": [
+    17,
+    15,
+    5
+   ]
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    0,
+    12
+   ],
+   "block": "grass"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    0,
+    12
+   ],
+   "to": [
+    12,
+    0,
+    12
+   ],
+   "block": "grass"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    0,
+    12
+   ],
+   "block": "grass"
+  },
+  {
+   "op": "fill",
+   "from": [
+    30,
+    0,
+    12
+   ],
+   "to": [
+    32,
+    0,
+    12
+   ],
+   "block": "grass"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    0,
+    14
+   ],
+   "to": [
+    10,
+    0,
+    16
+   ],
+   "block": "grass"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    0,
+    14
+   ],
+   "to": [
+    12,
+    0,
+    16
+   ],
+   "block": "grass"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    0,
+    18
+   ],
+   "to": [
+    10,
+    0,
+    21
+   ],
+   "block": "grass"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    0,
+    18
+   ],
+   "to": [
+    12,
+    0,
+    21
+   ],
+   "block": "grass"
+  },
+  {
+   "op": "fill",
+   "from": [
+    28,
+    0,
+    26
+   ],
+   "to": [
+    32,
+    0,
+    26
+   ],
+   "block": "grass"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    1,
+    14
+   ],
+   "to": [
+    10,
+    1,
+    21
+   ],
+   "block": "fence"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    1,
+    14
+   ],
+   "to": [
+    12,
+    1,
+    21
+   ],
+   "block": "fence"
+  },
+  {
+   "op": "fill",
+   "from": [
+    4,
+    5,
+    5
+   ],
+   "to": [
+    8,
+    5,
+    5
+   ],
+   "block": "fence"
+  },
+  {
+   "op": "fill",
+   "from": [
+    17,
+    4,
+    4
+   ],
+   "to": [
+    17,
+    13,
+    4
+   ],
+   "block": "stone"
+  },
+  {
+   "op": "fill",
+   "from": [
+    24,
+    0,
+    8
+   ],
+   "to": [
+    24,
+    0,
+    10
+   ],
+   "block": "u_dirt"
+  },
+  {
+   "op": "fill",
+   "from": [
+    38,
+    0,
+    8
+   ],
+   "to": [
+    38,
+    0,
+    10
+   ],
+   "block": "u_dirt"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    5,
+    9
+   ],
+   "block": "u_red_bed_facing_south_part_foot"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    5,
+    9
+   ],
+   "block": "u_red_bed_facing_south_part_foot"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    5,
+    9
+   ],
+   "block": "u_red_bed_facing_south_part_foot"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    15,
+    5,
+    9
+   ],
+   "block": "u_red_bed_facing_south_part_foot"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    5,
+    10
+   ],
+   "block": "u_red_bed_facing_south_part_head"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    5,
+    10
+   ],
+   "block": "u_red_bed_facing_south_part_head"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    5,
+    10
+   ],
+   "block": "u_red_bed_facing_south_part_head"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    15,
+    5,
+    10
+   ],
+   "block": "u_red_bed_facing_south_part_head"
+  },
+  {
+   "op": "fill",
+   "from": [
+    11,
+    0,
+    18
+   ],
+   "to": [
+    11,
+    0,
+    21
+   ],
+   "block": "path"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    0,
+    17
+   ],
+   "to": [
+    12,
+    0,
+    17
+   ],
+   "block": "u_spruce_slab_type_top"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    1,
+    4
+   ],
+   "block": "u_spruce_stairs_facing_west_half_top"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    2,
+    4
+   ],
+   "block": "u_spruce_stairs_facing_west_half_top"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    3,
+    4
+   ],
+   "block": "u_spruce_stairs_facing_west_half_top"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    15,
+    2,
+    7
+   ],
+   "block": "u_oak_door_facing_east_half_upper_hinge_left_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    6,
+    7
+   ],
+   "block": "u_oak_door_facing_east_half_upper_hinge_left_open_true"
+  },
+  {
+   "op": "fill",
+   "from": [
+    19,
+    2,
+    5
+   ],
+   "to": [
+    19,
+    3,
+    5
+   ],
+   "block": "plaster"
+  },
+  {
+   "op": "fill",
+   "from": [
+    18,
+    3,
+    4
+   ],
+   "to": [
+    18,
+    3,
+    5
+   ],
+   "block": "u_stone_stairs_facing_east_half_bottom"
+  },
+  {
+   "op": "fill",
+   "from": [
+    18,
+    1,
+    4
+   ],
+   "to": [
+    18,
+    1,
+    5
+   ],
+   "block": "u_stone_stairs_facing_east_half_top"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    31,
+    1,
+    11
+   ],
+   "block": "u_oak_door_facing_north_half_lower_hinge_left_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    43,
+    1,
+    16
+   ],
+   "block": "u_oak_door_facing_north_half_lower_hinge_left_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    15,
+    1,
+    7
+   ],
+   "block": "u_oak_door_facing_east_half_lower_hinge_left_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    5,
+    7
+   ],
+   "block": "u_oak_door_facing_east_half_lower_hinge_left_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    31,
+    2,
+    11
+   ],
+   "block": "u_oak_door_facing_north_half_upper_hinge_left_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    43,
+    2,
+    16
+   ],
+   "block": "u_oak_door_facing_north_half_upper_hinge_left_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    18,
+    2,
+    4
+   ],
+   "block": "u_campfire_facing_east"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    25,
+    8,
+    32
+   ],
+   "block": "u_oak_door_facing_west_half_lower_hinge_left_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    25,
+    9,
+    32
+   ],
+   "block": "u_oak_door_facing_west_half_upper_hinge_left_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    1,
+    11
+   ],
+   "block": "u_oak_door_facing_south_half_lower_hinge_left_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    2,
+    11
+   ],
+   "block": "u_oak_door_facing_south_half_upper_hinge_left_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    42,
+    1,
+    19
+   ],
+   "block": "u_spruce_fence_gate_facing_north_open_true"
   }
  ],
  "entry": {

@@ -7,7 +7,7 @@
   "stone": "minecraft:stone_bricks",
   "brick": "minecraft:bricks",
   "floor": "minecraft:spruce_planks",
-  "slab_b": "minecraft:spruce_slab[type=bottom]",
+  "slab_b": "minecraft:spruce_slab[type=top]",
   "fence": "minecraft:spruce_fence",
   "hay": "minecraft:hay_block[axis=y]",
   "glass": "minecraft:glass_pane",
@@ -24,7 +24,22 @@
   "composter": "minecraft:composter",
   "hay_bale": "minecraft:hay_block[axis=y]",
   "grindstone": "minecraft:grindstone[face=floor,facing=north]",
-  "lantern": "minecraft:lantern[hanging=false]"
+  "lantern": "minecraft:lantern[hanging=false]",
+  "u_oak_fence": "minecraft:oak_fence",
+  "u_dirt": "minecraft:dirt",
+  "u_oak_door_facing_west_half_upper_hinge_left_open_true": "minecraft:oak_door[facing=west,half=upper,hinge=left,open=true]",
+  "u_composter_level_0": "minecraft:composter[level=0]",
+  "u_oak_door_facing_west_half_lower_hinge_left_open_true": "minecraft:oak_door[facing=west,half=lower,hinge=left,open=true]",
+  "tr_ramp_s": "minecraft:stone_brick_stairs[facing=south,half=bottom]",
+  "tr_gate": "minecraft:oak_fence_gate[facing=north,open=false,in_wall=false]",
+  "tr_stair_north": "minecraft:spruce_stairs[facing=north,half=bottom]",
+  "tr_stair_west": "minecraft:spruce_stairs[facing=west,half=bottom]",
+  "tr_stair_east": "minecraft:spruce_stairs[facing=east,half=bottom]",
+  "tr_rail_east": "minecraft:spruce_trapdoor[facing=east,half=bottom,open=true]",
+  "tr_rail_north": "minecraft:spruce_trapdoor[facing=north,half=bottom,open=true]",
+  "tr_rail_south": "minecraft:spruce_trapdoor[facing=south,half=bottom,open=true]",
+  "tr_stair_south": "minecraft:spruce_stairs[facing=south,half=bottom]",
+  "tr_rail_west": "minecraft:spruce_trapdoor[facing=west,half=bottom,open=true]"
  },
  "ops": [
   {
@@ -897,6 +912,1228 @@
     15
    ],
    "block": "lantern"
+  },
+  {
+   "op": "carve",
+   "from": [
+    14,
+    9,
+    10
+   ],
+   "to": [
+    14,
+    11,
+    11
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    11,
+    10,
+    9
+   ],
+   "to": [
+    11,
+    10,
+    9
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    17,
+    10,
+    9
+   ],
+   "to": [
+    17,
+    10,
+    9
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    10,
+    10,
+    10
+   ],
+   "to": [
+    10,
+    10,
+    10
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    18,
+    10,
+    10
+   ],
+   "to": [
+    18,
+    10,
+    10
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    9,
+    10,
+    11
+   ],
+   "to": [
+    9,
+    10,
+    11
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    19,
+    10,
+    11
+   ],
+   "to": [
+    19,
+    10,
+    11
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    9,
+    10,
+    17
+   ],
+   "to": [
+    9,
+    10,
+    17
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    19,
+    10,
+    17
+   ],
+   "to": [
+    19,
+    10,
+    17
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    10,
+    10,
+    18
+   ],
+   "to": [
+    10,
+    10,
+    18
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    18,
+    10,
+    18
+   ],
+   "to": [
+    18,
+    10,
+    18
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    11,
+    10,
+    19
+   ],
+   "to": [
+    11,
+    10,
+    19
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    17,
+    10,
+    19
+   ],
+   "to": [
+    17,
+    10,
+    19
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    14,
+    18,
+    12
+   ],
+   "to": [
+    14,
+    18,
+    12
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    10,
+    8
+   ],
+   "to": [
+    18,
+    10,
+    8
+   ],
+   "block": "u_oak_fence"
+  },
+  {
+   "op": "fill",
+   "from": [
+    9,
+    10,
+    9
+   ],
+   "to": [
+    10,
+    10,
+    9
+   ],
+   "block": "u_oak_fence"
+  },
+  {
+   "op": "fill",
+   "from": [
+    18,
+    10,
+    9
+   ],
+   "to": [
+    19,
+    10,
+    9
+   ],
+   "block": "u_oak_fence"
+  },
+  {
+   "op": "fill",
+   "from": [
+    8,
+    10,
+    10
+   ],
+   "to": [
+    9,
+    10,
+    10
+   ],
+   "block": "u_oak_fence"
+  },
+  {
+   "op": "fill",
+   "from": [
+    19,
+    10,
+    10
+   ],
+   "to": [
+    20,
+    10,
+    10
+   ],
+   "block": "u_oak_fence"
+  },
+  {
+   "op": "fill",
+   "from": [
+    8,
+    10,
+    11
+   ],
+   "to": [
+    8,
+    10,
+    18
+   ],
+   "block": "u_oak_fence"
+  },
+  {
+   "op": "fill",
+   "from": [
+    20,
+    10,
+    11
+   ],
+   "to": [
+    20,
+    10,
+    18
+   ],
+   "block": "u_oak_fence"
+  },
+  {
+   "op": "fill",
+   "from": [
+    9,
+    10,
+    18
+   ],
+   "to": [
+    9,
+    10,
+    19
+   ],
+   "block": "u_oak_fence"
+  },
+  {
+   "op": "fill",
+   "from": [
+    19,
+    10,
+    18
+   ],
+   "to": [
+    19,
+    10,
+    19
+   ],
+   "block": "u_oak_fence"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    10,
+    19
+   ],
+   "to": [
+    10,
+    10,
+    20
+   ],
+   "block": "u_oak_fence"
+  },
+  {
+   "op": "fill",
+   "from": [
+    18,
+    10,
+    19
+   ],
+   "to": [
+    18,
+    10,
+    20
+   ],
+   "block": "u_oak_fence"
+  },
+  {
+   "op": "fill",
+   "from": [
+    11,
+    10,
+    20
+   ],
+   "to": [
+    17,
+    10,
+    20
+   ],
+   "block": "u_oak_fence"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    0,
+    8
+   ],
+   "to": [
+    16,
+    0,
+    8
+   ],
+   "block": "u_dirt"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    0,
+    9
+   ],
+   "to": [
+    11,
+    0,
+    9
+   ],
+   "block": "u_dirt"
+  },
+  {
+   "op": "fill",
+   "from": [
+    17,
+    0,
+    9
+   ],
+   "to": [
+    18,
+    0,
+    9
+   ],
+   "block": "u_dirt"
+  },
+  {
+   "op": "fill",
+   "from": [
+    9,
+    0,
+    10
+   ],
+   "to": [
+    10,
+    0,
+    10
+   ],
+   "block": "u_dirt"
+  },
+  {
+   "op": "fill",
+   "from": [
+    18,
+    0,
+    10
+   ],
+   "to": [
+    19,
+    0,
+    10
+   ],
+   "block": "u_dirt"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    0,
+    11
+   ],
+   "block": "u_dirt"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    19,
+    0,
+    11
+   ],
+   "block": "u_dirt"
+  },
+  {
+   "op": "fill",
+   "from": [
+    8,
+    0,
+    12
+   ],
+   "to": [
+    8,
+    0,
+    16
+   ],
+   "block": "u_dirt"
+  },
+  {
+   "op": "fill",
+   "from": [
+    20,
+    0,
+    12
+   ],
+   "to": [
+    20,
+    0,
+    13
+   ],
+   "block": "u_dirt"
+  },
+  {
+   "op": "fill",
+   "from": [
+    20,
+    0,
+    15
+   ],
+   "to": [
+    20,
+    0,
+    16
+   ],
+   "block": "u_dirt"
+  },
+  {
+   "op": "fill",
+   "from": [
+    9,
+    0,
+    17
+   ],
+   "to": [
+    9,
+    0,
+    18
+   ],
+   "block": "u_dirt"
+  },
+  {
+   "op": "fill",
+   "from": [
+    19,
+    0,
+    17
+   ],
+   "to": [
+    19,
+    0,
+    18
+   ],
+   "block": "u_dirt"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    0,
+    18
+   ],
+   "to": [
+    10,
+    0,
+    19
+   ],
+   "block": "u_dirt"
+  },
+  {
+   "op": "fill",
+   "from": [
+    18,
+    0,
+    18
+   ],
+   "to": [
+    18,
+    0,
+    19
+   ],
+   "block": "u_dirt"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    0,
+    19
+   ],
+   "block": "u_dirt"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    17,
+    0,
+    19
+   ],
+   "block": "u_dirt"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    0,
+    20
+   ],
+   "to": [
+    16,
+    0,
+    20
+   ],
+   "block": "u_dirt"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    9,
+    8
+   ],
+   "to": [
+    11,
+    9,
+    8
+   ],
+   "block": "slab_b"
+  },
+  {
+   "op": "fill",
+   "from": [
+    17,
+    9,
+    8
+   ],
+   "to": [
+    18,
+    9,
+    8
+   ],
+   "block": "slab_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    9,
+    9
+   ],
+   "block": "slab_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    19,
+    9,
+    9
+   ],
+   "block": "slab_b"
+  },
+  {
+   "op": "fill",
+   "from": [
+    8,
+    9,
+    10
+   ],
+   "to": [
+    8,
+    9,
+    11
+   ],
+   "block": "slab_b"
+  },
+  {
+   "op": "fill",
+   "from": [
+    20,
+    9,
+    10
+   ],
+   "to": [
+    20,
+    9,
+    11
+   ],
+   "block": "slab_b"
+  },
+  {
+   "op": "fill",
+   "from": [
+    8,
+    9,
+    17
+   ],
+   "to": [
+    8,
+    9,
+    18
+   ],
+   "block": "slab_b"
+  },
+  {
+   "op": "fill",
+   "from": [
+    20,
+    9,
+    17
+   ],
+   "to": [
+    20,
+    9,
+    18
+   ],
+   "block": "slab_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    9,
+    19
+   ],
+   "block": "slab_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    19,
+    9,
+    19
+   ],
+   "block": "slab_b"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    9,
+    20
+   ],
+   "to": [
+    11,
+    9,
+    20
+   ],
+   "block": "slab_b"
+  },
+  {
+   "op": "fill",
+   "from": [
+    17,
+    9,
+    20
+   ],
+   "to": [
+    18,
+    9,
+    20
+   ],
+   "block": "slab_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    20,
+    2,
+    14
+   ],
+   "block": "u_oak_door_facing_west_half_upper_hinge_left_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    17,
+    1,
+    12
+   ],
+   "block": "u_composter_level_0"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    20,
+    1,
+    14
+   ],
+   "block": "u_oak_door_facing_west_half_lower_hinge_left_open_true"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    9,
+    8
+   ],
+   "block": "tr_ramp_s"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    10,
+    8
+   ],
+   "block": "tr_gate"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    9,
+    10
+   ],
+   "block": "tr_stair_north"
+  },
+  {
+   "op": "carve",
+   "from": [
+    14,
+    12,
+    11
+   ],
+   "to": [
+    14,
+    12,
+    11
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    14,
+    13,
+    11
+   ],
+   "to": [
+    14,
+    13,
+    11
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    14,
+    14,
+    11
+   ],
+   "to": [
+    14,
+    14,
+    11
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    14,
+    15,
+    11
+   ],
+   "to": [
+    14,
+    15,
+    11
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    14,
+    16,
+    12
+   ],
+   "to": [
+    14,
+    16,
+    12
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    14,
+    17,
+    12
+   ],
+   "to": [
+    14,
+    17,
+    12
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    14,
+    19,
+    12
+   ],
+   "to": [
+    14,
+    19,
+    12
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    14,
+    20,
+    12
+   ],
+   "to": [
+    14,
+    20,
+    12
+   ]
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    1,
+    16
+   ],
+   "block": "tr_stair_north"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    2,
+    15
+   ],
+   "block": "tr_stair_west"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    3,
+    15
+   ],
+   "block": "tr_stair_north"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    4,
+    14
+   ],
+   "block": "tr_stair_north"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    5,
+    13
+   ],
+   "block": "tr_stair_east"
+  },
+  {
+   "op": "carve",
+   "from": [
+    11,
+    8,
+    13
+   ],
+   "to": [
+    11,
+    8,
+    13
+   ]
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    6,
+    13
+   ],
+   "block": "tr_stair_east"
+  },
+  {
+   "op": "carve",
+   "from": [
+    12,
+    8,
+    13
+   ],
+   "to": [
+    12,
+    8,
+    13
+   ]
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    7,
+    13
+   ],
+   "block": "tr_stair_east"
+  },
+  {
+   "op": "carve",
+   "from": [
+    13,
+    8,
+    13
+   ],
+   "to": [
+    13,
+    8,
+    13
+   ]
+  },
+  {
+   "op": "setblock",
+   "at": [
+    13,
+    8,
+    13
+   ],
+   "block": "tr_stair_east"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    2,
+    16
+   ],
+   "block": "tr_rail_east"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    3,
+    15
+   ],
+   "block": "tr_rail_east"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    3,
+    14
+   ],
+   "block": "tr_rail_north"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    5,
+    14
+   ],
+   "block": "tr_rail_east"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    7,
+    14
+   ],
+   "block": "tr_rail_south"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    7,
+    12
+   ],
+   "block": "tr_rail_north"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    9,
+    14
+   ],
+   "block": "tr_rail_south"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    9,
+    14
+   ],
+   "block": "tr_rail_south"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    9,
+    12
+   ],
+   "block": "tr_rail_north"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    16,
+    9,
+    15
+   ],
+   "block": "tr_stair_south"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    16,
+    10,
+    16
+   ],
+   "block": "tr_stair_west"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    15,
+    11,
+    16
+   ],
+   "block": "tr_stair_south"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    15,
+    12,
+    17
+   ],
+   "block": "tr_stair_west"
+  },
+  {
+   "op": "carve",
+   "from": [
+    14,
+    15,
+    17
+   ],
+   "to": [
+    14,
+    15,
+    17
+   ]
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    13,
+    17
+   ],
+   "block": "tr_stair_north"
+  },
+  {
+   "op": "carve",
+   "from": [
+    14,
+    15,
+    16
+   ],
+   "to": [
+    14,
+    15,
+    16
+   ]
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    14,
+    16
+   ],
+   "block": "tr_stair_north"
+  },
+  {
+   "op": "carve",
+   "from": [
+    14,
+    15,
+    15
+   ],
+   "to": [
+    14,
+    15,
+    15
+   ]
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    15,
+    15
+   ],
+   "block": "tr_stair_north"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    17,
+    10,
+    15
+   ],
+   "block": "tr_rail_east"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    15,
+    10,
+    15
+   ],
+   "block": "tr_rail_west"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    15,
+    12,
+    15
+   ],
+   "block": "tr_rail_north"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    13,
+    14,
+    17
+   ],
+   "block": "tr_rail_west"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    15,
+    16,
+    16
+   ],
+   "block": "tr_rail_east"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    13,
+    16,
+    16
+   ],
+   "block": "tr_rail_west"
   }
  ],
  "entry": {

@@ -1,0 +1,1180 @@
+{
+ "name": "schmiede",
+ "palette": {
+  "dirt": "minecraft:dirt",
+  "grass": "minecraft:grass_block",
+  "path": "minecraft:dirt_path",
+  "cobble": "minecraft:cobblestone",
+  "stone": "minecraft:stone_bricks",
+  "mossy": "minecraft:mossy_stone_bricks",
+  "floor_h": "minecraft:polished_andesite",
+  "floor_r": "minecraft:spruce_planks",
+  "beam_x": "minecraft:dark_oak_log[axis=x]",
+  "beam_y": "minecraft:dark_oak_log[axis=y]",
+  "beam_z": "minecraft:dark_oak_log[axis=z]",
+  "roofstair": "minecraft:deepslate_tile_stairs",
+  "gable": "minecraft:spruce_planks",
+  "glass": "minecraft:glass_pane",
+  "bars": "minecraft:iron_bars",
+  "magma": "minecraft:magma_block",
+  "fire": "minecraft:campfire[facing=south,lit=true,signal_fire=false,waterlogged=false]",
+  "hood": "minecraft:stone_brick_stairs[facing=south,half=top]",
+  "anvil": "minecraft:anvil[facing=east]",
+  "grind": "minecraft:grindstone[face=floor,facing=east]",
+  "blast": "minecraft:blast_furnace[facing=east,lit=false]",
+  "smith": "minecraft:smithing_table",
+  "cauldron": "minecraft:water_cauldron[level=3]",
+  "barrel": "minecraft:barrel[facing=up,open=false]",
+  "chest": "minecraft:chest[facing=south,type=single,waterlogged=false]",
+  "coal": "minecraft:coal_block",
+  "lantern_h": "minecraft:lantern[hanging=true]",
+  "lantern": "minecraft:lantern[hanging=false]",
+  "fence": "minecraft:spruce_fence",
+  "plate": "minecraft:spruce_pressure_plate",
+  "st_w": "minecraft:spruce_stairs[facing=west,half=bottom]",
+  "st_e": "minecraft:spruce_stairs[facing=east,half=bottom]",
+  "bed_h": "minecraft:red_bed[facing=north,part=head]",
+  "bed_f": "minecraft:red_bed[facing=north,part=foot]",
+  "furnace": "minecraft:furnace[facing=west,lit=false]",
+  "craft": "minecraft:crafting_table",
+  "log_z": "minecraft:oak_log[axis=z]",
+  "water": "minecraft:water",
+  "d_n_lo": "minecraft:oak_door[facing=north,half=lower,hinge=left,open=false]",
+  "d_n_hi": "minecraft:oak_door[facing=north,half=upper,hinge=left,open=false]"
+ },
+ "ops": [
+  {
+   "op": "fill",
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    20,
+    2,
+    22
+   ],
+   "block": "dirt"
+  },
+  {
+   "op": "fill",
+   "from": [
+    0,
+    3,
+    0
+   ],
+   "to": [
+    20,
+    3,
+    22
+   ],
+   "block": "grass"
+  },
+  {
+   "op": "hollow_box",
+   "from": [
+    5,
+    3,
+    2
+   ],
+   "to": [
+    15,
+    8,
+    18
+   ],
+   "block": "stone"
+  },
+  {
+   "op": "carve",
+   "from": [
+    6,
+    4,
+    3
+   ],
+   "to": [
+    14,
+    7,
+    9
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    6,
+    4,
+    11
+   ],
+   "to": [
+    14,
+    7,
+    17
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    4,
+    10
+   ],
+   "to": [
+    15,
+    8,
+    10
+   ],
+   "block": "stone"
+  },
+  {
+   "op": "fill",
+   "from": [
+    6,
+    3,
+    3
+   ],
+   "to": [
+    14,
+    3,
+    9
+   ],
+   "block": "floor_r"
+  },
+  {
+   "op": "fill",
+   "from": [
+    6,
+    3,
+    11
+   ],
+   "to": [
+    14,
+    3,
+    17
+   ],
+   "block": "floor_h"
+  },
+  {
+   "op": "fill",
+   "from": [
+    6,
+    3,
+    18
+   ],
+   "to": [
+    14,
+    3,
+    18
+   ],
+   "block": "floor_h"
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    3,
+    2
+   ],
+   "to": [
+    5,
+    8,
+    2
+   ],
+   "block": "beam_y"
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    3,
+    10
+   ],
+   "to": [
+    5,
+    8,
+    10
+   ],
+   "block": "beam_y"
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    3,
+    14
+   ],
+   "to": [
+    5,
+    8,
+    14
+   ],
+   "block": "beam_y"
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    3,
+    18
+   ],
+   "to": [
+    5,
+    8,
+    18
+   ],
+   "block": "beam_y"
+  },
+  {
+   "op": "fill",
+   "from": [
+    15,
+    3,
+    2
+   ],
+   "to": [
+    15,
+    8,
+    2
+   ],
+   "block": "beam_y"
+  },
+  {
+   "op": "fill",
+   "from": [
+    15,
+    3,
+    10
+   ],
+   "to": [
+    15,
+    8,
+    10
+   ],
+   "block": "beam_y"
+  },
+  {
+   "op": "fill",
+   "from": [
+    15,
+    3,
+    14
+   ],
+   "to": [
+    15,
+    8,
+    14
+   ],
+   "block": "beam_y"
+  },
+  {
+   "op": "fill",
+   "from": [
+    15,
+    3,
+    18
+   ],
+   "to": [
+    15,
+    8,
+    18
+   ],
+   "block": "beam_y"
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    8,
+    2
+   ],
+   "to": [
+    15,
+    8,
+    2
+   ],
+   "block": "beam_x"
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    8,
+    10
+   ],
+   "to": [
+    15,
+    8,
+    10
+   ],
+   "block": "beam_x"
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    8,
+    18
+   ],
+   "to": [
+    15,
+    8,
+    18
+   ],
+   "block": "beam_x"
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    8,
+    2
+   ],
+   "to": [
+    5,
+    8,
+    18
+   ],
+   "block": "beam_z"
+  },
+  {
+   "op": "fill",
+   "from": [
+    15,
+    8,
+    2
+   ],
+   "to": [
+    15,
+    8,
+    18
+   ],
+   "block": "beam_z"
+  },
+  {
+   "op": "carve",
+   "from": [
+    6,
+    4,
+    18
+   ],
+   "to": [
+    14,
+    7,
+    18
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    8,
+    4,
+    18
+   ],
+   "to": [
+    8,
+    7,
+    18
+   ],
+   "block": "beam_y"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    4,
+    18
+   ],
+   "to": [
+    12,
+    7,
+    18
+   ],
+   "block": "beam_y"
+  },
+  {
+   "op": "carve",
+   "from": [
+    8,
+    5,
+    2
+   ],
+   "to": [
+    8,
+    6,
+    2
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    8,
+    5,
+    2
+   ],
+   "to": [
+    8,
+    6,
+    2
+   ],
+   "block": "glass"
+  },
+  {
+   "op": "carve",
+   "from": [
+    12,
+    5,
+    2
+   ],
+   "to": [
+    12,
+    6,
+    2
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    5,
+    2
+   ],
+   "to": [
+    12,
+    6,
+    2
+   ],
+   "block": "glass"
+  },
+  {
+   "op": "carve",
+   "from": [
+    5,
+    5,
+    6
+   ],
+   "to": [
+    5,
+    6,
+    6
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    5,
+    6
+   ],
+   "to": [
+    5,
+    6,
+    6
+   ],
+   "block": "glass"
+  },
+  {
+   "op": "carve",
+   "from": [
+    5,
+    5,
+    12
+   ],
+   "to": [
+    5,
+    6,
+    12
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    5,
+    12
+   ],
+   "to": [
+    5,
+    6,
+    12
+   ],
+   "block": "bars"
+  },
+  {
+   "op": "carve",
+   "from": [
+    5,
+    5,
+    16
+   ],
+   "to": [
+    5,
+    6,
+    16
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    5,
+    16
+   ],
+   "to": [
+    5,
+    6,
+    16
+   ],
+   "block": "bars"
+  },
+  {
+   "op": "carve",
+   "from": [
+    15,
+    5,
+    6
+   ],
+   "to": [
+    15,
+    6,
+    6
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    15,
+    5,
+    6
+   ],
+   "to": [
+    15,
+    6,
+    6
+   ],
+   "block": "glass"
+  },
+  {
+   "op": "carve",
+   "from": [
+    15,
+    5,
+    12
+   ],
+   "to": [
+    15,
+    6,
+    12
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    15,
+    5,
+    12
+   ],
+   "to": [
+    15,
+    6,
+    12
+   ],
+   "block": "bars"
+  },
+  {
+   "op": "carve",
+   "from": [
+    15,
+    5,
+    16
+   ],
+   "to": [
+    15,
+    6,
+    16
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    15,
+    5,
+    16
+   ],
+   "to": [
+    15,
+    6,
+    16
+   ],
+   "block": "bars"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    4,
+    10
+   ],
+   "block": "d_n_lo"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    5,
+    10
+   ],
+   "block": "d_n_hi"
+  },
+  {
+   "op": "gable_roof",
+   "from": [
+    4,
+    9,
+    2
+   ],
+   "to": [
+    16,
+    9,
+    18
+   ],
+   "axis": "z",
+   "stairs": "roofstair",
+   "gable": "gable"
+  },
+  {
+   "op": "hollow_box",
+   "from": [
+    8,
+    4,
+    11
+   ],
+   "to": [
+    12,
+    5,
+    12
+   ],
+   "block": "stone"
+  },
+  {
+   "op": "carve",
+   "from": [
+    9,
+    4,
+    12
+   ],
+   "to": [
+    11,
+    5,
+    12
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    9,
+    4,
+    12
+   ],
+   "to": [
+    11,
+    4,
+    12
+   ],
+   "block": "magma"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    5,
+    12
+   ],
+   "block": "fire"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    5,
+    12
+   ],
+   "block": "fire"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    5,
+    12
+   ],
+   "block": "fire"
+  },
+  {
+   "op": "hollow_box",
+   "from": [
+    8,
+    6,
+    11
+   ],
+   "to": [
+    12,
+    9,
+    13
+   ],
+   "block": "stone"
+  },
+  {
+   "op": "carve",
+   "from": [
+    9,
+    6,
+    12
+   ],
+   "to": [
+    11,
+    9,
+    12
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    9,
+    6,
+    13
+   ],
+   "to": [
+    9,
+    6,
+    13
+   ],
+   "block": "stone"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    6,
+    13
+   ],
+   "to": [
+    10,
+    6,
+    13
+   ],
+   "block": "stone"
+  },
+  {
+   "op": "fill",
+   "from": [
+    11,
+    6,
+    13
+   ],
+   "to": [
+    11,
+    6,
+    13
+   ],
+   "block": "stone"
+  },
+  {
+   "op": "hollow_box",
+   "from": [
+    9,
+    10,
+    11
+   ],
+   "to": [
+    11,
+    18,
+    13
+   ],
+   "block": "stone"
+  },
+  {
+   "op": "carve",
+   "from": [
+    10,
+    10,
+    12
+   ],
+   "to": [
+    10,
+    18,
+    12
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    8,
+    4,
+    13
+   ],
+   "to": [
+    12,
+    5,
+    13
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    8,
+    4,
+    13
+   ],
+   "to": [
+    8,
+    5,
+    13
+   ],
+   "block": "stone"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    4,
+    13
+   ],
+   "to": [
+    12,
+    5,
+    13
+   ],
+   "block": "stone"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    4,
+    15
+   ],
+   "block": "anvil"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    4,
+    13
+   ],
+   "block": "smith"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    4,
+    14
+   ],
+   "block": "blast"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    4,
+    15
+   ],
+   "block": "grind"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    4,
+    13
+   ],
+   "block": "cauldron"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    4,
+    15
+   ],
+   "block": "barrel"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    4,
+    16
+   ],
+   "block": "barrel"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    4,
+    17
+   ],
+   "block": "chest"
+  },
+  {
+   "op": "fill",
+   "from": [
+    6,
+    4,
+    17
+   ],
+   "to": [
+    7,
+    4,
+    17
+   ],
+   "block": "coal"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    5,
+    17
+   ],
+   "block": "coal"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    7,
+    15
+   ],
+   "block": "lantern_h"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    7,
+    15
+   ],
+   "block": "lantern_h"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    7,
+    17
+   ],
+   "block": "lantern_h"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    4,
+    3
+   ],
+   "block": "bed_h"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    4,
+    4
+   ],
+   "block": "bed_f"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    13,
+    4,
+    3
+   ],
+   "block": "chest"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    4,
+    3
+   ],
+   "block": "barrel"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    4,
+    6
+   ],
+   "block": "craft"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    4,
+    8
+   ],
+   "block": "furnace"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    4,
+    6
+   ],
+   "block": "fence"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    5,
+    6
+   ],
+   "block": "plate"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    4,
+    6
+   ],
+   "block": "st_w"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    4,
+    6
+   ],
+   "block": "st_e"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    7,
+    7
+   ],
+   "block": "lantern_h"
+  },
+  {
+   "op": "fill",
+   "from": [
+    6,
+    3,
+    19
+   ],
+   "to": [
+    14,
+    3,
+    21
+   ],
+   "block": "stone"
+  },
+  {
+   "op": "fill",
+   "from": [
+    9,
+    3,
+    22
+   ],
+   "to": [
+    11,
+    3,
+    22
+   ],
+   "block": "path"
+  },
+  {
+   "op": "fill",
+   "from": [
+    6,
+    4,
+    20
+   ],
+   "to": [
+    6,
+    5,
+    20
+   ],
+   "block": "fence"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    6,
+    20
+   ],
+   "block": "lantern"
+  },
+  {
+   "op": "fill",
+   "from": [
+    14,
+    4,
+    20
+   ],
+   "to": [
+    14,
+    5,
+    20
+   ],
+   "block": "fence"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    6,
+    20
+   ],
+   "block": "lantern"
+  },
+  {
+   "op": "fill",
+   "from": [
+    17,
+    4,
+    4
+   ],
+   "to": [
+    18,
+    5,
+    8
+   ],
+   "block": "log_z"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    3,
+    13
+   ],
+   "to": [
+    3,
+    3,
+    15
+   ],
+   "block": "water"
+  }
+ ],
+ "entry": {
+  "at": [
+   10,
+   4,
+   22
+  ],
+  "facing": "south"
+ }
+}

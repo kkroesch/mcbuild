@@ -133,6 +133,26 @@
    "facing": "west"
   },
   {
+   "id": "schmiede",
+   "bp": "schmiede.json",
+   "tag": "Z",
+   "entry": [
+    150,
+    82
+   ],
+   "facing": "north"
+  },
+  {
+   "id": "baeckerei",
+   "bp": "baeckerei.json",
+   "tag": "B",
+   "entry": [
+    180,
+    82
+   ],
+   "facing": "north"
+  },
+  {
    "id": "hof1",
    "bp": "bauernhof.json",
    "tag": "H",

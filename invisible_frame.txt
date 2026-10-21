@@ -1,0 +1,1 @@
+/give @p item_frame[entity_data={id:"minecraft:item_frame",Invisible:1b}]

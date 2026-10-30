@@ -1,0 +1,234 @@
+{
+ "name": "turris",
+ "palette": {
+  "body": "minecraft:cut_sandstone",
+  "band": "minecraft:smooth_sandstone",
+  "chisel": "minecraft:chiseled_sandstone",
+  "stonebr": "minecraft:stone_bricks",
+  "stairs_w": "minecraft:sandstone_stairs[facing=west,half=top]",
+  "stairs_e": "minecraft:sandstone_stairs[facing=east,half=top]",
+  "step_n": "minecraft:sandstone_stairs[facing=north,half=bottom]",
+  "planks": "minecraft:spruce_planks",
+  "slab": "minecraft:sandstone_slab[type=bottom]",
+  "bars": "minecraft:iron_bars",
+  "ladder": "minecraft:ladder[facing=south]",
+  "lantern": "minecraft:lantern[hanging=false]",
+  "lantern_h": "minecraft:lantern[hanging=true]"
+ },
+ "ops": [
+  {
+   "op": "fill",
+   "from": [0, 3, 0],
+   "to": [6, 17, 6],
+   "block": "body"
+  },
+  {
+   "op": "carve",
+   "from": [1, 3, 1],
+   "to": [5, 16, 5]
+  },
+  {
+   "op": "fill",
+   "from": [0, 3, 0],
+   "to": [6, 3, 0],
+   "block": "stonebr"
+  },
+  {
+   "op": "fill",
+   "from": [0, 3, 6],
+   "to": [6, 3, 6],
+   "block": "stonebr"
+  },
+  {
+   "op": "fill",
+   "from": [0, 3, 0],
+   "to": [0, 3, 6],
+   "block": "stonebr"
+  },
+  {
+   "op": "fill",
+   "from": [6, 3, 0],
+   "to": [6, 3, 6],
+   "block": "stonebr"
+  },
+  {
+   "op": "fill",
+   "from": [1, 3, 1],
+   "to": [5, 3, 5],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [1, 7, 1],
+   "to": [5, 7, 5],
+   "block": "planks"
+  },
+  {
+   "op": "fill",
+   "from": [1, 12, 1],
+   "to": [5, 12, 5],
+   "block": "planks"
+  },
+  {
+   "op": "fill",
+   "from": [1, 16, 1],
+   "to": [5, 16, 5],
+   "block": "band"
+  },
+  {
+   "op": "carve",
+   "from": [1, 7, 1],
+   "to": [1, 16, 1]
+  },
+  {
+   "op": "fill",
+   "from": [1, 4, 1],
+   "to": [1, 16, 1],
+   "block": "ladder"
+  },
+  {
+   "op": "carve",
+   "from": [2, 8, 0],
+   "to": [4, 10, 0]
+  },
+  {
+   "op": "carve",
+   "from": [2, 8, 6],
+   "to": [4, 10, 6]
+  },
+  {
+   "op": "setblock",
+   "at": [3, 9, 0],
+   "block": "bars"
+  },
+  {
+   "op": "setblock",
+   "at": [3, 9, 6],
+   "block": "bars"
+  },
+  {
+   "op": "fill",
+   "from": [0, 8, 2],
+   "to": [0, 10, 4],
+   "block": "body"
+  },
+  {
+   "op": "carve",
+   "from": [0, 8, 3],
+   "to": [0, 9, 3]
+  },
+  {
+   "op": "setblock",
+   "at": [0, 9, 3],
+   "block": "bars"
+  },
+  {
+   "op": "fill",
+   "from": [1, 13, 0],
+   "to": [5, 14, 0],
+   "block": "bars"
+  },
+  {
+   "op": "fill",
+   "from": [1, 13, 6],
+   "to": [5, 14, 6],
+   "block": "bars"
+  },
+  {
+   "op": "fill",
+   "from": [0, 13, 1],
+   "to": [0, 14, 5],
+   "block": "bars"
+  },
+  {
+   "op": "fill",
+   "from": [0, 17, 0],
+   "to": [6, 17, 6],
+   "block": "band"
+  },
+  {
+   "op": "carve",
+   "from": [1, 17, 1],
+   "to": [5, 17, 5]
+  },
+  {
+   "op": "setblock",
+   "at": [1, 17, 0],
+   "block": "slab"
+  },
+  {
+   "op": "setblock",
+   "at": [3, 17, 0],
+   "block": "slab"
+  },
+  {
+   "op": "setblock",
+   "at": [5, 17, 0],
+   "block": "slab"
+  },
+  {
+   "op": "setblock",
+   "at": [1, 17, 6],
+   "block": "slab"
+  },
+  {
+   "op": "setblock",
+   "at": [3, 17, 6],
+   "block": "slab"
+  },
+  {
+   "op": "setblock",
+   "at": [5, 17, 6],
+   "block": "slab"
+  },
+  {
+   "op": "setblock",
+   "at": [0, 17, 1],
+   "block": "slab"
+  },
+  {
+   "op": "setblock",
+   "at": [0, 17, 3],
+   "block": "slab"
+  },
+  {
+   "op": "setblock",
+   "at": [0, 17, 5],
+   "block": "slab"
+  },
+  {
+   "op": "setblock",
+   "at": [6, 17, 1],
+   "block": "slab"
+  },
+  {
+   "op": "setblock",
+   "at": [6, 17, 3],
+   "block": "slab"
+  },
+  {
+   "op": "setblock",
+   "at": [6, 17, 5],
+   "block": "slab"
+  },
+  {
+   "op": "setblock",
+   "at": [3, 6, 3],
+   "block": "lantern_h"
+  },
+  {
+   "op": "setblock",
+   "at": [3, 11, 3],
+   "block": "lantern_h"
+  },
+  {
+   "op": "setblock",
+   "at": [3, 17, 3],
+   "block": "lantern"
+  }
+ ],
+ "entry": {
+  "at": [6, 3, 3],
+  "facing": "east"
+ }
+}

@@ -1,0 +1,1066 @@
+{
+ "name": "curia",
+ "palette": {
+  "dirt": "minecraft:dirt",
+  "grass": "minecraft:grass_block",
+  "gravel": "minecraft:gravel",
+  "path": "minecraft:dirt_path",
+  "body": "minecraft:cut_sandstone",
+  "band": "minecraft:smooth_sandstone",
+  "chisel": "minecraft:chiseled_sandstone",
+  "quartz": "minecraft:quartz_block",
+  "smoothq": "minecraft:smooth_quartz",
+  "pillar": "minecraft:quartz_pillar[axis=y]",
+  "qchisel": "minecraft:chiseled_quartz_block",
+  "qslab": "minecraft:quartz_slab[type=bottom]",
+  "white": "minecraft:white_terracotta",
+  "red": "minecraft:red_terracotta",
+  "gold": "minecraft:gold_block",
+  "seat_e": "minecraft:quartz_stairs[facing=east,half=bottom]",
+  "seat_w": "minecraft:quartz_stairs[facing=west,half=bottom]",
+  "seat_s": "minecraft:quartz_stairs[facing=south,half=bottom]",
+  "step_n": "minecraft:sandstone_stairs[facing=north,half=bottom]",
+  "st_w": "minecraft:sandstone_stairs[facing=west,half=top]",
+  "st_e": "minecraft:sandstone_stairs[facing=east,half=top]",
+  "r_slab": "minecraft:brick_slab[type=bottom]",
+  "r_st_s": "minecraft:brick_stairs[facing=south,half=bottom]",
+  "r_st_n": "minecraft:brick_stairs[facing=north,half=bottom]",
+  "r_ridge": "minecraft:bricks",
+  "iron_bars": "minecraft:iron_bars",
+  "lantern_h": "minecraft:lantern[hanging=true]",
+  "lantern": "minecraft:lantern[hanging=false]",
+  "lectern": "minecraft:lectern[facing=south]",
+  "banner_r": "minecraft:red_wool",
+  "darklog": "minecraft:dark_oak_log[axis=y]",
+  "cyp": "minecraft:spruce_leaves[persistent=true]",
+  "poppy": "minecraft:poppy",
+  "allium": "minecraft:allium",
+  "bluet": "minecraft:azure_bluet",
+  "daisy": "minecraft:oxeye_daisy",
+  "tuft": "minecraft:short_grass"
+ },
+ "ops": [
+  {
+   "op": "fill",
+   "from": [0, 0, 0],
+   "to": [28, 1, 40],
+   "block": "dirt"
+  },
+  {
+   "op": "fill",
+   "from": [0, 2, 0],
+   "to": [28, 2, 40],
+   "block": "grass"
+  },
+  {
+   "op": "fill",
+   "from": [0, 2, 35],
+   "to": [28, 2, 40],
+   "block": "gravel"
+  },
+  {
+   "op": "fill",
+   "from": [2, 2, 3],
+   "to": [26, 3, 33],
+   "block": "body"
+  },
+  {
+   "op": "fill",
+   "from": [2, 3, 3],
+   "to": [26, 3, 33],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [11, 2, 34],
+   "to": [17, 2, 34],
+   "block": "body"
+  },
+  {
+   "op": "fill",
+   "from": [11, 3, 34],
+   "to": [17, 3, 34],
+   "block": "step_n"
+  },
+  {
+   "op": "fill",
+   "from": [3, 4, 4],
+   "to": [25, 18, 30],
+   "block": "body"
+  },
+  {
+   "op": "carve",
+   "from": [4, 4, 5],
+   "to": [24, 17, 29]
+  },
+  {
+   "op": "fill",
+   "from": [4, 3, 5],
+   "to": [24, 3, 29],
+   "block": "smoothq"
+  },
+  {
+   "op": "fill",
+   "from": [4, 3, 5],
+   "to": [4, 3, 29],
+   "block": "red"
+  },
+  {
+   "op": "fill",
+   "from": [24, 3, 5],
+   "to": [24, 3, 29],
+   "block": "red"
+  },
+  {
+   "op": "fill",
+   "from": [4, 3, 5],
+   "to": [24, 3, 5],
+   "block": "red"
+  },
+  {
+   "op": "fill",
+   "from": [4, 3, 29],
+   "to": [24, 3, 29],
+   "block": "red"
+  },
+  {
+   "op": "fill",
+   "from": [10, 3, 10],
+   "to": [18, 3, 10],
+   "block": "white"
+  },
+  {
+   "op": "fill",
+   "from": [10, 3, 16],
+   "to": [18, 3, 16],
+   "block": "white"
+  },
+  {
+   "op": "fill",
+   "from": [10, 3, 22],
+   "to": [18, 3, 22],
+   "block": "white"
+  },
+  {
+   "op": "fill",
+   "from": [10, 3, 10],
+   "to": [10, 3, 22],
+   "block": "white"
+  },
+  {
+   "op": "fill",
+   "from": [18, 3, 10],
+   "to": [18, 3, 22],
+   "block": "white"
+  },
+  {
+   "op": "setblock",
+   "at": [14, 3, 16],
+   "block": "gold"
+  },
+  {
+   "op": "fill",
+   "from": [4, 4, 8],
+   "to": [7, 4, 25],
+   "block": "body"
+  },
+  {
+   "op": "fill",
+   "from": [4, 5, 8],
+   "to": [5, 5, 25],
+   "block": "body"
+  },
+  {
+   "op": "fill",
+   "from": [7, 5, 8],
+   "to": [7, 5, 25],
+   "block": "seat_e"
+  },
+  {
+   "op": "fill",
+   "from": [5, 6, 8],
+   "to": [5, 6, 25],
+   "block": "seat_e"
+  },
+  {
+   "op": "fill",
+   "from": [21, 4, 8],
+   "to": [24, 4, 25],
+   "block": "body"
+  },
+  {
+   "op": "fill",
+   "from": [23, 5, 8],
+   "to": [24, 5, 25],
+   "block": "body"
+  },
+  {
+   "op": "fill",
+   "from": [21, 5, 8],
+   "to": [21, 5, 25],
+   "block": "seat_w"
+  },
+  {
+   "op": "fill",
+   "from": [23, 6, 8],
+   "to": [23, 6, 25],
+   "block": "seat_w"
+  },
+  {
+   "op": "fill",
+   "from": [10, 4, 5],
+   "to": [18, 5, 8],
+   "block": "quartz"
+  },
+  {
+   "op": "fill",
+   "from": [10, 5, 5],
+   "to": [18, 5, 8],
+   "block": "smoothq"
+  },
+  {
+   "op": "fill",
+   "from": [12, 4, 9],
+   "to": [16, 4, 9],
+   "block": "step_n"
+  },
+  {
+   "op": "fill",
+   "from": [13, 5, 9],
+   "to": [15, 5, 9],
+   "block": "step_n"
+  },
+  {
+   "op": "setblock",
+   "at": [14, 6, 6],
+   "block": "seat_s"
+  },
+  {
+   "op": "setblock",
+   "at": [14, 6, 8],
+   "block": "lectern"
+  },
+  {
+   "op": "fill",
+   "from": [13, 6, 5],
+   "to": [15, 9, 5],
+   "block": "banner_r"
+  },
+  {
+   "op": "setblock",
+   "at": [14, 10, 5],
+   "block": "gold"
+  },
+  {
+   "op": "fill",
+   "from": [5, 4, 7],
+   "to": [5, 12, 7],
+   "block": "pillar"
+  },
+  {
+   "op": "setblock",
+   "at": [5, 13, 7],
+   "block": "qchisel"
+  },
+  {
+   "op": "fill",
+   "from": [5, 4, 14],
+   "to": [5, 12, 14],
+   "block": "pillar"
+  },
+  {
+   "op": "setblock",
+   "at": [5, 13, 14],
+   "block": "qchisel"
+  },
+  {
+   "op": "fill",
+   "from": [5, 4, 20],
+   "to": [5, 12, 20],
+   "block": "pillar"
+  },
+  {
+   "op": "setblock",
+   "at": [5, 13, 20],
+   "block": "qchisel"
+  },
+  {
+   "op": "fill",
+   "from": [5, 4, 27],
+   "to": [5, 12, 27],
+   "block": "pillar"
+  },
+  {
+   "op": "setblock",
+   "at": [5, 13, 27],
+   "block": "qchisel"
+  },
+  {
+   "op": "fill",
+   "from": [23, 4, 7],
+   "to": [23, 12, 7],
+   "block": "pillar"
+  },
+  {
+   "op": "setblock",
+   "at": [23, 13, 7],
+   "block": "qchisel"
+  },
+  {
+   "op": "fill",
+   "from": [23, 4, 14],
+   "to": [23, 12, 14],
+   "block": "pillar"
+  },
+  {
+   "op": "setblock",
+   "at": [23, 13, 14],
+   "block": "qchisel"
+  },
+  {
+   "op": "fill",
+   "from": [23, 4, 20],
+   "to": [23, 12, 20],
+   "block": "pillar"
+  },
+  {
+   "op": "setblock",
+   "at": [23, 13, 20],
+   "block": "qchisel"
+  },
+  {
+   "op": "fill",
+   "from": [23, 4, 27],
+   "to": [23, 12, 27],
+   "block": "pillar"
+  },
+  {
+   "op": "setblock",
+   "at": [23, 13, 27],
+   "block": "qchisel"
+  },
+  {
+   "op": "fill",
+   "from": [3, 11, 10],
+   "to": [3, 15, 11],
+   "block": "iron_bars"
+  },
+  {
+   "op": "fill",
+   "from": [3, 11, 16],
+   "to": [3, 15, 18],
+   "block": "iron_bars"
+  },
+  {
+   "op": "fill",
+   "from": [3, 11, 23],
+   "to": [3, 15, 24],
+   "block": "iron_bars"
+  },
+  {
+   "op": "fill",
+   "from": [25, 11, 10],
+   "to": [25, 15, 11],
+   "block": "iron_bars"
+  },
+  {
+   "op": "fill",
+   "from": [25, 11, 16],
+   "to": [25, 15, 18],
+   "block": "iron_bars"
+  },
+  {
+   "op": "fill",
+   "from": [25, 11, 23],
+   "to": [25, 15, 24],
+   "block": "iron_bars"
+  },
+  {
+   "op": "carve",
+   "from": [12, 4, 30],
+   "to": [16, 9, 30]
+  },
+  {
+   "op": "carve",
+   "from": [13, 10, 30],
+   "to": [15, 10, 30]
+  },
+  {
+   "op": "setblock",
+   "at": [12, 10, 30],
+   "block": "st_w"
+  },
+  {
+   "op": "setblock",
+   "at": [16, 10, 30],
+   "block": "st_e"
+  },
+  {
+   "op": "fill",
+   "from": [12, 4, 30],
+   "to": [16, 4, 30],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [4, 4, 33],
+   "to": [4, 10, 33],
+   "block": "pillar"
+  },
+  {
+   "op": "setblock",
+   "at": [4, 11, 33],
+   "block": "qchisel"
+  },
+  {
+   "op": "fill",
+   "from": [8, 4, 33],
+   "to": [8, 10, 33],
+   "block": "pillar"
+  },
+  {
+   "op": "setblock",
+   "at": [8, 11, 33],
+   "block": "qchisel"
+  },
+  {
+   "op": "fill",
+   "from": [20, 4, 33],
+   "to": [20, 10, 33],
+   "block": "pillar"
+  },
+  {
+   "op": "setblock",
+   "at": [20, 11, 33],
+   "block": "qchisel"
+  },
+  {
+   "op": "fill",
+   "from": [24, 4, 33],
+   "to": [24, 10, 33],
+   "block": "pillar"
+  },
+  {
+   "op": "setblock",
+   "at": [24, 11, 33],
+   "block": "qchisel"
+  },
+  {
+   "op": "fill",
+   "from": [3, 11, 33],
+   "to": [25, 11, 33],
+   "block": "smoothq"
+  },
+  {
+   "op": "fill",
+   "from": [2, 12, 30],
+   "to": [26, 12, 34],
+   "block": "r_slab"
+  },
+  {
+   "op": "setblock",
+   "at": [6, 10, 33],
+   "block": "lantern_h"
+  },
+  {
+   "op": "setblock",
+   "at": [14, 10, 33],
+   "block": "lantern_h"
+  },
+  {
+   "op": "setblock",
+   "at": [22, 10, 33],
+   "block": "lantern_h"
+  },
+  {
+   "op": "fill",
+   "from": [12, 13, 30],
+   "to": [16, 16, 30],
+   "block": "iron_bars"
+  },
+  {
+   "op": "setblock",
+   "at": [10, 14, 10],
+   "block": "lantern_h"
+  },
+  {
+   "op": "setblock",
+   "at": [18, 14, 10],
+   "block": "lantern_h"
+  },
+  {
+   "op": "setblock",
+   "at": [10, 14, 18],
+   "block": "lantern_h"
+  },
+  {
+   "op": "setblock",
+   "at": [18, 14, 18],
+   "block": "lantern_h"
+  },
+  {
+   "op": "setblock",
+   "at": [10, 14, 25],
+   "block": "lantern_h"
+  },
+  {
+   "op": "setblock",
+   "at": [18, 14, 25],
+   "block": "lantern_h"
+  },
+  {
+   "op": "fill",
+   "from": [2, 19, 3],
+   "to": [26, 19, 3],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [2, 19, 31],
+   "to": [26, 19, 31],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [2, 19, 3],
+   "to": [2, 19, 31],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [26, 19, 3],
+   "to": [26, 19, 31],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [1, 20, 2],
+   "to": [1, 20, 32],
+   "block": "r_slab"
+  },
+  {
+   "op": "fill",
+   "from": [27, 20, 2],
+   "to": [27, 20, 32],
+   "block": "r_slab"
+  },
+  {
+   "op": "fill",
+   "from": [2, 20, 2],
+   "to": [2, 20, 32],
+   "block": "r_st_s"
+  },
+  {
+   "op": "fill",
+   "from": [26, 20, 2],
+   "to": [26, 20, 32],
+   "block": "r_st_n"
+  },
+  {
+   "op": "fill",
+   "from": [3, 21, 2],
+   "to": [3, 21, 32],
+   "block": "r_slab"
+  },
+  {
+   "op": "fill",
+   "from": [25, 21, 2],
+   "to": [25, 21, 32],
+   "block": "r_slab"
+  },
+  {
+   "op": "fill",
+   "from": [4, 21, 2],
+   "to": [4, 21, 32],
+   "block": "r_st_s"
+  },
+  {
+   "op": "fill",
+   "from": [24, 21, 2],
+   "to": [24, 21, 32],
+   "block": "r_st_n"
+  },
+  {
+   "op": "fill",
+   "from": [5, 22, 2],
+   "to": [5, 22, 32],
+   "block": "r_slab"
+  },
+  {
+   "op": "fill",
+   "from": [23, 22, 2],
+   "to": [23, 22, 32],
+   "block": "r_slab"
+  },
+  {
+   "op": "fill",
+   "from": [6, 22, 2],
+   "to": [6, 22, 32],
+   "block": "r_st_s"
+  },
+  {
+   "op": "fill",
+   "from": [22, 22, 2],
+   "to": [22, 22, 32],
+   "block": "r_st_n"
+  },
+  {
+   "op": "fill",
+   "from": [7, 23, 2],
+   "to": [7, 23, 32],
+   "block": "r_slab"
+  },
+  {
+   "op": "fill",
+   "from": [21, 23, 2],
+   "to": [21, 23, 32],
+   "block": "r_slab"
+  },
+  {
+   "op": "fill",
+   "from": [8, 23, 2],
+   "to": [8, 23, 32],
+   "block": "r_st_s"
+  },
+  {
+   "op": "fill",
+   "from": [20, 23, 2],
+   "to": [20, 23, 32],
+   "block": "r_st_n"
+  },
+  {
+   "op": "fill",
+   "from": [9, 24, 2],
+   "to": [9, 24, 32],
+   "block": "r_slab"
+  },
+  {
+   "op": "fill",
+   "from": [19, 24, 2],
+   "to": [19, 24, 32],
+   "block": "r_slab"
+  },
+  {
+   "op": "fill",
+   "from": [10, 24, 2],
+   "to": [10, 24, 32],
+   "block": "r_st_s"
+  },
+  {
+   "op": "fill",
+   "from": [18, 24, 2],
+   "to": [18, 24, 32],
+   "block": "r_st_n"
+  },
+  {
+   "op": "fill",
+   "from": [11, 25, 2],
+   "to": [11, 25, 32],
+   "block": "r_slab"
+  },
+  {
+   "op": "fill",
+   "from": [17, 25, 2],
+   "to": [17, 25, 32],
+   "block": "r_slab"
+  },
+  {
+   "op": "fill",
+   "from": [12, 25, 2],
+   "to": [12, 25, 32],
+   "block": "r_st_s"
+  },
+  {
+   "op": "fill",
+   "from": [16, 25, 2],
+   "to": [16, 25, 32],
+   "block": "r_st_n"
+  },
+  {
+   "op": "fill",
+   "from": [13, 26, 2],
+   "to": [13, 26, 32],
+   "block": "r_slab"
+  },
+  {
+   "op": "fill",
+   "from": [15, 26, 2],
+   "to": [15, 26, 32],
+   "block": "r_slab"
+  },
+  {
+   "op": "fill",
+   "from": [14, 26, 2],
+   "to": [14, 26, 32],
+   "block": "r_ridge"
+  },
+  {
+   "op": "fill",
+   "from": [3, 20, 4],
+   "to": [3, 20, 4],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [25, 20, 4],
+   "to": [25, 20, 4],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [3, 20, 30],
+   "to": [3, 20, 30],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [25, 20, 30],
+   "to": [25, 20, 30],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [5, 20, 4],
+   "to": [5, 21, 4],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [23, 20, 4],
+   "to": [23, 21, 4],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [5, 20, 30],
+   "to": [5, 21, 30],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [23, 20, 30],
+   "to": [23, 21, 30],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [7, 20, 4],
+   "to": [7, 22, 4],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [21, 20, 4],
+   "to": [21, 22, 4],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [7, 20, 30],
+   "to": [7, 22, 30],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [21, 20, 30],
+   "to": [21, 22, 30],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [9, 20, 4],
+   "to": [9, 23, 4],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [19, 20, 4],
+   "to": [19, 23, 4],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [9, 20, 30],
+   "to": [9, 23, 30],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [19, 20, 30],
+   "to": [19, 23, 30],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [11, 20, 4],
+   "to": [11, 24, 4],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [17, 20, 4],
+   "to": [17, 24, 4],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [11, 20, 30],
+   "to": [11, 24, 30],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [17, 20, 30],
+   "to": [17, 24, 30],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [13, 20, 4],
+   "to": [15, 25, 4],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [13, 20, 30],
+   "to": [15, 25, 30],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [1, 3, 36],
+   "to": [1, 4, 36],
+   "block": "darklog"
+  },
+  {
+   "op": "setblock",
+   "at": [0, 5, 35],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [0, 5, 36],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [0, 5, 37],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [1, 5, 35],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [1, 5, 36],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [1, 5, 37],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [2, 5, 35],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [2, 5, 36],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [2, 5, 37],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [0, 6, 35],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [0, 6, 36],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [0, 6, 37],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [1, 6, 35],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [1, 6, 36],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [1, 6, 37],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [2, 6, 35],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [2, 6, 36],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [2, 6, 37],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [1, 7, 36],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [1, 8, 36],
+   "block": "cyp"
+  },
+  {
+   "op": "fill",
+   "from": [27, 3, 36],
+   "to": [27, 4, 36],
+   "block": "darklog"
+  },
+  {
+   "op": "setblock",
+   "at": [26, 5, 35],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [26, 5, 36],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [26, 5, 37],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [27, 5, 35],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [27, 5, 36],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [27, 5, 37],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [28, 5, 35],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [28, 5, 36],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [28, 5, 37],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [26, 6, 35],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [26, 6, 36],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [26, 6, 37],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [27, 6, 35],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [27, 6, 36],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [27, 6, 37],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [28, 6, 35],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [28, 6, 36],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [28, 6, 37],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [27, 7, 36],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [27, 8, 36],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [1, 3, 34],
+   "block": "poppy"
+  },
+  {
+   "op": "setblock",
+   "at": [27, 3, 34],
+   "block": "bluet"
+  },
+  {
+   "op": "setblock",
+   "at": [0, 3, 38],
+   "block": "tuft"
+  },
+  {
+   "op": "setblock",
+   "at": [28, 3, 38],
+   "block": "daisy"
+  }
+ ],
+ "entry": {
+  "at": [14, 3, 35],
+  "facing": "south"
+ }
+}

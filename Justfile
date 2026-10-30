@@ -3,7 +3,7 @@ PLAYER := "FoolBar"
 LEVEL := "flach1"
 LEVEL_TYPE := "flat"
 # Plugins von Modrinth (Slugs, kommagetrennt); lädt itzg beim Start nach data/plugins
-PLUGINS := "worldedit"
+PLUGINS := "worldedit,luckperms,vaultunlocked,animatedarchitecture"
 SCHEMA := "haus3.json"
 # Versatz zur Spielerposition (dx dy dz), z.B. "0 -1 0" = Boden bündig mit dem Gelände
 OFFSET := "0 0 0"

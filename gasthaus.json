@@ -62,7 +62,15 @@
   "u_jungle_stairs_facing_west_half_top": "minecraft:jungle_stairs[facing=west,half=top]",
   "u_copper_chest_facing_east": "minecraft:copper_chest[facing=east]",
   "u_spruce_door_facing_west_half_lower_hinge_left": "minecraft:spruce_door[facing=west,half=lower,hinge=left]",
-  "u_composter_level_0": "minecraft:composter[level=0]"
+  "u_composter_level_0": "minecraft:composter[level=0]",
+  "u_diorite_stairs_facing_east_half_top": "minecraft:diorite_stairs[facing=east,half=top]",
+  "u_diorite_stairs_facing_south_half_bottom": "minecraft:diorite_stairs[facing=south,half=bottom]",
+  "u_diorite_stairs_facing_north_half_bottom": "minecraft:diorite_stairs[facing=north,half=bottom]",
+  "u_furnace_facing_south": "minecraft:furnace[facing=south]",
+  "u_diorite_stairs_facing_east_half_bottom": "minecraft:diorite_stairs[facing=east,half=bottom]",
+  "u_diorite_stairs_facing_south_half_top": "minecraft:diorite_stairs[facing=south,half=top]",
+  "u_diorite_stairs_facing_north_half_top": "minecraft:diorite_stairs[facing=north,half=top]",
+  "u_dark_oak_slab_type_bottom": "minecraft:dark_oak_slab[type=bottom]"
  },
  "ops": [
   {
@@ -3792,6 +3800,318 @@
     3
    ],
    "block": "u_composter_level_0"
+  },
+  {
+   "op": "carve",
+   "from": [
+    9,
+    2,
+    1
+   ],
+   "to": [
+    9,
+    2,
+    1
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    13,
+    2,
+    1
+   ],
+   "to": [
+    13,
+    2,
+    1
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    9,
+    3,
+    1
+   ],
+   "to": [
+    9,
+    3,
+    1
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    13,
+    3,
+    1
+   ],
+   "to": [
+    13,
+    3,
+    1
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    9,
+    4,
+    1
+   ],
+   "to": [
+    13,
+    4,
+    1
+   ]
+  },
+  {
+   "op": "fill",
+   "from": [
+    9,
+    1,
+    18
+   ],
+   "to": [
+    10,
+    1,
+    18
+   ],
+   "block": "fence"
+  },
+  {
+   "op": "fill",
+   "from": [
+    14,
+    1,
+    18
+   ],
+   "to": [
+    15,
+    1,
+    18
+   ],
+   "block": "fence"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    20,
+    4,
+    7
+   ],
+   "block": "u_diorite_stairs_facing_east_half_top"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    20,
+    4,
+    8
+   ],
+   "block": "u_diorite_stairs_facing_east_half_top"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    20,
+    4,
+    9
+   ],
+   "block": "u_diorite_stairs_facing_east_half_top"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    20,
+    4,
+    10
+   ],
+   "block": "u_diorite_stairs_facing_east_half_top"
+  },
+  {
+   "op": "fill",
+   "from": [
+    20,
+    3,
+    7
+   ],
+   "to": [
+    22,
+    3,
+    7
+   ],
+   "block": "u_diorite_stairs_facing_south_half_bottom"
+  },
+  {
+   "op": "fill",
+   "from": [
+    14,
+    1,
+    17
+   ],
+   "to": [
+    15,
+    1,
+    17
+   ],
+   "block": "bench_n"
+  },
+  {
+   "op": "fill",
+   "from": [
+    20,
+    3,
+    11
+   ],
+   "to": [
+    22,
+    3,
+    11
+   ],
+   "block": "u_diorite_stairs_facing_north_half_bottom"
+  },
+  {
+   "op": "fill",
+   "from": [
+    9,
+    2,
+    18
+   ],
+   "to": [
+    10,
+    2,
+    18
+   ],
+   "block": "plate"
+  },
+  {
+   "op": "fill",
+   "from": [
+    14,
+    2,
+    18
+   ],
+   "to": [
+    15,
+    2,
+    18
+   ],
+   "block": "plate"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    3,
+    17
+   ],
+   "block": "lantern_h"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    3,
+    17
+   ],
+   "block": "lantern_h"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    21,
+    1,
+    11
+   ],
+   "block": "u_furnace_facing_south"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    20,
+    3,
+    8
+   ],
+   "block": "u_diorite_stairs_facing_east_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    20,
+    3,
+    9
+   ],
+   "block": "u_diorite_stairs_facing_east_half_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    20,
+    3,
+    10
+   ],
+   "block": "u_diorite_stairs_facing_east_half_bottom"
+  },
+  {
+   "op": "fill",
+   "from": [
+    21,
+    4,
+    7
+   ],
+   "to": [
+    22,
+    4,
+    7
+   ],
+   "block": "u_diorite_stairs_facing_south_half_top"
+  },
+  {
+   "op": "fill",
+   "from": [
+    20,
+    4,
+    11
+   ],
+   "to": [
+    22,
+    4,
+    11
+   ],
+   "block": "u_diorite_stairs_facing_north_half_top"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    4,
+    17
+   ],
+   "block": "u_dark_oak_slab_type_bottom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    4,
+    17
+   ],
+   "block": "u_dark_oak_slab_type_bottom"
+  },
+  {
+   "op": "carve",
+   "from": [
+    9,
+    4,
+    0
+   ],
+   "to": [
+    13,
+    4,
+    0
+   ]
   }
  ],
  "entry": {

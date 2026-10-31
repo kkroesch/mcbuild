@@ -1,0 +1,348 @@
+{
+ "name": "porta_gallica",
+ "palette": {
+  "dirt": "minecraft:dirt",
+  "grass": "minecraft:grass_block",
+  "path": "minecraft:dirt_path",
+  "gravel": "minecraft:gravel",
+  "cobble": "minecraft:cobblestone",
+  "mud": "minecraft:packed_mud",
+  "log_y": "minecraft:oak_log[axis=y]",
+  "log_x": "minecraft:oak_log[axis=x]",
+  "log_z": "minecraft:oak_log[axis=z]",
+  "wood": "minecraft:stripped_oak_log[axis=y]",
+  "planks": "minecraft:oak_planks",
+  "fence": "minecraft:oak_fence",
+  "gate_n": "minecraft:oak_fence_gate[facing=north,open=false]",
+  "gate_s": "minecraft:oak_fence_gate[facing=south,open=false]",
+  "r_st_s": "minecraft:oak_stairs[facing=south,half=bottom]",
+  "r_st_n": "minecraft:oak_stairs[facing=north,half=bottom]",
+  "r_st_e": "minecraft:oak_stairs[facing=east,half=bottom]",
+  "r_st_w": "minecraft:oak_stairs[facing=west,half=bottom]",
+  "r_slab": "minecraft:oak_slab[type=bottom]",
+  "ladder": "minecraft:ladder[facing=south]",
+  "lantern_h": "minecraft:lantern[hanging=true]",
+  "lantern": "minecraft:lantern[hanging=false]",
+  "tuft": "minecraft:short_grass",
+  "fern": "minecraft:fern"
+ },
+ "ops": [
+  {
+   "op": "fill",
+   "from": [0, 0, 0],
+   "to": [14, 1, 6],
+   "block": "dirt"
+  },
+  {
+   "op": "fill",
+   "from": [0, 2, 0],
+   "to": [14, 2, 6],
+   "block": "grass"
+  },
+  {
+   "op": "fill",
+   "from": [5, 2, 0],
+   "to": [9, 2, 6],
+   "block": "path"
+  },
+  {
+   "op": "fill",
+   "from": [6, 2, 0],
+   "to": [8, 2, 6],
+   "block": "gravel"
+  },
+  {
+   "op": "fill",
+   "from": [0, 2, 2],
+   "to": [4, 3, 5],
+   "block": "cobble"
+  },
+  {
+   "op": "fill",
+   "from": [10, 2, 2],
+   "to": [14, 3, 5],
+   "block": "cobble"
+  },
+  {
+   "op": "fill",
+   "from": [0, 3, 2],
+   "to": [4, 4, 4],
+   "block": "mud"
+  },
+  {
+   "op": "fill",
+   "from": [10, 3, 2],
+   "to": [14, 4, 4],
+   "block": "mud"
+  },
+  {
+   "op": "fill",
+   "from": [0, 3, 1],
+   "to": [4, 7, 1],
+   "block": "log_y"
+  },
+  {
+   "op": "fill",
+   "from": [10, 3, 1],
+   "to": [14, 7, 1],
+   "block": "log_y"
+  },
+  {
+   "op": "setblock",
+   "at": [0, 8, 1],
+   "block": "fence"
+  },
+  {
+   "op": "setblock",
+   "at": [2, 8, 1],
+   "block": "fence"
+  },
+  {
+   "op": "setblock",
+   "at": [4, 8, 1],
+   "block": "fence"
+  },
+  {
+   "op": "setblock",
+   "at": [10, 8, 1],
+   "block": "fence"
+  },
+  {
+   "op": "setblock",
+   "at": [12, 8, 1],
+   "block": "fence"
+  },
+  {
+   "op": "setblock",
+   "at": [14, 8, 1],
+   "block": "fence"
+  },
+  {
+   "op": "fill",
+   "from": [0, 5, 2],
+   "to": [4, 5, 3],
+   "block": "planks"
+  },
+  {
+   "op": "fill",
+   "from": [10, 5, 2],
+   "to": [14, 5, 3],
+   "block": "planks"
+  },
+  {
+   "op": "fill",
+   "from": [0, 6, 4],
+   "to": [4, 6, 4],
+   "block": "fence"
+  },
+  {
+   "op": "fill",
+   "from": [10, 6, 4],
+   "to": [14, 6, 4],
+   "block": "fence"
+  },
+  {
+   "op": "fill",
+   "from": [2, 3, 4],
+   "to": [2, 5, 4],
+   "block": "wood"
+  },
+  {
+   "op": "fill",
+   "from": [12, 3, 4],
+   "to": [12, 5, 4],
+   "block": "wood"
+  },
+  {
+   "op": "fill",
+   "from": [4, 3, 1],
+   "to": [4, 11, 1],
+   "block": "log_y"
+  },
+  {
+   "op": "fill",
+   "from": [10, 3, 1],
+   "to": [10, 11, 1],
+   "block": "log_y"
+  },
+  {
+   "op": "fill",
+   "from": [4, 3, 5],
+   "to": [4, 11, 5],
+   "block": "log_y"
+  },
+  {
+   "op": "fill",
+   "from": [10, 3, 5],
+   "to": [10, 11, 5],
+   "block": "log_y"
+  },
+  {
+   "op": "fill",
+   "from": [5, 3, 1],
+   "to": [9, 3, 1],
+   "block": "gate_s"
+  },
+  {
+   "op": "fill",
+   "from": [5, 4, 1],
+   "to": [9, 4, 1],
+   "block": "gate_s"
+  },
+  {
+   "op": "fill",
+   "from": [5, 5, 1],
+   "to": [9, 5, 1],
+   "block": "gate_s"
+  },
+  {
+   "op": "fill",
+   "from": [4, 6, 1],
+   "to": [10, 6, 1],
+   "block": "log_x"
+  },
+  {
+   "op": "fill",
+   "from": [4, 6, 5],
+   "to": [10, 6, 5],
+   "block": "log_x"
+  },
+  {
+   "op": "fill",
+   "from": [4, 6, 1],
+   "to": [4, 6, 5],
+   "block": "log_z"
+  },
+  {
+   "op": "fill",
+   "from": [10, 6, 1],
+   "to": [10, 6, 5],
+   "block": "log_z"
+  },
+  {
+   "op": "fill",
+   "from": [4, 6, 2],
+   "to": [10, 6, 4],
+   "block": "planks"
+  },
+  {
+   "op": "fill",
+   "from": [4, 7, 0],
+   "to": [10, 7, 6],
+   "block": "fence"
+  },
+  {
+   "op": "carve",
+   "from": [5, 7, 1],
+   "to": [9, 7, 5]
+  },
+  {
+   "op": "fill",
+   "from": [4, 11, 1],
+   "to": [10, 11, 1],
+   "block": "log_x"
+  },
+  {
+   "op": "fill",
+   "from": [4, 11, 5],
+   "to": [10, 11, 5],
+   "block": "log_x"
+  },
+  {
+   "op": "fill",
+   "from": [4, 11, 1],
+   "to": [4, 11, 5],
+   "block": "log_z"
+  },
+  {
+   "op": "fill",
+   "from": [10, 11, 1],
+   "to": [10, 11, 5],
+   "block": "log_z"
+  },
+  {
+   "op": "fill",
+   "from": [4, 3, 4],
+   "to": [4, 6, 4],
+   "block": "ladder"
+  },
+  {
+   "op": "fill",
+   "from": [3, 12, 0],
+   "to": [11, 12, 0],
+   "block": "r_st_s"
+  },
+  {
+   "op": "fill",
+   "from": [3, 12, 6],
+   "to": [11, 12, 6],
+   "block": "r_st_n"
+  },
+  {
+   "op": "fill",
+   "from": [3, 12, 1],
+   "to": [3, 12, 5],
+   "block": "r_st_e"
+  },
+  {
+   "op": "fill",
+   "from": [11, 12, 1],
+   "to": [11, 12, 5],
+   "block": "r_st_w"
+  },
+  {
+   "op": "fill",
+   "from": [4, 13, 1],
+   "to": [10, 13, 1],
+   "block": "r_st_s"
+  },
+  {
+   "op": "fill",
+   "from": [4, 13, 5],
+   "to": [10, 13, 5],
+   "block": "r_st_n"
+  },
+  {
+   "op": "fill",
+   "from": [4, 13, 2],
+   "to": [4, 13, 4],
+   "block": "r_st_e"
+  },
+  {
+   "op": "fill",
+   "from": [10, 13, 2],
+   "to": [10, 13, 4],
+   "block": "r_st_w"
+  },
+  {
+   "op": "fill",
+   "from": [5, 13, 2],
+   "to": [9, 13, 4],
+   "block": "r_slab"
+  },
+  {
+   "op": "setblock",
+   "at": [7, 5, 1],
+   "block": "lantern_h"
+  },
+  {
+   "op": "setblock",
+   "at": [7, 10, 3],
+   "block": "lantern_h"
+  },
+  {
+   "op": "setblock",
+   "at": [3, 3, 0],
+   "block": "fern"
+  },
+  {
+   "op": "setblock",
+   "at": [11, 3, 0],
+   "block": "tuft"
+  }
+ ],
+ "entry": {
+  "at": [7, 3, 6],
+  "facing": "south"
+ }
+}

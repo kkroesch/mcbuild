@@ -1,0 +1,545 @@
+{
+ "name": "domus_gallica",
+ "palette": {
+  "dirt": "minecraft:dirt",
+  "grass": "minecraft:grass_block",
+  "gravel": "minecraft:gravel",
+  "path": "minecraft:dirt_path",
+  "cobble": "minecraft:cobblestone",
+  "mud": "minecraft:packed_mud",
+  "log_y": "minecraft:oak_log[axis=y]",
+  "log_x": "minecraft:oak_log[axis=x]",
+  "log_z": "minecraft:oak_log[axis=z]",
+  "planks": "minecraft:oak_planks",
+  "fence": "minecraft:oak_fence",
+  "hearth": "minecraft:campfire[facing=north,lit=true,signal_fire=false,waterlogged=false]",
+  "cauldron": "minecraft:cauldron",
+  "barrel": "minecraft:barrel[facing=up]",
+  "chest_e": "minecraft:chest[facing=east]",
+  "loom_w": "minecraft:loom[facing=west]",
+  "craft": "minecraft:crafting_table",
+  "hay": "minecraft:hay_block",
+  "carpet_br": "minecraft:brown_carpet",
+  "bed_h": "minecraft:brown_bed[facing=north,part=head]",
+  "bed_f": "minecraft:brown_bed[facing=north,part=foot]",
+  "r_st_s": "minecraft:oak_stairs[facing=south,half=bottom]",
+  "r_st_n": "minecraft:oak_stairs[facing=north,half=bottom]",
+  "r_st_e": "minecraft:oak_stairs[facing=east,half=bottom]",
+  "r_st_w": "minecraft:oak_stairs[facing=west,half=bottom]",
+  "r_slab": "minecraft:oak_slab[type=bottom]",
+  "lantern_h": "minecraft:lantern[hanging=true]",
+  "lantern": "minecraft:lantern[hanging=false]",
+  "tuft": "minecraft:short_grass",
+  "fern": "minecraft:fern",
+  "poppy": "minecraft:poppy"
+ },
+ "ops": [
+  {
+   "op": "fill",
+   "from": [0, 0, 0],
+   "to": [14, 1, 24],
+   "block": "dirt"
+  },
+  {
+   "op": "fill",
+   "from": [0, 2, 0],
+   "to": [14, 2, 24],
+   "block": "grass"
+  },
+  {
+   "op": "fill",
+   "from": [0, 2, 21],
+   "to": [14, 2, 24],
+   "block": "path"
+  },
+  {
+   "op": "fill",
+   "from": [1, 2, 2],
+   "to": [13, 2, 20],
+   "block": "cobble"
+  },
+  {
+   "op": "fill",
+   "from": [1, 3, 2],
+   "to": [13, 3, 20],
+   "block": "cobble"
+  },
+  {
+   "op": "fill",
+   "from": [1, 4, 2],
+   "to": [13, 7, 20],
+   "block": "mud"
+  },
+  {
+   "op": "carve",
+   "from": [2, 3, 3],
+   "to": [12, 7, 19]
+  },
+  {
+   "op": "fill",
+   "from": [1, 3, 2],
+   "to": [1, 7, 2],
+   "block": "log_y"
+  },
+  {
+   "op": "fill",
+   "from": [13, 3, 2],
+   "to": [13, 7, 2],
+   "block": "log_y"
+  },
+  {
+   "op": "fill",
+   "from": [1, 3, 20],
+   "to": [1, 7, 20],
+   "block": "log_y"
+  },
+  {
+   "op": "fill",
+   "from": [13, 3, 20],
+   "to": [13, 7, 20],
+   "block": "log_y"
+  },
+  {
+   "op": "fill",
+   "from": [1, 3, 8],
+   "to": [1, 7, 8],
+   "block": "log_y"
+  },
+  {
+   "op": "fill",
+   "from": [1, 3, 14],
+   "to": [1, 7, 14],
+   "block": "log_y"
+  },
+  {
+   "op": "fill",
+   "from": [13, 3, 8],
+   "to": [13, 7, 8],
+   "block": "log_y"
+  },
+  {
+   "op": "fill",
+   "from": [13, 3, 14],
+   "to": [13, 7, 14],
+   "block": "log_y"
+  },
+  {
+   "op": "fill",
+   "from": [5, 3, 20],
+   "to": [5, 7, 20],
+   "block": "log_y"
+  },
+  {
+   "op": "fill",
+   "from": [9, 3, 20],
+   "to": [9, 7, 20],
+   "block": "log_y"
+  },
+  {
+   "op": "fill",
+   "from": [7, 3, 2],
+   "to": [7, 7, 2],
+   "block": "log_y"
+  },
+  {
+   "op": "fill",
+   "from": [1, 7, 2],
+   "to": [13, 7, 2],
+   "block": "log_x"
+  },
+  {
+   "op": "fill",
+   "from": [1, 7, 20],
+   "to": [13, 7, 20],
+   "block": "log_x"
+  },
+  {
+   "op": "fill",
+   "from": [1, 7, 2],
+   "to": [1, 7, 20],
+   "block": "log_z"
+  },
+  {
+   "op": "fill",
+   "from": [13, 7, 2],
+   "to": [13, 7, 20],
+   "block": "log_z"
+  },
+  {
+   "op": "carve",
+   "from": [6, 3, 20],
+   "to": [8, 5, 20]
+  },
+  {
+   "op": "setblock",
+   "at": [6, 6, 20],
+   "block": "fence"
+  },
+  {
+   "op": "setblock",
+   "at": [7, 6, 20],
+   "block": "fence"
+  },
+  {
+   "op": "setblock",
+   "at": [8, 6, 20],
+   "block": "fence"
+  },
+  {
+   "op": "fill",
+   "from": [6, 2, 18],
+   "to": [8, 2, 21],
+   "block": "path"
+  },
+  {
+   "op": "fill",
+   "from": [2, 3, 7],
+   "to": [12, 6, 7],
+   "block": "fence"
+  },
+  {
+   "op": "carve",
+   "from": [6, 3, 7],
+   "to": [8, 5, 7]
+  },
+  {
+   "op": "setblock",
+   "at": [1, 5, 11],
+   "block": "fence"
+  },
+  {
+   "op": "setblock",
+   "at": [13, 5, 11],
+   "block": "fence"
+  },
+  {
+   "op": "setblock",
+   "at": [7, 5, 2],
+   "block": "fence"
+  },
+  {
+   "op": "fill",
+   "from": [6, 2, 11],
+   "to": [8, 2, 13],
+   "block": "cobble"
+  },
+  {
+   "op": "setblock",
+   "at": [7, 3, 12],
+   "block": "hearth"
+  },
+  {
+   "op": "setblock",
+   "at": [7, 4, 12],
+   "block": "cauldron"
+  },
+  {
+   "op": "fill",
+   "from": [5, 3, 11],
+   "to": [5, 3, 13],
+   "block": "carpet_br"
+  },
+  {
+   "op": "fill",
+   "from": [9, 3, 11],
+   "to": [9, 3, 13],
+   "block": "carpet_br"
+  },
+  {
+   "op": "fill",
+   "from": [2, 3, 17],
+   "to": [4, 3, 19],
+   "block": "hay"
+  },
+  {
+   "op": "setblock",
+   "at": [2, 4, 19],
+   "block": "hay"
+  },
+  {
+   "op": "fill",
+   "from": [10, 3, 17],
+   "to": [12, 4, 18],
+   "block": "barrel"
+  },
+  {
+   "op": "setblock",
+   "at": [10, 3, 19],
+   "block": "chest_e"
+  },
+  {
+   "op": "setblock",
+   "at": [12, 3, 19],
+   "block": "barrel"
+  },
+  {
+   "op": "setblock",
+   "at": [3, 3, 4],
+   "block": "bed_h"
+  },
+  {
+   "op": "setblock",
+   "at": [3, 3, 5],
+   "block": "bed_f"
+  },
+  {
+   "op": "setblock",
+   "at": [5, 3, 4],
+   "block": "bed_h"
+  },
+  {
+   "op": "setblock",
+   "at": [5, 3, 5],
+   "block": "bed_f"
+  },
+  {
+   "op": "setblock",
+   "at": [2, 3, 3],
+   "block": "chest_e"
+  },
+  {
+   "op": "setblock",
+   "at": [11, 3, 3],
+   "block": "loom_w"
+  },
+  {
+   "op": "setblock",
+   "at": [12, 3, 3],
+   "block": "craft"
+  },
+  {
+   "op": "fill",
+   "from": [10, 3, 5],
+   "to": [12, 3, 6],
+   "block": "hay"
+  },
+  {
+   "op": "setblock",
+   "at": [4, 6, 12],
+   "block": "lantern_h"
+  },
+  {
+   "op": "setblock",
+   "at": [10, 6, 12],
+   "block": "lantern_h"
+  },
+  {
+   "op": "setblock",
+   "at": [7, 6, 5],
+   "block": "lantern_h"
+  },
+  {
+   "op": "fill",
+   "from": [0, 8, 1],
+   "to": [14, 8, 1],
+   "block": "r_st_s"
+  },
+  {
+   "op": "fill",
+   "from": [0, 8, 21],
+   "to": [14, 8, 21],
+   "block": "r_st_n"
+  },
+  {
+   "op": "fill",
+   "from": [0, 8, 2],
+   "to": [0, 8, 20],
+   "block": "r_st_e"
+  },
+  {
+   "op": "fill",
+   "from": [14, 8, 2],
+   "to": [14, 8, 20],
+   "block": "r_st_w"
+  },
+  {
+   "op": "fill",
+   "from": [1, 9, 2],
+   "to": [13, 9, 2],
+   "block": "r_st_s"
+  },
+  {
+   "op": "fill",
+   "from": [1, 9, 20],
+   "to": [13, 9, 20],
+   "block": "r_st_n"
+  },
+  {
+   "op": "fill",
+   "from": [1, 9, 3],
+   "to": [1, 9, 19],
+   "block": "r_st_e"
+  },
+  {
+   "op": "fill",
+   "from": [13, 9, 3],
+   "to": [13, 9, 19],
+   "block": "r_st_w"
+  },
+  {
+   "op": "fill",
+   "from": [2, 10, 3],
+   "to": [12, 10, 3],
+   "block": "r_st_s"
+  },
+  {
+   "op": "fill",
+   "from": [2, 10, 19],
+   "to": [12, 10, 19],
+   "block": "r_st_n"
+  },
+  {
+   "op": "fill",
+   "from": [2, 10, 4],
+   "to": [2, 10, 18],
+   "block": "r_st_e"
+  },
+  {
+   "op": "fill",
+   "from": [12, 10, 4],
+   "to": [12, 10, 18],
+   "block": "r_st_w"
+  },
+  {
+   "op": "fill",
+   "from": [3, 11, 4],
+   "to": [11, 11, 4],
+   "block": "r_st_s"
+  },
+  {
+   "op": "fill",
+   "from": [3, 11, 18],
+   "to": [11, 11, 18],
+   "block": "r_st_n"
+  },
+  {
+   "op": "fill",
+   "from": [3, 11, 5],
+   "to": [3, 11, 17],
+   "block": "r_st_e"
+  },
+  {
+   "op": "fill",
+   "from": [11, 11, 5],
+   "to": [11, 11, 17],
+   "block": "r_st_w"
+  },
+  {
+   "op": "fill",
+   "from": [4, 12, 5],
+   "to": [10, 12, 5],
+   "block": "r_st_s"
+  },
+  {
+   "op": "fill",
+   "from": [4, 12, 17],
+   "to": [10, 12, 17],
+   "block": "r_st_n"
+  },
+  {
+   "op": "fill",
+   "from": [4, 12, 6],
+   "to": [4, 12, 16],
+   "block": "r_st_e"
+  },
+  {
+   "op": "fill",
+   "from": [10, 12, 6],
+   "to": [10, 12, 16],
+   "block": "r_st_w"
+  },
+  {
+   "op": "fill",
+   "from": [5, 13, 6],
+   "to": [9, 13, 6],
+   "block": "r_st_s"
+  },
+  {
+   "op": "fill",
+   "from": [5, 13, 16],
+   "to": [9, 13, 16],
+   "block": "r_st_n"
+  },
+  {
+   "op": "fill",
+   "from": [5, 13, 7],
+   "to": [5, 13, 15],
+   "block": "r_st_e"
+  },
+  {
+   "op": "fill",
+   "from": [9, 13, 7],
+   "to": [9, 13, 15],
+   "block": "r_st_w"
+  },
+  {
+   "op": "fill",
+   "from": [6, 14, 7],
+   "to": [8, 14, 7],
+   "block": "r_st_s"
+  },
+  {
+   "op": "fill",
+   "from": [6, 14, 15],
+   "to": [8, 14, 15],
+   "block": "r_st_n"
+  },
+  {
+   "op": "fill",
+   "from": [6, 14, 8],
+   "to": [6, 14, 14],
+   "block": "r_st_e"
+  },
+  {
+   "op": "fill",
+   "from": [8, 14, 8],
+   "to": [8, 14, 14],
+   "block": "r_st_w"
+  },
+  {
+   "op": "fill",
+   "from": [7, 14, 8],
+   "to": [7, 14, 14],
+   "block": "r_slab"
+  },
+  {
+   "op": "carve",
+   "from": [7, 14, 12],
+   "to": [7, 14, 12]
+  },
+  {
+   "op": "setblock",
+   "at": [2, 3, 21],
+   "block": "fern"
+  },
+  {
+   "op": "setblock",
+   "at": [3, 3, 22],
+   "block": "tuft"
+  },
+  {
+   "op": "setblock",
+   "at": [11, 3, 22],
+   "block": "fern"
+  },
+  {
+   "op": "setblock",
+   "at": [12, 3, 21],
+   "block": "poppy"
+  },
+  {
+   "op": "setblock",
+   "at": [0, 3, 10],
+   "block": "tuft"
+  },
+  {
+   "op": "setblock",
+   "at": [14, 3, 10],
+   "block": "fern"
+  }
+ ],
+ "entry": {
+  "at": [7, 3, 21],
+  "facing": "south"
+ }
+}

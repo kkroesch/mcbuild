@@ -1,0 +1,3659 @@
+{
+ "name": "haus_klein",
+ "palette": {
+  "dirt": "minecraft:dirt",
+  "grass": "minecraft:grass_block",
+  "gravel": "minecraft:gravel",
+  "path": "minecraft:dirt_path",
+  "brick": "minecraft:bricks",
+  "plast": "minecraft:white_terracotta",
+  "terra": "minecraft:terracotta",
+  "body": "minecraft:cut_sandstone",
+  "band": "minecraft:smooth_sandstone",
+  "chisel": "minecraft:chiseled_sandstone",
+  "dlog": "minecraft:dark_oak_log[axis=y]",
+  "dlog_x": "minecraft:dark_oak_log[axis=x]",
+  "olog_x": "minecraft:oak_log[axis=x]",
+  "dplanks": "minecraft:dark_oak_planks",
+  "planks": "minecraft:oak_planks",
+  "st_w": "minecraft:brick_stairs[facing=west,half=top]",
+  "st_e": "minecraft:brick_stairs[facing=east,half=top]",
+  "stair_n": "minecraft:oak_stairs[facing=north,half=bottom]",
+  "r_slab": "minecraft:brick_slab[type=bottom]",
+  "r_st_s": "minecraft:brick_stairs[facing=south,half=bottom]",
+  "r_st_n": "minecraft:brick_stairs[facing=north,half=bottom]",
+  "r_ridge": "minecraft:brick_slab[type=top]",
+  "bars_x": "minecraft:iron_bars[east=true,west=true]",
+  "bars_z": "minecraft:iron_bars[north=true,south=true]",
+  "pane_x": "minecraft:glass_pane[east=true,west=true]",
+  "pane_z": "minecraft:glass_pane[north=true,south=true]",
+  "f_post": "minecraft:dark_oak_fence",
+  "f_ew": "minecraft:dark_oak_fence[east=true,west=true]",
+  "f_e": "minecraft:dark_oak_fence[east=true,north=true]",
+  "f_w": "minecraft:dark_oak_fence[west=true,north=true]",
+  "f_s": "minecraft:dark_oak_fence[north=true,south=true]",
+  "door_lo": "minecraft:oak_door[facing=north,half=lower,hinge=left,open=false]",
+  "door_up": "minecraft:oak_door[facing=north,half=upper,hinge=left,open=false]",
+  "lantern_h": "minecraft:lantern[hanging=true]",
+  "lantern": "minecraft:lantern[hanging=false]",
+  "bed_h": "minecraft:red_bed[facing=north,part=head]",
+  "bed_f": "minecraft:red_bed[facing=north,part=foot]",
+  "table": "minecraft:crafting_table",
+  "barrel": "minecraft:barrel[facing=up]",
+  "chest": "minecraft:chest[facing=east]",
+  "shelf": "minecraft:bookshelf",
+  "loom": "minecraft:loom[facing=south]",
+  "smoker": "minecraft:smoker[facing=south]",
+  "camp": "minecraft:campfire[lit=true,facing=south]",
+  "cauldron": "minecraft:water_cauldron[level=3]",
+  "pot": "minecraft:decorated_pot",
+  "candle": "minecraft:candle[candles=3,lit=true]",
+  "plate": "minecraft:spruce_pressure_plate",
+  "fence": "minecraft:spruce_fence",
+  "tile_a": "minecraft:terracotta",
+  "tile_b": "minecraft:white_terracotta",
+  "carpet": "minecraft:red_carpet",
+  "olog": "minecraft:oak_log[axis=y]",
+  "leaves": "minecraft:oak_leaves[persistent=true]",
+  "cyp": "minecraft:spruce_leaves[persistent=true]",
+  "darklog": "minecraft:dark_oak_log[axis=y]",
+  "poppy": "minecraft:poppy",
+  "allium": "minecraft:allium",
+  "bluet": "minecraft:azure_bluet",
+  "daisy": "minecraft:oxeye_daisy",
+  "tuft": "minecraft:short_grass"
+ },
+ "ops": [
+  {
+   "op": "fill",
+   "from": [
+    0,
+    0,
+    0
+   ],
+   "to": [
+    14,
+    1,
+    17
+   ],
+   "block": "dirt"
+  },
+  {
+   "op": "fill",
+   "from": [
+    0,
+    2,
+    0
+   ],
+   "to": [
+    14,
+    2,
+    17
+   ],
+   "block": "grass"
+  },
+  {
+   "op": "fill",
+   "from": [
+    0,
+    2,
+    16
+   ],
+   "to": [
+    14,
+    2,
+    17
+   ],
+   "block": "gravel"
+  },
+  {
+   "op": "fill",
+   "from": [
+    6,
+    2,
+    13
+   ],
+   "to": [
+    8,
+    2,
+    15
+   ],
+   "block": "path"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    3,
+    2
+   ],
+   "to": [
+    12,
+    3,
+    12
+   ],
+   "block": "body"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    4,
+    2
+   ],
+   "to": [
+    12,
+    5,
+    12
+   ],
+   "block": "brick"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    6,
+    2
+   ],
+   "to": [
+    12,
+    6,
+    12
+   ],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    7,
+    2
+   ],
+   "to": [
+    12,
+    9,
+    12
+   ],
+   "block": "plast"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    3,
+    2
+   ],
+   "to": [
+    2,
+    5,
+    2
+   ],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    7,
+    2
+   ],
+   "to": [
+    2,
+    9,
+    2
+   ],
+   "block": "dlog"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    3,
+    12
+   ],
+   "to": [
+    2,
+    5,
+    12
+   ],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    7,
+    12
+   ],
+   "to": [
+    2,
+    9,
+    12
+   ],
+   "block": "dlog"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    3,
+    2
+   ],
+   "to": [
+    12,
+    5,
+    2
+   ],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    7,
+    2
+   ],
+   "to": [
+    12,
+    9,
+    2
+   ],
+   "block": "dlog"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    3,
+    12
+   ],
+   "to": [
+    12,
+    5,
+    12
+   ],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    7,
+    12
+   ],
+   "to": [
+    12,
+    9,
+    12
+   ],
+   "block": "dlog"
+  },
+  {
+   "op": "carve",
+   "from": [
+    3,
+    3,
+    3
+   ],
+   "to": [
+    11,
+    5,
+    11
+   ]
+  },
+  {
+   "op": "carve",
+   "from": [
+    3,
+    7,
+    3
+   ],
+   "to": [
+    11,
+    9,
+    11
+   ]
+  },
+  {
+   "op": "setblock",
+   "at": [
+    3,
+    2,
+    3
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    2,
+    3
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    5,
+    2,
+    3
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    2,
+    3
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    2,
+    3
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    2,
+    3
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    2,
+    3
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    2,
+    3
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    2,
+    3
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    3,
+    2,
+    4
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    2,
+    4
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    5,
+    2,
+    4
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    2,
+    4
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    2,
+    4
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    2,
+    4
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    2,
+    4
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    2,
+    4
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    2,
+    4
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    3,
+    2,
+    5
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    2,
+    5
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    5,
+    2,
+    5
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    2,
+    5
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    2,
+    5
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    2,
+    5
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    2,
+    5
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    2,
+    5
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    2,
+    5
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    3,
+    2,
+    6
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    2,
+    6
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    5,
+    2,
+    6
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    2,
+    6
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    2,
+    6
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    2,
+    6
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    2,
+    6
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    2,
+    6
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    2,
+    6
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    3,
+    2,
+    7
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    2,
+    7
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    5,
+    2,
+    7
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    2,
+    7
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    2,
+    7
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    2,
+    7
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    2,
+    7
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    2,
+    7
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    2,
+    7
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    3,
+    2,
+    8
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    2,
+    8
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    5,
+    2,
+    8
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    2,
+    8
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    2,
+    8
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    2,
+    8
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    2,
+    8
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    2,
+    8
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    2,
+    8
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    3,
+    2,
+    9
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    2,
+    9
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    5,
+    2,
+    9
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    2,
+    9
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    2,
+    9
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    2,
+    9
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    2,
+    9
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    2,
+    9
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    2,
+    9
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    3,
+    2,
+    10
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    2,
+    10
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    5,
+    2,
+    10
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    2,
+    10
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    2,
+    10
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    2,
+    10
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    2,
+    10
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    2,
+    10
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    2,
+    10
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    3,
+    2,
+    11
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    2,
+    11
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    5,
+    2,
+    11
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    2,
+    11
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    2,
+    11
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    2,
+    11
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    2,
+    11
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    2,
+    11
+   ],
+   "block": "tile_b"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    2,
+    11
+   ],
+   "block": "tile_a"
+  },
+  {
+   "op": "fill",
+   "from": [
+    3,
+    6,
+    3
+   ],
+   "to": [
+    11,
+    6,
+    11
+   ],
+   "block": "planks"
+  },
+  {
+   "op": "fill",
+   "from": [
+    3,
+    6,
+    3
+   ],
+   "to": [
+    11,
+    6,
+    3
+   ],
+   "block": "olog_x"
+  },
+  {
+   "op": "fill",
+   "from": [
+    3,
+    6,
+    7
+   ],
+   "to": [
+    11,
+    6,
+    7
+   ],
+   "block": "olog_x"
+  },
+  {
+   "op": "fill",
+   "from": [
+    3,
+    6,
+    11
+   ],
+   "to": [
+    11,
+    6,
+    11
+   ],
+   "block": "olog_x"
+  },
+  {
+   "op": "fill",
+   "from": [
+    3,
+    10,
+    3
+   ],
+   "to": [
+    11,
+    10,
+    11
+   ],
+   "block": "planks"
+  },
+  {
+   "op": "fill",
+   "from": [
+    3,
+    10,
+    3
+   ],
+   "to": [
+    11,
+    10,
+    3
+   ],
+   "block": "olog_x"
+  },
+  {
+   "op": "fill",
+   "from": [
+    3,
+    10,
+    7
+   ],
+   "to": [
+    11,
+    10,
+    7
+   ],
+   "block": "olog_x"
+  },
+  {
+   "op": "fill",
+   "from": [
+    3,
+    10,
+    11
+   ],
+   "to": [
+    11,
+    10,
+    11
+   ],
+   "block": "olog_x"
+  },
+  {
+   "op": "carve",
+   "from": [
+    3,
+    6,
+    8
+   ],
+   "to": [
+    3,
+    6,
+    10
+   ]
+  },
+  {
+   "op": "setblock",
+   "at": [
+    3,
+    3,
+    11
+   ],
+   "block": "stair_n"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    3,
+    4,
+    10
+   ],
+   "block": "stair_n"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    3,
+    5,
+    9
+   ],
+   "block": "stair_n"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    3,
+    6,
+    8
+   ],
+   "block": "stair_n"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    7,
+    8
+   ],
+   "block": "f_s"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    7,
+    9
+   ],
+   "block": "f_s"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    7,
+    10
+   ],
+   "block": "f_s"
+  },
+  {
+   "op": "carve",
+   "from": [
+    7,
+    3,
+    12
+   ],
+   "to": [
+    7,
+    4,
+    12
+   ]
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    3,
+    12
+   ],
+   "block": "door_lo"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    4,
+    12
+   ],
+   "block": "door_up"
+  },
+  {
+   "op": "fill",
+   "from": [
+    6,
+    3,
+    12
+   ],
+   "to": [
+    6,
+    5,
+    12
+   ],
+   "block": "band"
+  },
+  {
+   "op": "fill",
+   "from": [
+    8,
+    3,
+    12
+   ],
+   "to": [
+    8,
+    5,
+    12
+   ],
+   "block": "band"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    5,
+    12
+   ],
+   "block": "chisel"
+  },
+  {
+   "op": "fill",
+   "from": [
+    4,
+    4,
+    12
+   ],
+   "to": [
+    4,
+    5,
+    12
+   ],
+   "block": "bars_x"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    4,
+    12
+   ],
+   "to": [
+    10,
+    5,
+    12
+   ],
+   "block": "bars_x"
+  },
+  {
+   "op": "carve",
+   "from": [
+    7,
+    7,
+    12
+   ],
+   "to": [
+    7,
+    8,
+    12
+   ]
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    7,
+    12
+   ],
+   "block": "door_lo"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    8,
+    12
+   ],
+   "block": "door_up"
+  },
+  {
+   "op": "fill",
+   "from": [
+    4,
+    8,
+    12
+   ],
+   "to": [
+    4,
+    9,
+    12
+   ],
+   "block": "pane_x"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    8,
+    12
+   ],
+   "to": [
+    10,
+    9,
+    12
+   ],
+   "block": "pane_x"
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    4,
+    2
+   ],
+   "to": [
+    5,
+    5,
+    2
+   ],
+   "block": "bars_x"
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    8,
+    2
+   ],
+   "to": [
+    5,
+    9,
+    2
+   ],
+   "block": "pane_x"
+  },
+  {
+   "op": "fill",
+   "from": [
+    9,
+    4,
+    2
+   ],
+   "to": [
+    9,
+    5,
+    2
+   ],
+   "block": "bars_x"
+  },
+  {
+   "op": "fill",
+   "from": [
+    9,
+    8,
+    2
+   ],
+   "to": [
+    9,
+    9,
+    2
+   ],
+   "block": "pane_x"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    4,
+    5
+   ],
+   "to": [
+    2,
+    5,
+    5
+   ],
+   "block": "bars_z"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    8,
+    5
+   ],
+   "to": [
+    2,
+    9,
+    5
+   ],
+   "block": "pane_z"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    4,
+    9
+   ],
+   "to": [
+    2,
+    5,
+    9
+   ],
+   "block": "bars_z"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    8,
+    9
+   ],
+   "to": [
+    2,
+    9,
+    9
+   ],
+   "block": "pane_z"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    4,
+    5
+   ],
+   "to": [
+    12,
+    5,
+    5
+   ],
+   "block": "bars_z"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    8,
+    5
+   ],
+   "to": [
+    12,
+    9,
+    5
+   ],
+   "block": "pane_z"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    4,
+    9
+   ],
+   "to": [
+    12,
+    5,
+    9
+   ],
+   "block": "bars_z"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    8,
+    9
+   ],
+   "to": [
+    12,
+    9,
+    9
+   ],
+   "block": "pane_z"
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    6,
+    13
+   ],
+   "to": [
+    9,
+    6,
+    14
+   ],
+   "block": "dplanks"
+  },
+  {
+   "op": "fill",
+   "from": [
+    5,
+    3,
+    14
+   ],
+   "to": [
+    5,
+    5,
+    14
+   ],
+   "block": "f_post"
+  },
+  {
+   "op": "fill",
+   "from": [
+    9,
+    3,
+    14
+   ],
+   "to": [
+    9,
+    5,
+    14
+   ],
+   "block": "f_post"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    5,
+    7,
+    14
+   ],
+   "block": "f_e"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    7,
+    14
+   ],
+   "block": "f_ew"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    7,
+    14
+   ],
+   "block": "f_ew"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    7,
+    14
+   ],
+   "block": "f_ew"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    7,
+    14
+   ],
+   "block": "f_w"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    5,
+    7,
+    13
+   ],
+   "block": "f_s"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    7,
+    13
+   ],
+   "block": "f_s"
+  },
+  {
+   "op": "fill",
+   "from": [
+    1,
+    10,
+    1
+   ],
+   "to": [
+    13,
+    10,
+    1
+   ],
+   "block": "r_slab"
+  },
+  {
+   "op": "fill",
+   "from": [
+    1,
+    10,
+    13
+   ],
+   "to": [
+    13,
+    10,
+    13
+   ],
+   "block": "r_slab"
+  },
+  {
+   "op": "fill",
+   "from": [
+    1,
+    10,
+    2
+   ],
+   "to": [
+    13,
+    10,
+    2
+   ],
+   "block": "r_st_s"
+  },
+  {
+   "op": "fill",
+   "from": [
+    1,
+    10,
+    12
+   ],
+   "to": [
+    13,
+    10,
+    12
+   ],
+   "block": "r_st_n"
+  },
+  {
+   "op": "fill",
+   "from": [
+    1,
+    11,
+    3
+   ],
+   "to": [
+    13,
+    11,
+    3
+   ],
+   "block": "r_slab"
+  },
+  {
+   "op": "fill",
+   "from": [
+    1,
+    11,
+    11
+   ],
+   "to": [
+    13,
+    11,
+    11
+   ],
+   "block": "r_slab"
+  },
+  {
+   "op": "fill",
+   "from": [
+    1,
+    11,
+    4
+   ],
+   "to": [
+    13,
+    11,
+    4
+   ],
+   "block": "r_st_s"
+  },
+  {
+   "op": "fill",
+   "from": [
+    1,
+    11,
+    10
+   ],
+   "to": [
+    13,
+    11,
+    10
+   ],
+   "block": "r_st_n"
+  },
+  {
+   "op": "fill",
+   "from": [
+    1,
+    12,
+    5
+   ],
+   "to": [
+    13,
+    12,
+    5
+   ],
+   "block": "r_slab"
+  },
+  {
+   "op": "fill",
+   "from": [
+    1,
+    12,
+    9
+   ],
+   "to": [
+    13,
+    12,
+    9
+   ],
+   "block": "r_slab"
+  },
+  {
+   "op": "fill",
+   "from": [
+    1,
+    12,
+    6
+   ],
+   "to": [
+    13,
+    12,
+    6
+   ],
+   "block": "r_st_s"
+  },
+  {
+   "op": "fill",
+   "from": [
+    1,
+    12,
+    8
+   ],
+   "to": [
+    13,
+    12,
+    8
+   ],
+   "block": "r_st_n"
+  },
+  {
+   "op": "fill",
+   "from": [
+    1,
+    13,
+    7
+   ],
+   "to": [
+    13,
+    13,
+    7
+   ],
+   "block": "r_ridge"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    10,
+    3
+   ],
+   "to": [
+    2,
+    10,
+    3
+   ],
+   "block": "plast"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    10,
+    3
+   ],
+   "to": [
+    12,
+    10,
+    3
+   ],
+   "block": "plast"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    10,
+    11
+   ],
+   "to": [
+    2,
+    10,
+    11
+   ],
+   "block": "plast"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    10,
+    11
+   ],
+   "to": [
+    12,
+    10,
+    11
+   ],
+   "block": "plast"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    10,
+    4
+   ],
+   "to": [
+    2,
+    10,
+    4
+   ],
+   "block": "plast"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    10,
+    4
+   ],
+   "to": [
+    12,
+    10,
+    4
+   ],
+   "block": "plast"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    10,
+    10
+   ],
+   "to": [
+    2,
+    10,
+    10
+   ],
+   "block": "plast"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    10,
+    10
+   ],
+   "to": [
+    12,
+    10,
+    10
+   ],
+   "block": "plast"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    10,
+    5
+   ],
+   "to": [
+    2,
+    11,
+    5
+   ],
+   "block": "plast"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    10,
+    5
+   ],
+   "to": [
+    12,
+    11,
+    5
+   ],
+   "block": "plast"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    10,
+    9
+   ],
+   "to": [
+    2,
+    11,
+    9
+   ],
+   "block": "plast"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    10,
+    9
+   ],
+   "to": [
+    12,
+    11,
+    9
+   ],
+   "block": "plast"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    10,
+    6
+   ],
+   "to": [
+    2,
+    11,
+    6
+   ],
+   "block": "plast"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    10,
+    6
+   ],
+   "to": [
+    12,
+    11,
+    6
+   ],
+   "block": "plast"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    10,
+    8
+   ],
+   "to": [
+    2,
+    11,
+    8
+   ],
+   "block": "plast"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    10,
+    8
+   ],
+   "to": [
+    12,
+    11,
+    8
+   ],
+   "block": "plast"
+  },
+  {
+   "op": "fill",
+   "from": [
+    2,
+    10,
+    7
+   ],
+   "to": [
+    2,
+    12,
+    7
+   ],
+   "block": "plast"
+  },
+  {
+   "op": "fill",
+   "from": [
+    12,
+    10,
+    7
+   ],
+   "to": [
+    12,
+    12,
+    7
+   ],
+   "block": "plast"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    3,
+    3
+   ],
+   "block": "camp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    3,
+    3
+   ],
+   "block": "smoker"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    3,
+    4
+   ],
+   "block": "barrel"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    3,
+    5
+   ],
+   "block": "barrel"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    3,
+    11
+   ],
+   "block": "barrel"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    3,
+    11
+   ],
+   "block": "chest"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    3,
+    3
+   ],
+   "block": "shelf"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    3,
+    4
+   ],
+   "block": "shelf"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    3,
+    3
+   ],
+   "block": "table"
+  },
+  {
+   "op": "fill",
+   "from": [
+    10,
+    3,
+    3
+   ],
+   "to": [
+    10,
+    3,
+    3
+   ],
+   "block": "camp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    5,
+    3,
+    3
+   ],
+   "block": "chisel"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    5,
+    4,
+    3
+   ],
+   "block": "candle"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    3,
+    7
+   ],
+   "block": "fence"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    4,
+    7
+   ],
+   "block": "plate"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    3,
+    8
+   ],
+   "block": "fence"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    4,
+    8
+   ],
+   "block": "plate"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    3,
+    4
+   ],
+   "block": "loom"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    3,
+    3,
+    5
+   ],
+   "block": "cauldron"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    5,
+    5
+   ],
+   "block": "lantern_h"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    5,
+    5,
+    10
+   ],
+   "block": "lantern_h"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    5,
+    8
+   ],
+   "block": "lantern_h"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    7,
+    3
+   ],
+   "block": "bed_h"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    7,
+    4
+   ],
+   "block": "bed_f"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    7,
+    3
+   ],
+   "block": "bed_h"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    7,
+    4
+   ],
+   "block": "bed_f"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    7,
+    3
+   ],
+   "block": "bed_h"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    7,
+    4
+   ],
+   "block": "bed_f"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    7,
+    8
+   ],
+   "block": "chest"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    7,
+    9
+   ],
+   "block": "shelf"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    8,
+    9
+   ],
+   "block": "shelf"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    7,
+    11
+   ],
+   "block": "table"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    5,
+    7,
+    11
+   ],
+   "block": "chest"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    5,
+    9,
+    6
+   ],
+   "block": "lantern_h"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    9,
+    6
+   ],
+   "block": "lantern_h"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    9,
+    10
+   ],
+   "block": "lantern_h"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    5,
+    3,
+    13
+   ],
+   "block": "pot"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    9,
+    3,
+    13
+   ],
+   "block": "pot"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    3,
+    3,
+    13
+   ],
+   "block": "cauldron"
+  },
+  {
+   "op": "fill",
+   "from": [
+    1,
+    3,
+    14
+   ],
+   "to": [
+    1,
+    4,
+    14
+   ],
+   "block": "darklog"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    0,
+    5,
+    13
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    0,
+    5,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    0,
+    5,
+    15
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    1,
+    5,
+    13
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    1,
+    5,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    1,
+    5,
+    15
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    2,
+    5,
+    13
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    2,
+    5,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    2,
+    5,
+    15
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    0,
+    6,
+    13
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    0,
+    6,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    0,
+    6,
+    15
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    1,
+    6,
+    13
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    1,
+    6,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    1,
+    6,
+    15
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    2,
+    6,
+    13
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    2,
+    6,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    2,
+    6,
+    15
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    0,
+    7,
+    13
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    0,
+    7,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    0,
+    7,
+    15
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    1,
+    7,
+    13
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    1,
+    7,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    1,
+    7,
+    15
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    2,
+    7,
+    13
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    2,
+    7,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    2,
+    7,
+    15
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    0,
+    8,
+    13
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    0,
+    8,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    0,
+    8,
+    15
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    1,
+    8,
+    13
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    1,
+    8,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    1,
+    8,
+    15
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    2,
+    8,
+    13
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    2,
+    8,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    2,
+    8,
+    15
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    0,
+    9,
+    13
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    0,
+    9,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    0,
+    9,
+    15
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    1,
+    9,
+    13
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    1,
+    9,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    1,
+    9,
+    15
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    2,
+    9,
+    13
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    2,
+    9,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    2,
+    9,
+    15
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    1,
+    10,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    1,
+    11,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "fill",
+   "from": [
+    13,
+    3,
+    14
+   ],
+   "to": [
+    13,
+    4,
+    14
+   ],
+   "block": "darklog"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    5,
+    13
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    5,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    5,
+    15
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    13,
+    5,
+    13
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    13,
+    5,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    13,
+    5,
+    15
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    5,
+    13
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    5,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    5,
+    15
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    6,
+    13
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    6,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    6,
+    15
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    13,
+    6,
+    13
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    13,
+    6,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    13,
+    6,
+    15
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    6,
+    13
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    6,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    6,
+    15
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    7,
+    13
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    7,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    7,
+    15
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    13,
+    7,
+    13
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    13,
+    7,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    13,
+    7,
+    15
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    7,
+    13
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    7,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    7,
+    15
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    8,
+    13
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    8,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    8,
+    15
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    13,
+    8,
+    13
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    13,
+    8,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    13,
+    8,
+    15
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    8,
+    13
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    8,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    8,
+    15
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    9,
+    13
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    9,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    9,
+    15
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    13,
+    9,
+    13
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    13,
+    9,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    13,
+    9,
+    15
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    9,
+    13
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    9,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    14,
+    9,
+    15
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    13,
+    10,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    13,
+    11,
+    14
+   ],
+   "block": "cyp"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    3,
+    1
+   ],
+   "block": "allium"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    3,
+    1
+   ],
+   "block": "poppy"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    3,
+    1
+   ],
+   "block": "tuft"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    3,
+    15
+   ],
+   "block": "daisy"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    3,
+    0
+   ],
+   "block": "tuft"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    1,
+    3,
+    0
+   ],
+   "block": "allium"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    3,
+    0
+   ],
+   "block": "tuft"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    3,
+    1
+   ],
+   "block": "daisy"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    3,
+    1
+   ],
+   "block": "tuft"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    3,
+    13
+   ],
+   "block": "poppy"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    1,
+    3,
+    0
+   ],
+   "block": "bluet"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    3,
+    0
+   ],
+   "block": "allium"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    3,
+    3,
+    14
+   ],
+   "block": "tuft"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    3,
+    1
+   ],
+   "block": "tuft"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    3,
+    13
+   ],
+   "block": "bluet"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    0,
+    3,
+    1
+   ],
+   "block": "allium"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    3,
+    0
+   ],
+   "block": "daisy"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    3,
+    1
+   ],
+   "block": "daisy"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    8,
+    3,
+    0
+   ],
+   "block": "daisy"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    3,
+    13
+   ],
+   "block": "daisy"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    3,
+    3,
+    14
+   ],
+   "block": "poppy"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    3,
+    3,
+    0
+   ],
+   "block": "poppy"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    2,
+    3,
+    14
+   ],
+   "block": "poppy"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    12,
+    3,
+    14
+   ],
+   "block": "poppy"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    1,
+    3,
+    0
+   ],
+   "block": "poppy"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    2,
+    3,
+    1
+   ],
+   "block": "daisy"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    2,
+    3,
+    0
+   ],
+   "block": "tuft"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    3,
+    3,
+    0
+   ],
+   "block": "tuft"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    3,
+    1
+   ],
+   "block": "daisy"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    0,
+    3,
+    0
+   ],
+   "block": "tuft"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    3,
+    15
+   ],
+   "block": "bluet"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    6,
+    3,
+    1
+   ],
+   "block": "tuft"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    1,
+    3,
+    13
+   ],
+   "block": "tuft"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    10,
+    3,
+    0
+   ],
+   "block": "allium"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    11,
+    3,
+    13
+   ],
+   "block": "daisy"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    7,
+    3,
+    0
+   ],
+   "block": "allium"
+  },
+  {
+   "op": "setblock",
+   "at": [
+    4,
+    3,
+    1
+   ],
+   "block": "poppy"
+  }
+ ],
+ "entry": {
+  "at": [
+   7,
+   3,
+   16
+  ],
+  "facing": "south"
+ }
+}

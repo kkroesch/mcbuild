@@ -66,8 +66,6 @@ restart: stop start
 logs:
   podman logs -f mc-preprod
 
-console:
-  podman exec -it mc-preprod rcon-cli
 
 # Seed der laufenden Welt anzeigen
 seed:
@@ -75,6 +73,9 @@ seed:
 
 position:
   podman exec mc-preprod rcon-cli data get entity {{PLAYER}} Pos
+
+console:
+  podman exec -it mc-preprod rcon-cli
 
 # Blueprint dort bauen, wo der Spieler gerade steht (Position per RCON, abgerundet).
 # Anker = Ecke links vorne unten des Blueprints (Nordwest-Ecke, Haus wächst nach Osten/Süden).

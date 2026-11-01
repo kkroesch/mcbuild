@@ -101,21 +101,57 @@ def parse_varints(raw_bytes, count):
     return res
 
 
+def find_tag_recursive(data, target_key):
+    """Sucht rekursiv nach einem Schlüssel in verschachtelten Dictionaries."""
+    if isinstance(data, dict):
+        for k, v in data.items():
+            if k.lower() == target_key.lower():
+                return v
+            res = find_tag_recursive(v, target_key)
+            if res is not None:
+                return res
+    elif isinstance(data, list):
+        for item in data:
+            res = find_tag_recursive(item, target_key)
+            if res is not None:
+                return res
+    return None
+
+
 def extract_sponge(root):
-    schem = root.get("Schematic", root)
-    w, h, l = schem["Width"], schem["Height"], schem["Length"]
-    id_map = {v: k for k, v in schem["Palette"].items()}
-    indices = parse_varints(schem["BlockData"], w * h * l)
-    
-    # 3D Array: (x, y, z) -> Blockstate
+    # Palette suchen (egal auf welcher Ebene)
+    palette_tag = find_tag_recursive(root, "Palette")
+    if not palette_tag or not isinstance(palette_tag, dict):
+        raise KeyError(
+            f"Keine Palette im NBT-Baum gefunden. Vorhandene Root-Keys: {list(root.keys())}"
+        )
+
+    # Dimensionen suchen
+    w = find_tag_recursive(root, "Width")
+    h = find_tag_recursive(root, "Height")
+    l = find_tag_recursive(root, "Length")
+
+    if w is None or h is None or l is None:
+        raise KeyError("Dimensionen (Width, Height, Length) nicht gefunden.")
+
+    # BlockData suchen
+    block_data = find_tag_recursive(root, "BlockData") or find_tag_recursive(
+        root, "Data"
+    )
+    if block_data is None:
+        raise KeyError("Kein 'BlockData'-Array gefunden.")
+
+    id_map = {v: k for k, v in palette_tag.items()}
+    indices = parse_varints(block_data, w * h * l)
+
     grid = {}
     for y in range(h):
         for z in range(l):
             for x in range(w):
                 b_idx = (y * l + z) * w + x
-                grid[(x, y, z)] = id_map[indices[b_idx]]
-    return w, h, l, grid
+                grid[(x, y, z)] = id_map.get(indices[b_idx], "minecraft:air")
 
+    return w, h, l, grid
 
 def extract_legacy(root):
     w, h, l = root["Width"], root["Height"], root["Length"]

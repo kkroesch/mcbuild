@@ -1,4 +1,5 @@
 RCON_PASSWORD := "changeme"
+VERSION := "26.3"
 PLAYER := "FoolBar"
 LEVEL := "flach1"
 LEVEL_TYPE := "flat"
@@ -17,7 +18,7 @@ init seed="":
   mkdir -p data
   -podman rm -f mc-preprod
   podman run -d --name mc-preprod \
-    -e EULA=TRUE -e TYPE=PURPUR -e VERSION=LATEST \
+    -e EULA=TRUE -e TYPE=PURPUR -e VERSION={{VERSION}} \
     -e MODE=creative -e MEMORY=2G \
     -e ENABLE_RCON=true -e RCON_PASSWORD={{RCON_PASSWORD}} \
     -e OPS={{PLAYER}} \
